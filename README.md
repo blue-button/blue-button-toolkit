@@ -1,3 +1,3 @@
-# The Blue Button Plus Website
+# The (new) Blue Button Plus Website
 
 View at http://blue-button.github.io
