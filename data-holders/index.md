@@ -1,8 +1,12 @@
 ---
-layout: docs
+layout: page
 ---
 
-# Sample Apps
+# Data Holders
+
+1. What data do you have?
+2. How do you structure it? [content]
+3. How do you send it? [transport]
 
 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
