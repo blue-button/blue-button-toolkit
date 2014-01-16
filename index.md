@@ -6,7 +6,7 @@ layout: main
   <div class="content">
     <div class="box">
       <h1>Start building great apps for patients.</h1>
-      <p>Blue Button+ is a technology and policy framework for building health applications for patients, helping them access their their health data and be empowered to act on it. As a developer, you can leverage a rich ecosystem of tools and resources to build great apps for patients.</p>
+      <p>Blue Button+ is a technology and policy framework for building health applications for patients, helping them access their health data and be empowered to act on it. As a developer, you can leverage a rich ecosystem of tools and resources to build great apps for patients.</p>
       <div class="center">
         <a class="button" href="/get-started.html"><span>Get Started</span></a>
       </div>
