@@ -4,14 +4,14 @@ layout: page
 
 # Data Holders
 
+<!--
 1. What data do you have?
 2. How do you structure it? [content]
 3. How do you send it? [transport]
+-->
 
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+As a dataholder, by implementing Blue Button+ Direct, you will be meeting the requirements of View, Download, and Transmit (V/D/T) in Meaningful Use Stage 2.
 
-Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+Blue Button+ Direct specifications ask data holders to meet V/D/T requirements, and offers guidance for a few minor clarifications and additions to V/D/T that ensure patients can easily transmit their records to third party applications of their choice.
 
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus.
-
-Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.
+[Learn More](/data-holders/mu2)
