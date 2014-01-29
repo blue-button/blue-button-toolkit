@@ -100,7 +100,7 @@ If you are not participating in one of those communities, one of the signing cer
 For testing, you can upload your anchor to the ***Providers-Test*** [Blue Button+ Trust Bundle](https://secure.bluebuttontrust.org/). For production, you will need to participate in a trust community or sign the message with an EV certificate.
 
 #### Detailed Flow Diagram
-The following diagram depicts a successful transmission. See it [full-size](files/patient-transmit.pdf).
+The following diagram depicts a successful transmission. See it [full-size](../files/patient-transmit.pdf).
 
 ![Direct Transmit Flow Diagram](../img/direct-transmit.png)
 
