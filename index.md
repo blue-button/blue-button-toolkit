@@ -20,13 +20,13 @@ layout: main
       
       <li>
         <div class="icon direct"></div>
-        <h1><a href="/docs">Blue Button Direct</a></h1>
+        <h1><a href="/applications/direct">Blue Button Direct</a></h1>
         <p>The Direct Project specification is one of many transport mechanisms for moving data between the data holder and the patient. It is commonly used for secure exchange of health information between providers. Blue Button Direct leverages the same technology to facilitate data exchange from the provider to the patient. This section will help you navigate trust bundles, HISPs, and service anchor registration to enable your application with Direct functionality.</p>
       </li>
       
       <li>
         <div class="icon apps"></div>
-        <h1><a href="/docs">Blue Button REST</a></h1>
+        <h1><a href="http://blue-button.github.io/blue-button-plus-pull/">Blue Button REST</a></h1>
         <p>This OAuth2 based API is a RESTful interface for accessing patient data. The REST API includes three basic functions: fetch an up-to-date clinical summary, search through available documents, and retrieve a document. The API also provides a mechanism for dynamic app registration (so apps can communicate with any data holder) and a registry mechanism to support discovery of data holders and apps.</p>
       </li>
       
@@ -38,7 +38,7 @@ layout: main
       
       <li>
         <div class="icon tools"></div>
-        <h1><a href="/docs">Open Source Tools</a></h1>
+        <h1><a href="/applications/tools">Open Source Tools</a></h1>
         <p>A set of utilities to help build applications to parse and query structured health data as well as libraries to help with presenting the data to the patient in a clear way.</p>
       </li>
       
@@ -50,7 +50,7 @@ layout: main
       
       <li>
         <div class="icon db"></div>
-        <h1><a href="/docs">Sample Data</a></h1>
+        <h1><a href="https://github.com/chb/sample_ccdas">Sample Data</a></h1>
         <p>When building an application it is important to have sample data that can represent your patient population. The data provided includes synthetic medical records from the EMERGE project that allow you to customize and filter the types of test patients that are generated. The GitHub repository also includes samples from industry of organizations that are already providing structured health data.</p>
       </li>
       
