@@ -94,7 +94,6 @@ Whenever the C-CDA is generated for patients, it should have the following field
 	</tr>
 </table>
 
-
 Link to [Companion Guide to Consolidated CDA](http://wiki.siframework.org/Companion+Guide+to+Consolidated+CDA+for+MU2) produced by ONC.
 
 ## 2. Codes, Dictionaries, and Vocabularies
