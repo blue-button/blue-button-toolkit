@@ -7,7 +7,7 @@ layout: page
 
 This section describes the use of the [Direct Project](http://directproject.org) specification to transmit health data securely from a ***data holder*** to a ***third party***. Implementation of Direct protocol is required for Meaningful Use Stage 2 CEHRT.
 
-![Transmit Diagram](img/transmit.png)
+![Transmit Diagram](../img/transmit.png)
 
 Examples of data holder systems include: provider's EHR, health insurance claims database, or pharmacy dispensing system. Examples of third parties include: personal health records, mobile applications, or web services.
 
@@ -80,7 +80,8 @@ Sample code: [.NET Reference Implementation](http://wiki.directproject.org/CShar
 
 Learn more: [Direct Project's Documentation Library](http://wiki.directproject.org/Documentation+Library) and [Direct Project's Applicability Statement for Secure Health Transport](http://wiki.directproject.org/Applicability+Statement+for+Secure+Health+Transport)
 
-#### Retrieving Blue Button+ Patient Trust Bundle {#bundle}
+<a name="bundle"></a>
+#### Retrieving Blue Button+ Patient Trust Bundle
 Your STA/HISP will need a set of trust anchors in order to transmit Direct messages. The ***Patient*** bundle includes the trust anchors from third party applications in the Blue Button+ ecosystem. The certificate bundle can be retrieved from:
 
 {% highlight text %}
@@ -101,10 +102,10 @@ For testing, you can upload your anchor to the ***Providers-Test*** [Blue Button
 #### Detailed Flow Diagram
 The following diagram depicts a successful transmission. See it [full-size](files/patient-transmit.pdf).
 
-![Direct Transmit Flow Diagram](img/direct-transmit.png)
+![Direct Transmit Flow Diagram](../img/direct-transmit.png)
 
-
-### E. Automation and Triggers {#triggers}
+<a name="triggers"></a>
+### E. Automation and Triggers
 
 When the patient has requested "ongoing" sharing of information, the data holder's system will have to use internal triggers that will cause new information to be sent. How this is done will differ from system to system, but we suggest the following as a starting point:
 
@@ -140,7 +141,8 @@ Depending on the trigger or type of encounter, it may also be appropriate to inc
 
 The payload may include other documents as well.
 
-#### 3. Transmit Context {#context}
+<a name="context"></a>
+#### 3. Transmit Context
 The message body should also include attribution that this transmission was on behalf of the patient in text/plain or text/html:
 
 {% highlight text %}
@@ -176,10 +178,10 @@ Recurring: Yes
 
 The storyboards below match the key user flows described above: (1) within the patient portal and (2) within the provider's EHR interface.
 
-![Patient Portal](img/transmit-workflow-1.jpg)
+![Patient Portal](../img/transmit-workflow-1.jpg)
 
-![Patient Portal - Revoke](img/transmit-workflow-2.jpg)
+![Patient Portal - Revoke](../img/transmit-workflow-2.jpg)
 
-![Provider Interface](img/transmit-workflow-3.jpg)
+![Provider Interface](../img/transmit-workflow-3.jpg)
 
-![Provider Interface - Revoke](img/transmit-workflow-4.jpg)
+![Provider Interface - Revoke](../img/transmit-workflow-4.jpg)
