@@ -169,6 +169,7 @@ iframe {
 table {	
   text-align: left;
   border-collapse: collapse;
+  margin: 20px;
 }
 
 
