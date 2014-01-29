@@ -152,7 +152,8 @@ The XML file references the schema from HL7.
  xmlns:sdtc="urn:hl7-org:sdtc">
  {% endhighlight %}
 
-### Header {#header}
+<a name="header"></a>
+### Header 
 
 The ***CDA Header*** includes details about the identity of the patient, the creator of the XML document, and the reason the encounter that generated data occured.
 
@@ -765,7 +766,8 @@ The ***CDA Header*** includes details about the identity of the patient, the cre
    </componentOf>
 {% endhighlight %}
 
-### Body {#body}
+<a name="body"></a>
+### Body
 
 This is the start of the ***CDA Body*** which contains all the sections in the health record.
 
@@ -778,7 +780,8 @@ This is the start of the ***CDA Body*** which contains all the sections in the h
          <!-- *********************** -->
 {% endhighlight %}
 
-### Allergies, Adverse Reactions, and Alerts {#allergies}
+<a name="allergies"></a>
+### Allergies, Adverse Reactions, and Alerts 
 
 This ***Alerts*** section contains a description of allergies, reactions, and alerts for the particular patient.
 
@@ -1317,7 +1320,8 @@ Allergies, Adverse Reactions, Alerts
          </component>
 {% endhighlight %}
 
-### Encounters {#encounters}
+<a name="encounters"></a>
+### Encounters
 
 This ***Encounters*** section includes all the office visits, emergency room visits, surgeries, etc.
 
@@ -1500,7 +1504,8 @@ ENCOUNTERS
          </component>
 {% endhighlight %}
 
-### Immunizations {#immunizations}
+<a name="Immunizations"></a>
+### Immunizations 
 
 This ***Immunizations*** section includes all the vaccines an individual has been administered.
 
@@ -1703,7 +1708,8 @@ IMMUNIZATIONS
          </component>
 {% endhighlight %}
 
-### Medications {#medications}
+<a name="medications"></a>
+### Medications
 
 This section includes all the ***Medications*** prescribed to an individual. It includes the type of medication, start date, instructions, and why it was prescribed.
 
@@ -2093,7 +2099,8 @@ MEDICATIONS
          </component>
 {% endhighlight %}
 
-### Care Plan {#careplan}
+<a name="careplan"></a>
+### Care Plan
 
 This ***Care Plan*** section lists all the planned activities and encounters recorded in the system.
 
@@ -2225,7 +2232,8 @@ CARE PLAN
          </component>
 {% endhighlight %}
 
-### Discharge Medications {#discharge}
+<a name="discharge"></a>
+### Discharge Medications
 
 This ***Hospital Discharge Summary*** section captures the medication prescribed at discharge.
 
@@ -2646,7 +2654,8 @@ HOSPITAL DISCHARGE MEDICATIONS
          </component>
 {% endhighlight %}
 
-### Reason for Referral {#reason}
+<a name="reason"></a>
+### Reason for Referral
 
 This ***Referral*** section is a free text field that captures the reason for the referral.
 
@@ -2675,7 +2684,8 @@ REASON FOR REFERRAL
          </component>
 {% endhighlight %}
 
-### Problem List {#problemlist}
+<a name="problemlist"></a>
+### Problem List
 
 The ***Problem List*** section includes all concerns, complaints, and observations; with their corresponding status.
 
@@ -2948,7 +2958,8 @@ PROBLEM LIST
          </component>
 {% endhighlight %}
 
-### Procedures {#procedures}
+<a name="procedures"></a>
+### Procedures
 
 The ***Procedures*** section details a history of procedures like x-rays.
 
@@ -3086,7 +3097,8 @@ PROCEDURES
          </component>
 {% endhighlight %}
 
-### Functional and Cognitive Status {#status}
+<a name="status"></a>
+### Functional and Cognitive Status
 
 This ***Functional Status*** section details the different functional and cognitive impairments.
 
@@ -3235,7 +3247,8 @@ FUNCTIONAL and COGNITIVE STATUS
          </component>
 {% endhighlight %}
 
-### Results {#results}
+<a name="results"></a>
+### Results
 
 This ***Results*** section includes all laboratory results.
 
@@ -3460,7 +3473,8 @@ RESULTS
          </component>
 {% endhighlight %}
 
-### Social History {#social}
+<a name="social"></a>
+### Social History
 
 This ***Social History*** section includes observations like smoking and drinking habits.
 
@@ -3536,7 +3550,8 @@ SOCIAL HISTORY
          </component>
 {% endhighlight %}
 
-### Vital Signs {#vitals}
+<a name="vitals"></a>
+### Vital Signs
 
 The ***Vital Signs*** section captures vitals that change over time like height, weight, and blood pressure.
 
@@ -3821,7 +3836,8 @@ VITAL SIGNS
          </component>
 {% endhighlight %}
 
-### Discharge Instructions {#dischargeinstructions}
+<a name="dischargeinstructions"></a>
+### Discharge Instructions
 
 The ***Hospital Discharge Instructions*** section is a free text field that captures the discharge instructions as written by the provider.
 
