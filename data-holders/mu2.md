@@ -54,18 +54,18 @@ Learn more about Meaningful Use at <a href="http://www.healthit.gov/policy-resea
 	</tr>
 	<tr class="odd">
 		<th>Transmit</th>
-		<td><a href="transmit-using-direct.html">Direct Protocol (SMIME/SMTP)</a></td>
-		<td><a href="transmit-using-direct.html">Direct Protocol (SMIME/SMTP)</a></td>
+		<td><a href="/applications/direct">Direct Protocol (SMIME/SMTP)</a></td>
+		<td><a href="/applications/direct">Direct Protocol (SMIME/SMTP)</a></td>
 	</tr>
 	<tr>
 		<th>Content</th>
-		<td><a href="healthrecords.html">Consolidated CDA</a></td>
-		<td><a href="healthrecords.html">Consolidated CDA</a></td>
+		<td><a href="/applications/content">Consolidated CDA</a></td>
+		<td><a href="/applications/content">Consolidated CDA</a></td>
 	</tr>
 	<tr class="odd">
 		<th>Section &amp; Fields</th>
-		<td><a href="healthrecords.html">Sections and fields described in MU 2</a></td>
-		<td><a href="healthrecords.html">Sections and fields described in MU 2</a></td>
+		<td><a href="/applications/content">Sections and fields described in MU 2</a></td>
+		<td><a href="/applications/content">Sections and fields described in MU 2</a></td>
 	</tr>
 	<tr>
 		<th>Trust Anchors</th>
@@ -90,7 +90,7 @@ Learn more about Meaningful Use at <a href="http://www.healthit.gov/policy-resea
 	<tr>
 		<th>Transmit: Send on Change</th>
 		<td>-</td>
-		<td><a href="transmit-using-direct.html#triggers">Automation &amp; Triggers</a></td>
+		<td><a href="applications/direct#triggers">Automation &amp; Triggers</a></td>
 	</tr>
 </table>
 
@@ -104,7 +104,7 @@ Members of the Blue Button+ community have updated the [.NET](http://wiki.direct
 
 So if you are using one of the Direct reference implementations, retrieving the Blue Button Trust Bundle is as simple as updating a configuration file.
 
-Learn more in the <a href="transmit-using-direct.html#bundle">Transmit</a> section.
+Learn more in the <a href="/applications/direct#bundle">Transmit</a> section.
 
 ### Transmit Context: Message Body & Request.txt
 
@@ -112,7 +112,7 @@ This is a simple addition to the message body to distinguish the type of transfe
 
 There is also an optional Request.txt that can be attached.
 
-Learn more in the <a href="transmit-using-direct.html#context">Transmit</a> section.
+Learn more in the <a href="/applications/direct#context">Transmit</a> section.
 
 ### Transmit: Send on Change (Automation)
 
@@ -120,4 +120,4 @@ Blue Button+ aims to encourage a health ecosystem of patient-centric application
 
 Automation is a key component because it enables data to flow to applications seamlessly. A patient can initiate a transmit and request it to be resent whenever data is changed.
 
-Learn more about <a href="transmit-using-direct.html#triggers">Automations and Triggers</a>.
+Learn more about <a href="/applications/direct#triggers">Automations and Triggers</a>.
