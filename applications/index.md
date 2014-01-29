@@ -26,6 +26,8 @@ The Consolidated CDA is a XML-based standard that specifies the encoding, struct
 
 There are a wide-range of templates that can be represented in the Consolidated CDA standard. For Blue Button we are outlining a subset of sections and fields that should be used. 
 
+[***Learn more***](/applications/content)
+
 <a name="transport"></a>
 ## Transport
 
