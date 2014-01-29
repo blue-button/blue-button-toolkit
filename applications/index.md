@@ -32,16 +32,19 @@ There are a wide-range of templates that can be represented in the Consolidated 
 ## Transport
 
 [***Transport with Direct***](/applications/direct)
+
 [***Transport with REST***](/applications/rest)
 
 <a name="tools"></a>
 ## Tools
 
 There are quite a few resources availiable to help help you adopt the different components of Blue Button+.
+
 [***Learn more***](/applications/tools)
 
 <a name="testing"></a>
 ## Testing
 
 Testing tools, sample data, and community driven issue support related to implementers seeking guidance in meeting certification requirements.
+
 [***Learn more***](/applications/testing)
