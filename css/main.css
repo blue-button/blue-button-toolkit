@@ -164,6 +164,23 @@ iframe {
   padding: 50px;
 }
 
+/* table */
+
+table {	
+  text-align: left;
+  border-collapse: collapse;
+}
+
+
+.table-column {
+  border-bottom: 2px solid #1875c6;
+}
+
+td, th {
+  border-bottom: 1px solid #1875c6;
+  padding: 10px;
+}
+
 /* news */
 
 article {
