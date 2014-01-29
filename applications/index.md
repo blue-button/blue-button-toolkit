@@ -4,7 +4,7 @@ layout: page
 
 # Applications
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ac suscipit elit. Praesent feugiat ac eros in imperdiet. Suspendisse et ipsum non mauris ullamcorper venenatis. Proin adipiscing neque in risus dictum egestas. Nullam tempus congue felis venenatis vehicula. Nullam sed risus suscipit, vulputate turpis eget, facilisis arcu. Sed cursus sagittis volutpat.
+Learn how to build applications powered by Blue Button+ receiving structured patient health records and getting automated access from dataholders.
 
 <!--
 1. What data do you want? [content]
@@ -18,9 +18,13 @@ Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ac suscipit 
 <a name="content"></a>
 ## Content
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ac suscipit elit. Praesent feugiat ac eros in imperdiet. Suspendisse et ipsum non mauris ullamcorper venenatis. Proin adipiscing neque in risus dictum egestas. Nullam tempus congue felis venenatis vehicula. Nullam sed risus suscipit, vulputate turpis eget, facilisis arcu. Sed cursus sagittis volutpat.
+An electronic health record keeps a digital record of clinical information about a particular individual. With the amount of variability among Health IT systems, it is important to have a consistent set of health information for each patient.
 
-Nam imperdiet commodo lacus non pharetra. Integer vel tellus euismod, consectetur leo ut, fermentum odio. Vestibulum sodales velit vitae arcu feugiat, laoreet lacinia ante dignissim. Praesent fringilla ligula nisi, at volutpat lacus eleifend eget. Quisque et metus magna. Duis bibendum auctor tortor at molestie. Fusce porta blandit orci, pretium sollicitudin lectus. Nam nec dapibus urna, eu ullamcorper quam. Sed molestie libero at mi convallis, et tempor mi blandit. Etiam fermentum nisl non ultricies faucibus. Donec euismod condimentum tellus, at tempus sapien fermentum et.
+For Blue Button, the recommended standard for representing the patient health record is the [***HL7 Consolidated Clinical Document Architecture***](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=258) also known as the Consolidated CDA.
+
+The Consolidated CDA is a XML-based standard that specifies the encoding, structure, and semantics of a clinical document.
+
+There are a wide-range of templates that can be represented in the Consolidated CDA standard. For Blue Button we are outlining a subset of sections and fields that should be used. 
 
 <a name="transport"></a>
 ## Transport
