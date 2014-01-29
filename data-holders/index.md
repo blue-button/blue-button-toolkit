@@ -14,4 +14,4 @@ As a dataholder, by implementing Blue Button+ Direct, you will be meeting the re
 
 Blue Button+ Direct specifications ask data holders to meet V/D/T requirements, and offers guidance for a few minor clarifications and additions to V/D/T that ensure patients can easily transmit their records to third party applications of their choice.
 
-[Learn More](/data-holders/mu2)
+[***Learn More***](/data-holders/mu2)
