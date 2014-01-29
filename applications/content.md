@@ -4,9 +4,6 @@ layout: page
 
 # Content
 
-
-{% include bb_plus_app.html %}
-
 <a name="content"></a>
 
 ## 1. Sections
