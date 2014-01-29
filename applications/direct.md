@@ -90,7 +90,8 @@ https://secure.bluebuttontrust.org
 
 The bundle format is ***PKCS7*** which has a ***.p7b*** extension. The bundle should be retrieved and loaded into the STA/HISP daily.
 
-#### Signing with a Certificate {#certificates}
+<a name="certificates"></a>
+#### Signing with a Certificate
 Your STA/HISP will need to sign messages before they are transmitted. Messages can be signed by multiple certificates. 
 
 The preferred path for STAs/HISPs serving providers is to participate in a trust community such as [Direct Trust](http://directtrust.org). These communities aggregate trust anchors from those members that issue certificates and publish them within trust anchor bundles. These anchor bundles will facilitate both Transitions of Care (ToC) and View, Download, and Transmit (VDT) workflows in MU 2.
