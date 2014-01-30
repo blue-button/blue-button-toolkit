@@ -6,7 +6,7 @@ layout: main
   <div class="content">
     <div class="box">
       <h1>Start building great apps for patients.</h1>
-      <p>Blue Button+ is a technology and policy framework for building health applications for patients, helping them access their health data and be empowered to act on it. As a developer, you can leverage a rich ecosystem of tools and resources to build great apps for patients.</p>
+      <p>Blue Button+ is a technology and policy framework for building health applications for patients. Leverage a rich ecosystem of tools and resources to help patients access and become empowered with their health data.</p>
       <div class="center">
         <a class="button" href="/get-started.html"><span>Get Started</span></a>
       </div>
@@ -20,7 +20,7 @@ layout: main
       
       <li>
         <div class="icon direct"></div>
-        <h1><a href="/applications/direct">Blue Button Direct</a></h1>
+        <h1><a href="/applications/transport/direct.html">Blue Button Direct</a></h1>
         <p>The Direct Project specification is one of many transport mechanisms for moving data between the data holder and the patient. It is commonly used for secure exchange of health information between providers. Blue Button Direct leverages the same technology to facilitate data exchange from the provider to the patient. This section will help you navigate trust bundles, HISPs, and service anchor registration to enable your application with Direct functionality.</p>
       </li>
       
@@ -32,7 +32,7 @@ layout: main
       
       <li>
         <div class="icon checkbox"></div>
-        <h1><a href="/docs">Implementation Checklists</a></h1>
+        <h1><a href="#">Implementation Checklists</a></h1>
         <p>A variety of checklists for content, transport, and portability of health data. Data holders and implementers should start here to quickly get up to speed toward building rich experiences for patients.</p>
       </li>
       

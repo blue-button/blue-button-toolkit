@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: docs
 ---
 
-<a name="testing"></a>
 # Testing Your DIRECT Instance
-
 
 The Trust Anchor for the [DIRECT Transport Sandbox](http://sitenv.org/web/sit/direct-transport/) is now a part of the Patients-Test and Providers-Test Bundles located at https://secure.bluebuttontrust.org/. This means that once your application or service is Blue Button+ enabled following the guidelines listed here you can test your application using the Standards Implementation & Testing Environment. SITE is home to testing tools, sample data, and community driven issue support related to implementers seeking guidance in meeting certification requirements.
 
@@ -18,8 +16,8 @@ Be sure to select Patients-Test and/or Providers-Test when registering.
 3. Use the SITE platform "Receive" section by entering the recipient DIRECT address for a user on your app (e.g. testuser@direct.yourapp.org)
 	 
 	You can **select your own content** (C-CDA). We recommend using:
-	- [SMART's Sample C-CDAs](https://github.com/chb/sample_ccdas) or
-	- [EMERGE's synthetic samples.](https://github.com/chb/sample_ccdas/tree/master/EMERGE)
+	- [SMART's Sample C-CDAs](https://github.com/chb/sample_ccdas)
+	- [EMERGE's synthetic samples](https://github.com/chb/sample_ccdas/tree/master/EMERGE)
 
 If you **use your own C-CDAs**, please run them through the [SMART C-CDA Scorecard](http://ccda-scorecard.smartplatforms.org) to ensure that your C-CDAs are following best practices.
 

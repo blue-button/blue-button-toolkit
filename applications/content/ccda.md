@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: docs
 ---
 
-# Content
-
-<a name="content"></a>
+# Clinical Summary (CCDA)
 
 ## 1. Sections
 Blue Button adopts the requirements for sections and fields from Meaningful Use Stage 2. Meaningful Use specifies the fields and content structure of clinical data that providers will share with patients at care transitions. This same structure and consistency will aid application developers as they design and build consumer tools. 

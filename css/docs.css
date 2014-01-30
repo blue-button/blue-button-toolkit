@@ -58,25 +58,5 @@
 .docs .page {
   margin-left: 190px;
   min-height: 500px;
-}
-
-.docs .page {
   padding: 20px;
-  background: #fff;
-  color: #333;
-  font-size: 16px;
-  line-height: 1.5em;
-}
-
-.docs .single-page .page {
-  border-radius: 3px;
-}
-
-.docs .single-page .content-area {
-  position: relative;
-  margin: 10px auto;
-  margin-bottom: 10px;
-  width: 900px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
 }

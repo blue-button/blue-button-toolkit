@@ -2,7 +2,7 @@
 layout: page
 ---
 
-# Contribute
+# Community
 
 Follow on [Twitter](https://twitter.com/bluebuttonplus).
 
