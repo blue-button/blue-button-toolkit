@@ -4,7 +4,7 @@ layout: docs
 
 # Claims 
 
-# Draft Recommendations For Payer / Health Plan Content
+# Recommendations For Payer / Health Plan Content
 
 Blue Button files from health plans are typically derived from administrative claims databases, as well as self-entered data from online Personal Health Records. Files made available to patients via Blue Button+ should be:
 
