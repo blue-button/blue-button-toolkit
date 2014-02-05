@@ -14,11 +14,15 @@ Blue Button files from health plans are typically derived from administrative cl
 The Blue Button+ file should include, as possible, interoperable data fields and elements as covered below in [Blue Button+ recommended data fields and elements](#fields). The base set of data fields and elements included should be as consistent as possible with the data represented in the [MyMedicare.gov Blue Button file](http://www.cms.gov/Research-Statistics-Data-and-Systems/Files-for-Order/NonIdentifiableDataFiles/BlueButtonInitiative.html). Additional fields were also recommended by the group and detailed below. These include fields to describe the patient, payer coverage, provider(s), and codified claims history (including medication where possible).
 Several options for formatting are currently possible. Each option is described below in "Blue Button+ format options,” with the potential strengths and limitations of each choice described.
 
-## Blue Button+ Recommended Data Fields and Elements {#fields}
+<a name="fields"></a>
+## Blue Button+ Recommended Data Fields and Elements 
 
 This section describes the recommended data fields and elements to represent in Blue Button files.
 
 Blue Button files from non-EMR sources typically come from administrative claims data, as well as potentially self-entered data on Personal Health Records. To the extent that data holders already have useful and meaningful health data for consumers' Blue Button files, including from administrative claims data, the following data fields and elements are recommended for inclusion.
+
+Full draft specification available at
+[S&amp;I Blue Button Payer Charter](http://www.bit.ly/bbcharter)
 
 ***Payer & Coverage Information***
 1.	Payer name
