@@ -190,7 +190,7 @@ iframe {
 
 /* table */
 
-table {	
+table {
   text-align: left;
   border-collapse: collapse;
   margin: 20px;
@@ -237,3 +237,8 @@ img.avatar {
   display: inline-block;
   vertical-align: middle;
 }
+
+.accordion h3.collapse-open {}
+.accordion h3.collapse-close {}
+.accordion h3.collapse-open span {}
+.accordion h3.collapse-close span {}

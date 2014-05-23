@@ -1,0 +1,57 @@
+---
+layout: main
+---
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/jquery.accordion.js"></script>
+<script src="../js/selector.js"></script>
+
+<div class="section page">
+	<div class="content">
+		{{ content }}
+	</div>
+  
+	<h2>Blue Button Implementation Guide</h2>
+	
+	<p>Introduction goes here</p>
+
+
+	<div>1. What would you like to do?
+		<select id="what">
+			<option value="">Select an option</option>
+			<option value="share">Share Data with Patients</option>
+			<option value="build">Build Tools &amp; Applications</option>
+			<option value="market">Communicate the Vision</option>
+		</select>
+	</div>
+	
+	<br>
+
+	<div>
+		2. I am a <select id="who"></select>
+	</div>
+	
+	<br>
+	
+	<div>
+		3. For <select id="how"></select> find the best approaches detailed below:
+	</div>
+
+	<div id="how-description"></div>
+
+	<br>
+	<!--Accordion-->
+	<div id="recommendations">
+		<div class="accordion" id="nav-section1">Navigation Section<span></span></div>
+		<div>
+			<ul>
+				<li><a href="#">Navigation Item</a></li>
+				<li><a href="#">Navigation Item</a></li>
+				<li><a href="#">Navigation Item</a></li>
+				<li><a href="#">Navigation Item</a></li>
+				<li><a href="#">Navigation Item</a></li>
+				<li><a href="#">Navigation Item</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
