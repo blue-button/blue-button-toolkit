@@ -56,6 +56,11 @@ p {
   line-height: 1.5em;
 }
 
+div p, div ul {
+  margin-bottom: 0em;
+  padding: 10px 45px;
+}
+
 ol, ul {
   list-style-position: inside;
   margin-left: 10px;
@@ -161,6 +166,7 @@ iframe {
 
 .section.page {
   margin-top: 25px;
+  padding: 10px 50px;
 }
 
 .page {
@@ -238,7 +244,16 @@ img.avatar {
   vertical-align: middle;
 }
 
-.accordion h3.collapse-open {}
-.accordion h3.collapse-close {}
-.accordion h3.collapse-open span {}
-.accordion h3.collapse-close span {}
+div.intro-section, div.nav-section { 
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #0070c0;
+  padding: 10px;
+}
+
+div.intro-section.odd, div.nav-section.odd { 
+  color: #0070c0;
+  background-color: #c9e1f5;
+}
+
+

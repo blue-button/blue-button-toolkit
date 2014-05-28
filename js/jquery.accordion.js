@@ -245,7 +245,7 @@
             secure: ''
         },
         defaultOpen: '', //id that you want opened by default
-        speed: 'slow', //speed of the slide effect
+        speed: 'fast', //speed of the slide effect
         bind: 'click', //event to bind to, supports click, dblclick, mouseover and mouseenter
         animateOpen: function (elem, opts) { //replace the standard slideDown with custom function
             elem.next().stop(true, true).slideDown(opts.speed);
