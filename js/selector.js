@@ -272,11 +272,12 @@ var market_data = {
         "display_name": "Marketing Resources",
         "audience": [
             {
-                "display_name": "Any Organization",
+                "display_name": "Data Holder or Non Data-Holder",
+                "description":"Audience level objective statement",
                 "data_types": [
                     {
                         "name": "The Blue Button PSAs",
-                        "description": "The description of the PSAs",
+                        "description": ":30-:60 sec Blue Button PSAs",
                         "link": "",
                         "resources": [
                             {
@@ -310,37 +311,23 @@ var market_data = {
 
 var developer_data = {
     "developer": {
-         "display_name": "Developer Resources",
+         "display_name": "Developer Resources",         
         "audience": [
             {
-                "display_name": "Any Organization",
+                "display_name": "Data Holder or Non Data-Holder",
+                "description":"Audience level objective statement",
                 "data_types": [
                     {
-                        "name": "The Blue Button PSAs",
-                        "description": "The description of the PSAs",
-                        "link": "",
-                        "resources": [
-                            {
-                                "name": ":60 sec Blue Button PSA for Cancer Patients and Survivors",
-                                "description": ":60 sec Blue Button PSA for Cancer Patients and Survivors",
-                                "link": "http://www.healthit.gov/patients-families/video/60-sec-latina-woman-her-forties-who-living-cancer"
-                            },
-                            {
-                                "name": ":60 sec Blue Button PSA for Seniors 65+ with chronic conditions ",
-                                "description": ":60 sec Blue Button PSA for Seniors 65+ with chronic conditions ",
-                                "link": "http://www.healthit.gov/patients-families/video/60-seconds-blue-button-psa-senior-65-chronic-condition"
-                            }
+                        "name": "GitHub Blue Button Project Page",
+                        "description": "Various open source development projects that support Blue Button ",
+                        "link": "https://github.com/blue-button",
+                        "resources": [                    
                         ]
                     },{
-                        "name": "The Blue Button Web Banner Ads",
-                        "description": "The description of Web Banner Ads",
-                        "link": "",
+                        "name": "Standards Implementation &amp; Testing Environment",
+                        "description": "The SITE aims to provide a central collaboration environment for developers and the standards community, and thus facilitate the rapid adoption of those standards in EHRs.  The SITE is divided into sandboxes, one for each standard supported by the SITE.",
+                        "link": "http://sitenv.org/",
                         "resources": [
-                            {
-                                "name": "The Blue Button Web Banner Ads",
-                                "description": "Print PSAs feature various images of the Blue Button that can be used in electronic or hard copy magazines, newsletters, and newspapers. Downloadable photos and graphics, including the print PSAs, are available in the Image Library.",
-                                "link": "hhttp://www.healthit.gov/sites/default/files/document_fonts.zip"
-                            }
                         ]
                     }
                 ]
@@ -402,7 +389,7 @@ $(document).ready(function(){
 		$("#"+recommendationsId).hide();
 
 		var selection = $(this).val();
-		var options = getDataTypes(selection);
+		var options = getDataTypePair(selection);
 		populateOptions(secondSelectBoxId, thirdSelectBoxId, options);		
 		
 		$("#"+thirdSelectBoxId).trigger("change");
@@ -410,20 +397,25 @@ $(document).ready(function(){
 
 	$("#"+thirdSelectBoxId).change(function(){
 		var selection = $(this).val();
-		$("#"+thirdSelectBoxId+"-description").html(getDataTypeDescription($("#"+thirdSelectBoxId).val())+"<br><br>");
-		var options = getDataTypeRecommendations($("#"+thirdSelectBoxId).val());		
+		
 
 
 		var keyword = $("#"+firstSelectBoxId).val();
 		switch(keyword){
 			case 'share':
+				var options = getDataTypeRecommendations($("#"+thirdSelectBoxId).val());		
 				populateRecommendations(recommendationsId, options, keyword);		
+				$("#"+thirdSelectBoxId+"-description").html(getDataTypeDescription($("#"+thirdSelectBoxId).val())+"<br><br>");
 				break;
 			case 'build':	
-				populateDeveloperResources(recommendationsId, options);		
+				var data_types = getDataTypeObject($("#"+thirdSelectBoxId).val());		
+				populateDeveloperResources(recommendationsId, data_types);		
+				$("#"+thirdSelectBoxId+"-description").html(getAudienceDescription($("#"+thirdSelectBoxId).val())+"<br><br>");
 				break;
-			case 'market':			
-				populateMarketingResources(recommendationsId, options);
+			case 'market':	
+				var resources = getDataTypeResources($("#"+thirdSelectBoxId).val()); 
+				populateMarketingResources(recommendationsId, resources);
+				$("#"+thirdSelectBoxId+"-description").html(getAudienceDescription($("#"+thirdSelectBoxId).val())+"<br><br>");
 				break;
 			default:
 				break;		
@@ -515,7 +507,7 @@ function populateRecommendations(id, recommendations, keyword){
 			guidePanelHtml += "<td>" + recommendations.transmit.transport[g].security[c].name + "</td>"
 		});
 		guidePanelHtml += "</tr><tr><th>Example</th>"
-		guidePanelHtml += "<td><a href='"+ recommendations.transmit.transport[g].link + "'>" + recommendations.transmit.transport[g].example.name + "</a><br />" + recommendations.transmit.transport[g].example.description + "</td>";
+		guidePanelHtml += "<td><a target='_blank' href='"+ recommendations.transmit.transport[g].link + "'>" + recommendations.transmit.transport[g].example.name + "</a><br />" + recommendations.transmit.transport[g].example.description + "</td>";
 		guidePanelHtml += "</tr></table>";
 	}); 
 
@@ -535,14 +527,22 @@ function populateDeveloperResources(id, resources){
 }
 
 function populateResources(id, resources, developer_flag){
-	
 	var guidePanelHtml = "";
-
+	
 	if(developer_flag){
-		guidePanelHtml += "Developer section goes here.";
+		
+		guidePanelHtml += "<h3>" + resources.name + "</h3>";
+		guidePanelHtml += "<p>" + resources.description + "</p>";
+		guidePanelHtml += "<a target='_blank' href='" + resources.link + "'>View</a>";
+		
 	}else{
-		guidePanelHtml += "Marketing section goes here.";
-	}
+		$(resources).each(function(a){
+			guidePanelHtml += "<h3>" + resources[a].name + "</h3>";
+			guidePanelHtml += "<p>" + resources[a].description + "</p>";
+			guidePanelHtml += "<a target='_blank' href='" + resources[a].link + "'>View</a>";
+		});	
+	}	
+
 
 	$("#"+id).html(guidePanelHtml);
 	$("#"+id).show();
@@ -562,17 +562,46 @@ function getAudienceNames(){
 	return audience_names;
 }
 
-/**Get Data Types By Audience Path**/
-function getDataTypes(audience_path){
-	var data_types = [];
+/**Get Data Type Pair By Audience Path**/
+function getDataTypePair(audience_path){
+	var data_type_pair = [];
 	var audience_path_array = audience_path.split("-");
 	var data_types_array = data[audience_path_array[0]].audience[parseInt(audience_path_array[1])].data_types;
 	
 	for(var key in data_types_array){
-		data_types.push({"value":audience_path+"-"+key, "display_name":data_types_array[key].name});
+		data_type_pair.push({"value":audience_path+"-"+key, "display_name":data_types_array[key].name});
 	}
 
-	return data_types;
+	return data_type_pair;
+}
+
+/**Get Data Type By Audience Path**/
+function getDataTypes(audience_path){	
+	
+	var audience_path_array = audience_path.split("-");
+	var data_types_array = data[audience_path_array[0]].audience[parseInt(audience_path_array[1])].data_types;
+	
+	return data_types_array;
+}
+
+/**Get Audience Description**/
+function getAudienceDescription(data_type_path){
+	var audience_description = "";
+	var data_type_path_array = data_type_path.split("-");
+	var audience_description = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].description;
+	
+	return audience_description;
+}
+
+
+
+/**Get Current Data Type Object**/
+function getDataTypeObject(data_type_path){
+	var data_type_object = "";
+	var data_type_path_array = data_type_path.split("-");
+	var data_type_object = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].data_types[parseInt(data_type_path_array[2])];
+	
+	return data_type_object;
 }
 
 /**Get Data Type Description**/
@@ -589,8 +618,14 @@ function getDataTypeRecommendations(data_type_path){
 	var data_type_recommendations = [];
 	var data_type_path_array = data_type_path.split("-");
 	var data_type_recommendations = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].data_types[parseInt(data_type_path_array[2])].recommendations;
-	console.log(data_type_recommendations);
 	return data_type_recommendations;	
 }
 
+/**Get Data Type Resources**/
+function getDataTypeResources(data_type_path){
+	var data_type_recommendations = [];
+	var data_type_path_array = data_type_path.split("-");
+	var data_type_recommendations = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].data_types[parseInt(data_type_path_array[2])].resources;
+	return data_type_recommendations;	
+}
 
