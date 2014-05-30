@@ -1566,21 +1566,6 @@ var developer_data = {
                     	"description":"Examples of redesigned health records submitted in 2013 in response to an open source challenge sponsored by HHS.",
                     	"link":"http://www.healthdesignchallenge.com",
                     	"resources":[]
-                    },{
-                    	"name":"",
-                    	"description":"",
-                    	"link":"",
-                    	"resources":[]
-                    },{
-                    	"name":"",
-                    	"description":"",
-                    	"link":"",
-                    	"resources":[]
-                    },{
-                    	"name":"",
-                    	"description":"",
-                    	"link":"",
-                    	"resources":[]
                     }
                 ]
             }
@@ -1616,7 +1601,7 @@ var recommendationsId = "recommendations";
 $(document).ready(function(){
 
     $("#"+recommendationsId).hide();
-
+    $("#"+thirdSelectBoxId).hide();
 
 	$('.intro-section').accordion({
 	    defaultOpen: "intro-section1"
@@ -1678,20 +1663,25 @@ $(document).ready(function(){
 				var options = getDataTypeRecommendations($("#"+thirdSelectBoxId).val());		
 				populateRecommendations(recommendationsId, options, keyword);		
 				$("#"+thirdSelectBoxId+"-description").html(getDataTypeDescription($("#"+thirdSelectBoxId).val())+"<br>");
+				$("#"+thirdSelectBoxId+"-action").html("3. Select the type of data you want to share.");
 				break;
 			case 'build':	
 				var data_types = getDataTypeObject($("#"+thirdSelectBoxId).val());		
 				populateDeveloperResources(recommendationsId, data_types);		
 				$("#"+thirdSelectBoxId+"-description").html(getAudienceDescription($("#"+thirdSelectBoxId).val())+"<br>");
+				$("#"+thirdSelectBoxId+"-action").html("3. Select the resource that you want to use.");
 				break;
 			case 'market':	
 				var resources = getDataTypeResources($("#"+thirdSelectBoxId).val()); 
 				populateMarketingResources(recommendationsId, resources);
 				$("#"+thirdSelectBoxId+"-description").html(getAudienceDescription($("#"+thirdSelectBoxId).val())+"<br>");
+				$("#"+thirdSelectBoxId+"-action").html("3. Select the resource that you want to use.");
 				break;
 			default:
 				break;		
 		}
+
+		$("#"+thirdSelectBoxId).show();
 
 	});
 });
@@ -1791,7 +1781,7 @@ function populateResources(id, resources, developer_flag){
 
 	if(developer_flag){
 		
-		guidePanelHtml += "<h3>" + $("#"+thirdSelectBoxId+ " :selected").text() +" designed for a " + $("#"+secondSelectBoxId+ " :selected").text()  + "</h3>";
+		guidePanelHtml += "<h3>" + $("#"+thirdSelectBoxId+ " :selected").text() +" designed for developers.</h3>";
 		guidePanelHtml += "<p>" + resources.description + "</p>";
 		guidePanelHtml += "<a target='_blank' href='" + resources.link + "'>View</a>";
 		

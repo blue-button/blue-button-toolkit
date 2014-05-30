@@ -316,3 +316,11 @@ div.intro-section.odd, div.nav-section.odd {
 	left: 45%;
 	position: relative;
 }
+
+.description {
+	padding: 25px;
+}
+
+.inline {
+	display: inline-block;
+}
