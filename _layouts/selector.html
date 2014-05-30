@@ -4,14 +4,25 @@ layout: main
 <script src="../js/jquery-1.11.1.min.js"></script>
 <script src="../js/jquery.accordion.js"></script>
 <script src="../js/selector.js"></script>
-
-<div class="section page">
+<div class="section home first">
+	<div class="content">
+		<div class="box">
+			<h1><div class="logo"></div><br />Blue Button Toolkit</h1>
+			<p>A Kit for Organizations to Support Consumers in Getting &amp; Using their Health Records</p>
+			<h4>This site is not yet public. Not endorsed by ONC.</h4>
+<!-- 		<div class="center">
+			<a class="button" href="#"><span>Go</span></a>
+		</div> -->
+    </div>
+  </div>
+</div>
+<div class="section page">	
 	<div class="content">
 		{{ content }}
 	</div>
-  
-	<h2>Blue Button Implementation Guide</h2>
-	
+  	
+  	
+	<h2>Introduction to Blue Button</h2>	
 	<div class="intro-section odd" id="intro-section1">What is “Blue Button”?<span></span></div>
 	<div>
 		<p>Blue Button is a nationally recognized symbol indicating to consumers that they can get their own health records electronically from doctors, hospitals, and other health care providers, such as pharmacies and health insurance plans.  With electronic access to their health records, consumers can check them for accuracy and completeness, share them with people they trust—in case of emergency or to coordinate care among different providers—and reference them as needed. Health records may include clinical information from doctors and hospitals, health insurance claims, prescription histories, and lab/diagnostic test results.</p>
@@ -43,6 +54,7 @@ layout: main
 	<div class="intro-section" id="intro-section4">Where Did Blue Button Come From?<span></span></div>
 	<div>
 		<p>In 2010, the US Department of Veterans Affairs (VA) and the Department of Defense (DoD) first used the Blue Button symbol on their patient portal to give veterans and members of the military the ability to download their health records.  In 2012 the US Department of Health and Human Services’ Office of the National Coordinator for Health Information Technology (ONC) took over responsibility for leading the expansion and evolution of the Blue Button Initiative beyond the VA to other federal agencies and the private sector. ONC, in collaboration with the White House, VA, DoD, CMS and hundreds of private sector volunteers has since evolved the recommended standards that support the Blue Button Initiative, refined public messaging related to the brand, and greatly expanded the number of participating organizations.  Today, more than 500 companies in the private sector have pledged their support for Blue Button and more than 150 million Americans are able to access their digital health information from at least one source.</p>
+		<p></p>
 	</div>
 	<div class="intro-section odd" id="intro-section5">Who is Behind the Blue Button Initiative?<span></span></div>
 	<div>
@@ -89,17 +101,16 @@ layout: main
 	<br>
 
 	<div>
-		2. I am a <select id="who"></select>
+		2. What type of organization are you? 
+		<select id="who"></select>
 	</div>
 	
-	<br>
-	<p id="how-description"></p>
-	
-	<div>
-		3. For <select id="how"></select> find the best approaches and resources detailed below:
-	</div>	
+	<div id="how-description"></div>
 
-	<br>
+
+	<div>
+		3. Select <select id="how"></select> 
+	</div>	
 	
 	<div id="recommendations">
 	</div>
