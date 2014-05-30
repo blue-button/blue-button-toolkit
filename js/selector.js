@@ -1668,13 +1668,15 @@ $(document).ready(function(){
 			case 'build':	
 				var data_types = getDataTypeObject($("#"+thirdSelectBoxId).val());		
 				populateDeveloperResources(recommendationsId, data_types);		
-				$("#"+thirdSelectBoxId+"-description").html(getAudienceDescription($("#"+thirdSelectBoxId).val())+"<br>");
+				$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+thirdSelectBoxId).val())+"<br>");
 				$("#"+thirdSelectBoxId+"-action").html("3. Select the resource that you want to use.");
 				break;
 			case 'market':	
 				var resources = getDataTypeResources($("#"+thirdSelectBoxId).val()); 
+				var description = getDataTypeDescription($("#"+thirdSelectBoxId).val());
+				resources.description = description;
 				populateMarketingResources(recommendationsId, resources);
-				$("#"+thirdSelectBoxId+"-description").html(getAudienceDescription($("#"+thirdSelectBoxId).val())+"<br>");
+				$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+thirdSelectBoxId).val())+"<br>");
 				$("#"+thirdSelectBoxId+"-action").html("3. Select the resource that you want to use.");
 				break;
 			default:
@@ -1782,14 +1784,15 @@ function populateResources(id, resources, developer_flag){
 	if(developer_flag){
 		
 		guidePanelHtml += "<h3>" + $("#"+thirdSelectBoxId+ " :selected").text() +" designed for developers.</h3>";
-		guidePanelHtml += "<p>" + resources.description + "</p>";
+		guidePanelHtml += "<div>" + resources.description + "</div>";
 		guidePanelHtml += "<a target='_blank' href='" + resources.link + "'>View</a>";
 		
-	}else{
-		$(resources).each(function(a){
-			guidePanelHtml += "<h3>" + $("#"+thirdSelectBoxId+ " :selected").text() +" resources for a " + $("#"+secondSelectBoxId+ " :selected").text()  + "</h3>";;
-			guidePanelHtml += "<p>" + resources[a].description + "</p>";
-			guidePanelHtml += "<a target='_blank' href='" + resources[a].link + "'>View</a>";
+	}else{		
+		guidePanelHtml += "<h3>" + $("#"+thirdSelectBoxId+ " :selected").text() +" resources for a " + $("#"+secondSelectBoxId+ " :selected").text()  + "</h3>";
+		guidePanelHtml += "<div>" + resources.description + " </div><br>";
+		$(resources).each(function(a){	
+			guidePanelHtml += "<div>" + resources[a].name + " - ";
+			guidePanelHtml += "<a target='_blank' href='" + resources[a].link + "'>View</a></div> <br>";
 		});	
 	}	
 
@@ -1847,17 +1850,22 @@ function getAudienceDescription(data_type_path){
 	var data_type_path_array = data_type_path.split("-");
 	var audience_description = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].description;
 	
-	if(data_type_path_array[0] == "market"){
-		audience_description = market_descriptions[$("#"+secondSelectBoxId+" option:selected").text()];
-	}
-
-	if(data_type_path_array[0] == "developer"){
-		audience_description = general_descriptions[$("#"+secondSelectBoxId+" option:selected").text()];
-	}
-
 	return audience_description;
 }
 
+/**Get Description**/
+function getDescription(data_type_path){
+	var description = "";
+	var data_type_path_array = data_type_path.split("-");
+	
+	if(data_type_path_array[0] == "market"){
+		description = market_descriptions[$("#"+secondSelectBoxId+" option:selected").text()];
+	}else{
+		description = general_descriptions[$("#"+secondSelectBoxId+" option:selected").text()];
+	}
+
+	return description;
+}
 
 
 /**Get Current Data Type Object**/
