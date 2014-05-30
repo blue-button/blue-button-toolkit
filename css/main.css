@@ -179,9 +179,9 @@ iframe {
 }
 
 .page img {
-  display: block;
+  /*display: block;*/
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 /* footer */
@@ -296,7 +296,12 @@ div.intro-section.odd, div.nav-section.odd {
 	border-radius: 7px;
 	font-size: 20px;
 	border: 3px solid rgba(255, 255, 255, 0.5);
-	padding: 20px 30px;
+	padding: 10px 30px;
+
+}
+
+.content .box .disclaimer {
+	padding-bottom:45px;
 }
 
 .home.first .box .button:hover {
@@ -323,4 +328,8 @@ div.intro-section.odd, div.nav-section.odd {
 
 .inline {
 	display: inline-block;
+}
+
+.resource_img {
+
 }

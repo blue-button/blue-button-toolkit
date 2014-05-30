@@ -1425,32 +1425,39 @@ var market_data = {
                             {
                                 "name": ":60 sec Blue Button PSA for Cancer Patients and Survivors",
                                 "description": "60 sec Latina woman in her forties who is living with cancer",
-                                "link": "http://www.healthit.gov/patients-families/video/60-sec-latina-woman-her-forties-who-living-cancer"
+                                "link": "http://www.healthit.gov/patients-families/video/60-sec-latina-woman-her-forties-who-living-cancer",
+                                "img":"../img/selector/cancer60.jpg"
                             },
                             {
                                 "name": ":60 sec Blue Button PSA for Seniors 65+ with chronic conditions",
                                 "description": "60 seconds Blue Button PSA for senior 65+ with chronic conditions",
-                                "link": "http://www.healthit.gov/patients-families/video/60-seconds-blue-button-psa-senior-65-chronic-condition"
+                                "link": "http://www.healthit.gov/patients-families/video/60-seconds-blue-button-psa-senior-65-chronic-condition",
+                                "img":"../img/selector/chronic60.jpg"
                             },
                             {
                                 "name": ":60 sec Blue Button PSA for Caregivers",
                                 "description": "60 sec Blue Button PSA for Caregivers",
-                                "link": "http://www.healthit.gov/patients-families/video/60-sec-blue-button-psa-caregivers"
+                                "link": "http://www.healthit.gov/patients-families/video/60-sec-blue-button-psa-caregivers",
+                                "img":"../img/selector/caregiver60.jpg"
                             },
                             {
                                 "name": ":30 sec Blue Button PSA for Cancer Patients and Survivors",
                                 "description": "30 sec Latina woman in her forties who is living with cancer",
-                                "link": "http://www.healthit.gov/patients-families/video/30-sec-latina-woman-her-forties-who-living-cancer"
+                                "link": "http://www.healthit.gov/patients-families/video/30-sec-latina-woman-her-forties-who-living-cancer",
+                                "img":"../img/selector/cancer30.jpg"
+
                             },
                             {
                                 "name": ":30 sec Blue Button PSA for Seniors 65+ with chronic conditions",
                                 "description": "30 sec 65+ African American man living with diabetes",
-                                "link": "http://www.healthit.gov/patients-families/video/30-sec-65-african-american-man-living-diabetes"
+                                "link": "http://www.healthit.gov/patients-families/video/30-sec-65-african-american-man-living-diabetes",
+                                "img":"../img/selector/diabetes30.jpg"
                             },
                             {
-                                "name": ":30 sec Blue Button PSA video for caregivers",
+                                "name": ":30 sec Blue Button PSA video for Caregivers",
                                 "description": "30 sec Blue Button PSA for Caregivers",
-                                "link": "http://www.healthit.gov/patients-families/video/30-sec-blue-button-psa-video-caregivers"
+                                "link": "http://www.healthit.gov/patients-families/video/30-sec-blue-button-psa-video-caregivers",
+                                "img":"../img/selector/caregiver30.jpg"
                             }
 
                         ]
@@ -1500,7 +1507,8 @@ var market_data = {
                             {
                             	"name": "Patient Stories",
                                 "description": "Use the VA Blue Button to Access Your Personal Health Information",
-                                "link": "https://www.youtube.com/watch?v=lGGnda44Yik&list=UUqynwrKIXFPyUCxqkAZ001w"
+                                "link": "https://www.youtube.com/watch?v=lGGnda44Yik&list=UUqynwrKIXFPyUCxqkAZ001w",
+                                "img":"../img/selector/patient_stories.jpg"
                             }
                         ]
                     },{
@@ -1597,6 +1605,14 @@ var firstSelectBoxId = "what";
 var secondSelectBoxId = "who";
 var thirdSelectBoxId = "how";
 var recommendationsId = "recommendations";
+
+ $(".scroll").click(function(event){
+     event.preventDefault();
+     //calculate destination place
+     var div_position = $(dest).offset();
+     //go to destination
+     $('html,body').animate({scrollTop: div_position.top}, 'slow');
+ });
 
 $(document).ready(function(){
 
@@ -1791,8 +1807,13 @@ function populateResources(id, resources, developer_flag){
 		guidePanelHtml += "<h3>" + $("#"+thirdSelectBoxId+ " :selected").text() +" resources for a " + $("#"+secondSelectBoxId+ " :selected").text()  + "</h3>";
 		guidePanelHtml += "<div>" + resources.description + " </div><br>";
 		$(resources).each(function(a){	
-			guidePanelHtml += "<div>" + resources[a].name + " - ";
-			guidePanelHtml += "<a target='_blank' href='" + resources[a].link + "'>View</a></div> <br>";
+			if(resources[a].hasOwnProperty("img")){
+				guidePanelHtml += "<a target='_blank' href='" + resources[a].link + "'><img src='" + resources[a].img + "' /></a></div> <br>";
+			}else{
+				guidePanelHtml += "<div>" + resources[a].name + " - ";
+				guidePanelHtml += "<a target='_blank' href='" + resources[a].link + "'>View</a></div> <br>";				
+			}
+			
 		});	
 	}	
 
