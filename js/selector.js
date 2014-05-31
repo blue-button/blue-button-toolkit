@@ -1559,7 +1559,7 @@ var main_data = {
                 "data_types": [
                     {
                         "name": "Immunization Records",
-                        "description": "State immunization registries should be able patients the ability to view, download and securely send their vacciantion records to a desitnation of their choice.",
+                        "description": "State immunization registries should provide patients with the ability to view, download and securely send their vacciantion records to a desitnation of their choice.",
                         "link": "",
                         "recommendations": {
                             "view": {
