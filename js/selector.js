@@ -1359,14 +1359,198 @@ var main_data = {
                 "display_name": "State Health Information Exchange",
                 "data_types": [
                     {
-                        "name": "",
-                        "description": "",
-                        "link": ""
-                    },
-                    {
-                        "name": "",
-                        "description": "",
-                        "link": ""
+                        "name": "Various Health Data",
+                        "description": "State health information exchanges should be able to ingest and aggregate structured health data from various providers within the state, in addition to making their aggregated health data portable so that consumers may securely send their data to a destination of their choice.",
+                        "link": "",
+                        "recommendations": {
+                            "view": {
+                                "file_type": [
+                                    {
+                                        "name": "TXT",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "View/Download via Authenticated Web Portal"
+                                        }
+                                    },{
+                                        "name": "HTML",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "View/Download via Authenticated Web Portal"
+                                        }
+                                    }
+                                ],
+                                "security": {
+                                    "name": "TLS/SSL",
+                                    "link": "#",
+                                    "description": "Description for security goes here"
+                                }
+                            },
+                            "download": {
+                                "file_type": [
+                                    {
+                                        "name": "PDF",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "Description for example goes here"
+                                        }
+                                    },{
+                                        "name": "XML",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "Description for example goes here"
+                                        }
+                                    },{
+                                        "name": "DOC",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                      	}    
+                                	}
+                                ],
+                                "security": {
+                                    "name": "TLS/SSL",
+                                    "link": "",
+                                    "description": "Description for security goes here"
+                                }
+                            },
+                            "transmit": {
+                                "content_structure": [
+                                    {
+                                        "name": "Various Standards",
+                                        "link": "",
+                                        "description": ""
+                                    }
+                                ],
+                                "vocabulary_code_sets": [
+                                    {
+                                        "name": "Various Code Sets",
+                                        "link": "http://www.cms.gov/Regulations-and-Guidance/HIPAA-Administrative-Simplification/TransactionCodeSetsStands/CodeSets.html",
+                                        "description": "CMS - Various Code Sets"
+                                    }
+                                ],
+                                "transport": [
+                                    {
+                                        "name": "RESTful",
+                                        "link": "",
+                                        "description": "This is a description of RESTful",
+                                        "example": {
+                                                    "name": "Blue Button API",
+                                                    "link": "http://blue-button.github.io/blue-button-plus-pull/",
+                                                    "description": "A FHIR-based API"
+                                                },
+                                        "content_type": [
+                                            {
+                                                "name": "JSON",
+                                                "link": "",
+                                                "description": "This is a description of JSON"
+                                            },{
+                                                "name": "XML",
+                                                "link": "",
+                                                "description": "This is a description of XML"
+                                            }
+                                        ],
+                                        "security": [
+                                            {
+                                                "name": "OAuth",
+                                                "link": "",
+                                                "description": "This is a description of OAuth"
+                                                
+                                            },{
+                                                "name": "SAML",
+                                                "link": "",
+                                                "description": "This is a description of SAML"
+                                            }
+                                        ]
+                                    },{
+                                        "name": "Direct",
+                                        "link": "",
+                                        "description": "This is a description of Direct",
+                                        "example": {
+                                                    "name": "Blue Button Trust Bundles",
+                                                    "link": "https://secure.bluebuttontrust.org",
+                                                    "description": "Open source Direct Trust Bundles"
+                                                },
+                                        "content_type": [
+                                            {
+                                                "name": "S/MIME",
+                                                "link": "",
+                                                "description": "This is a description of S/MIME"
+                                            }
+                                        ],
+                                        "security": [
+                                            {
+                                                "name": "X.509",
+                                                "link": "",
+                                                "description": "This is a description of OAuth"
+                                                
+                                            }
+                                        ]
+                                    },{
+                                        "name": "Webservices",
+                                        "link": "",
+                                        "description": "This is a description of Direct",
+                                        "example": {
+                                                    "name": "Blue Button Trust Bundles",
+                                                    "link": "https://secure.bluebuttontrust.org",
+                                                    "description": "Open source Direct Trust Bundles"
+                                                },
+                                        "content_type": [
+                                            {
+                                                "name": "S/MIME",
+                                                "link": "",
+                                                "description": "This is a description of S/MIME"
+                                            }
+                                        ],
+                                        "security": [
+                                            {
+                                                "name": "X.509",
+                                                "link": "",
+                                                "description": "This is a description of OAuth"
+                                                
+                                            }
+                                        ]
+                                    },{
+                                        "name": "Secure Attachments",
+                                        "link": "",
+                                        "description": "This is a description of Direct",
+                                        "example": {
+                                                    "name": "",
+                                                    "link": "",
+                                                    "description": ""
+                                                },
+                                        "content_type": [
+                                            {
+                                                "name": "Encrypted Files",
+                                                "link": "",
+                                                "description": "This is a description of encrypted files"
+                                            }
+                                        ],
+                                        "security": [
+                                            {
+                                                "name": "Various File Encryption",
+                                                "link": "",
+                                                "description": "This is a description of file encryption"
+                                                
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ]
             },
@@ -1374,14 +1558,200 @@ var main_data = {
                 "display_name": "State Immunization Registry",
                 "data_types": [
                     {
-                        "name": "",
-                        "description": "",
-                        "link": ""
-                    },
-                    {
-                        "name": "",
-                        "description": "",
-                        "link": ""
+                        "name": "Immunization Records",
+                        "description": "State immunization registries should be able patients the ability to view, download and securely send their vacciantion records to a desitnation of their choice.",
+                        "link": "",
+                        "recommendations": {
+                            "view": {
+                                "file_type": [
+                                    {
+                                        "name": "TXT",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "View/Download via Authenticated Web Portal"
+                                        }
+                                    },{
+                                        "name": "HTML",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "View/Download via Authenticated Web Portal"
+                                        }
+                                    }
+                                ],
+                                "security": {
+                                    "name": "TLS/SSL",
+                                    "link": "#",
+                                    "description": "Description for security goes here"
+                                }
+                            },
+                            "download": {
+                                "file_type": [
+                                    {
+                                        "name": "PDF",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "Description for example goes here"
+                                        }
+                                    },{
+                                        "name": "XML",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "Description for example goes here"
+                                        }
+                                    }
+                                ],
+                                "security": {
+                                    "name": "TLS/SSL",
+                                    "link": "",
+                                    "description": "Description for security goes here"
+                                }
+                            },
+                            "transmit": {
+                                "content_structure": [
+                                    {
+                                        "name": "HL7 2.5.1",
+                                        "link": "http://www.hl7.org/implement/standards/fhir/clinical.html#diagnostics",
+                                        "description": "FHIR Resources - Clinical Diagnostics"
+                                    },
+                                    {
+                                        "name": "FHIR Resources",
+                                        "link": "http://www.hl7.org/implement/standards/fhir/clinical.html",
+                                        "description": "FHIR Resources - Clinical"
+                                    },
+                                    {
+                                    	"name":"HL7 CCDA",
+                                    	"link":"https://www.hl7.org/implement/standards/product_brief.cfm?product_id=258",
+                                    	"description":"HL7 Specification"
+                                    }
+                                ],
+                                "vocabulary_code_sets": [
+                                    {
+                                        "name": "CVX",
+                                        "link": "http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx",
+                                        "description": "CDC CVX Vocuabulary Reference"
+                                    }
+                                ],
+                                "transport": [
+                                    {
+                                        "name": "RESTful",
+                                        "link": "",
+                                        "description": "This is a description of RESTful",
+                                        "example": {
+                                                    "name": "Blue Button API",
+                                                    "link": "http://blue-button.github.io/blue-button-plus-pull/",
+                                                    "description": "A FHIR-based API"
+                                                },
+                                        "content_type": [
+                                            {
+                                                "name": "JSON",
+                                                "link": "",
+                                                "description": "This is a description of JSON"
+                                            },{
+                                                "name": "XML",
+                                                "link": "",
+                                                "description": "This is a description of XML"
+                                            }
+                                        ],
+                                        "security": [
+                                            {
+                                                "name": "OAuth",
+                                                "link": "",
+                                                "description": "This is a description of OAuth"
+                                                
+                                            },{
+                                                "name": "SAML",
+                                                "link": "",
+                                                "description": "This is a description of SAML"
+                                            }
+                                        ]
+                                    },{
+                                        "name": "Direct",
+                                        "link": "",
+                                        "description": "This is a description of Direct",
+                                        "example": {
+                                                    "name": "Blue Button Trust Bundles",
+                                                    "link": "https://secure.bluebuttontrust.org",
+                                                    "description": "Open source Direct Trust Bundles"
+                                                },
+                                        "content_type": [
+                                            {
+                                                "name": "S/MIME",
+                                                "link": "",
+                                                "description": "This is a description of S/MIME"
+                                            }
+                                        ],
+                                        "security": [
+                                            {
+                                                "name": "X.509",
+                                                "link": "",
+                                                "description": "This is a description of OAuth"
+                                                
+                                            }
+                                        ]
+                                    },{
+                                        "name": "Webservices",
+                                        "link": "",
+                                        "description": "This is a description of Direct",
+                                        "example": {
+                                                    "name": "Blue Button Trust Bundles",
+                                                    "link": "https://secure.bluebuttontrust.org",
+                                                    "description": "Open source Direct Trust Bundles"
+                                                },
+                                        "content_type": [
+                                            {
+                                                "name": "S/MIME",
+                                                "link": "",
+                                                "description": "This is a description of S/MIME"
+                                            }
+                                        ],
+                                        "security": [
+                                            {
+                                                "name": "X.509",
+                                                "link": "",
+                                                "description": "This is a description of OAuth"
+                                                
+                                            }
+                                        ]
+                                    },{
+                                        "name": "Secure Attachments",
+                                        "link": "",
+                                        "description": "This is a description of Direct",
+                                        "example": {
+                                                    "name": "",
+                                                    "link": "",
+                                                    "description": ""
+                                                },
+                                        "content_type": [
+                                            {
+                                                "name": "Encrypted Files",
+                                                "link": "",
+                                                "description": "This is a description of encrypted files"
+                                            }
+                                        ],
+                                        "security": [
+                                            {
+                                                "name": "Various File Encryption",
+                                                "link": "",
+                                                "description": "This is a description of file encryption"
+                                                
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ]
             }
@@ -1395,13 +1765,140 @@ var main_data = {
                 "data_types": [
                     {
                         "name": "Consumer Generated Health Data",
-                        "description": "Appls/tools should be able to securely ingest structured health data into your application and also have the ability to export their data in an electronic format.",
-                        "link": ""
-                    },
-                    {
-                        "name": "",
-                        "description": "",
-                        "link": ""
+                        "description": "Third party applications should be able to ingest structured health data from an external source and also make any health data within the application/tool portable so that consumers may securely send their data to a destination of their choice.",
+                        "link": "",
+                        "recommendations": {
+                            "view": {
+                                "file_type": [
+                                	{
+                                        "name": "HTML",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "View/Download via Authenticated Web Portal"
+                                        }
+                                    }                                   
+                                ],
+                                "security": {
+                                    "name": "TLS/SSL",
+                                    "link": "#",
+                                    "description": "Description for security goes here"
+                                }
+                            },
+                            "download": {
+                                "file_type": [
+                                    {
+                                        "name": "CSV",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "Description for example goes here"
+                                        }
+                                    },{
+                                        "name": "JSON",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                            "description": "Description for example goes here"
+                                        }
+                                    },{
+                                        "name": "XML",
+                                        "link": "#",
+                                        "description": "Description for file type goes here",
+                                        "example": {
+                                            "name": "HTTPS",
+                                            "link": "#",
+                                      	}    
+                                	}
+                                ],
+                                "security": {
+                                    "name": "TLS/SSL",
+                                    "link": "",
+                                    "description": "Description for security goes here"
+                                }
+                            },
+                            "transmit": {
+                                "content_structure": [
+                                    {
+                                        "name": "Various Standards",
+                                        "link": "",
+                                        "description": ""
+                                    }
+                                ],
+                                "vocabulary_code_sets": [
+                                    {
+                                        "name": "Various Code Sets",
+                                        "link": "http://www.cms.gov/Regulations-and-Guidance/HIPAA-Administrative-Simplification/TransactionCodeSetsStands/CodeSets.html",
+                                        "description": "CMS - Various Code Sets"
+                                    }
+                                ],
+                                "transport": [
+                                    {
+                                        "name": "RESTful",
+                                        "link": "",
+                                        "description": "This is a description of RESTful",
+                                        "example": {
+                                                    "name": "Blue Button API",
+                                                    "link": "http://blue-button.github.io/blue-button-plus-pull/",
+                                                    "description": "A FHIR-based API"
+                                                },
+                                        "content_type": [
+                                            {
+                                                "name": "JSON",
+                                                "link": "",
+                                                "description": "This is a description of JSON"
+                                            },{
+                                                "name": "XML",
+                                                "link": "",
+                                                "description": "This is a description of XML"
+                                            }
+                                        ],
+                                        "security": [
+                                            {
+                                                "name": "OAuth",
+                                                "link": "",
+                                                "description": "This is a description of OAuth"
+                                                
+                                            },{
+                                                "name": "SAML",
+                                                "link": "",
+                                                "description": "This is a description of SAML"
+                                            }
+                                        ]
+                                    },{
+                                        "name": "Webservices",
+                                        "link": "",
+                                        "description": "This is a description of Direct",
+                                        "example": {
+                                                    "name": "Blue Button Trust Bundles",
+                                                    "link": "https://secure.bluebuttontrust.org",
+                                                    "description": "Open source Direct Trust Bundles"
+                                                },
+                                        "content_type": [
+                                            {
+                                                "name": "S/MIME",
+                                                "link": "",
+                                                "description": "This is a description of S/MIME"
+                                            }
+                                        ],
+                                        "security": [
+                                            {
+                                                "name": "X.509",
+                                                "link": "",
+                                                "description": "This is a description of OAuth"
+                                                
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
                     }
                 ]
             }
