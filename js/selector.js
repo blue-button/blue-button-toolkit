@@ -2206,13 +2206,13 @@ $(document).ready(function(){
 
 		switch(keyword){
 			case 'share':
-				$("#"+thirdSelectBoxId+"-action").html("3. Select the type of data you want to share.");
+				$("#"+thirdSelectBoxId+"-action").html("Step 3. Select the type of data you want to share.");
 				break;
 			case 'build':
-				$("#"+thirdSelectBoxId+"-action").html("3. Select the resource that you want to use.");
+				$("#"+thirdSelectBoxId+"-action").html("Step 3. Select the resource that you want to use.");
 				break;
 			case 'market':
-				$("#"+thirdSelectBoxId+"-action").html("3. Select the resource that you want to use.");
+				$("#"+thirdSelectBoxId+"-action").html("Step 3. Select the resource that you want to use.");
 				break;
 			default:
 				break;
