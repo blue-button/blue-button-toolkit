@@ -2234,7 +2234,7 @@ function populateRecommendations(id, recommendations){
 	
 	/**DOWNLOAD**/
 	guidePanelHtml += "<h3>Download</h3>";
-	guidePanelHtml += "<p>Enabling a patient the ability to download a machine readable copy of their health records so that a patient may securely store it or electronically send it to a destination of their choice.</p>"
+	guidePanelHtml += "<p>Enabling a patient the ability to download a machine readable copy of their health records so that a patient may securely store it or share it with a destination of their choice.</p>"
 
 	guidePanelHtml += "<table><tr><th>File Type </th>";
 	$(recommendations.download.file_type).each(function(i){		
