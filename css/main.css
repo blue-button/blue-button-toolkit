@@ -246,14 +246,22 @@ img.avatar {
 
 /*Selector Styles*/
 
-div.intro-section, div.nav-section {
+div.intro-section {
   font-size: 15px;
   color: #ffffff;
   background-color: #0070c0;
   padding: 10px;
 }
 
-div.intro-section.odd, div.nav-section.odd {
+div.intro-section:hover {
+	color: #ffffff;
+	background-color: #0070c0;
+	text-decoration:underline;
+	border: 2px solid;
+	border-color:#0070c0;
+}
+
+div.intro-section.odd {
   color: #0070c0;
   background-color: #c9e1f5;
 }
