@@ -187,11 +187,57 @@ iframe {
 /* footer */
 
 .section.footer {
-  height: 150px;
+  	color: white;
+		background: #1875c6;
+		font-size: 18px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+}
+
+.footer nav {
+	display: inline;
+}
+
+.footer nav .logo {
+	float: left;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: -14px;
+	margin-right: 10px;
+	background: url(../img/bb_logo.svg);
+}
+
+.footer nav a {
+	color: #fff;
+	text-decoration: none;
+	float: right;
+}
+
+.footer nav a.logo-link {
+	font-weight: bold;
+}
+
+.footer nav a:hover {
+	border-bottom: 2px solid #b4dff5;
+	border-bottom: 2px solid rgba(255, 255, 255, .7);
+}
+
+.footer nav ul {
+	list-style: none;
+}
+
+.footer nav ul li {
+	display: inline;
+}
+
+.footer .disclaimer {
+	font-size:small;
+	color:#DBDBDB!important;
 }
 
 .section.footer .content {
-  padding: 50px;
+
 }
 
 /* table */
@@ -348,4 +394,8 @@ div.intro-section.odd {
 
 .resource_img {
 
+}
+
+div nav ul {
+	padding: 10px 60px;
 }
