@@ -2114,6 +2114,7 @@ var recommendationsId = "recommendations";
 $(document).ready(function(){
 
     $("#"+recommendationsId).hide();
+    $("#" + thirdSelectBoxId + "-action").hide();
     $("#"+thirdSelectBoxId).hide();
 
 	$('.intro-section').accordion({
@@ -2126,7 +2127,8 @@ $(document).ready(function(){
 		resetElement(thirdSelectBoxId);
 		resetElement(thirdSelectBoxId+"-description");
 		$("#"+recommendationsId).hide();
-
+		$("#"+thirdSelectBoxId).hide();
+		$("#"+ thirdSelectBoxId +"-action").hide();
 
 		var selection = $(this).val();
 		switch(selection){
@@ -2173,34 +2175,52 @@ $(document).ready(function(){
 
 	$("#"+thirdSelectBoxId).change(function(){
 		var selection = $(this).val();
-		
 		var keyword = $("#"+firstSelectBoxId).val();
+
+		if(selection === ""){
+
+		}else{
+			
+			switch(keyword){
+				case 'share':
+					var options = getDataTypeRecommendations($("#"+thirdSelectBoxId).val());		
+					populateRecommendations(recommendationsId, options, keyword);		
+					
+					break;
+				case 'build':	
+					var data_types = getDataTypeObject($("#"+thirdSelectBoxId).val());		
+					populateDeveloperResources(recommendationsId, data_types);		
+
+					break;
+				case 'market':	
+					var resources = getDataTypeResources($("#"+thirdSelectBoxId).val()); 
+					var description = getDataTypeDescription($("#"+thirdSelectBoxId).val());
+					resources.description = description;
+					populateMarketingResources(recommendationsId, resources);
+
+					break;
+				default:
+					break;		
+			}
+		}
+
 		switch(keyword){
 			case 'share':
-				var options = getDataTypeRecommendations($("#"+thirdSelectBoxId).val());		
-				populateRecommendations(recommendationsId, options, keyword);		
-				$("#"+thirdSelectBoxId+"-description").html(getDataTypeDescription($("#"+thirdSelectBoxId).val())+"<br>");
 				$("#"+thirdSelectBoxId+"-action").html("3. Select the type of data you want to share.");
 				break;
-			case 'build':	
-				var data_types = getDataTypeObject($("#"+thirdSelectBoxId).val());		
-				populateDeveloperResources(recommendationsId, data_types);		
-				$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+thirdSelectBoxId).val())+"<br>");
+			case 'build':
 				$("#"+thirdSelectBoxId+"-action").html("3. Select the resource that you want to use.");
 				break;
-			case 'market':	
-				var resources = getDataTypeResources($("#"+thirdSelectBoxId).val()); 
-				var description = getDataTypeDescription($("#"+thirdSelectBoxId).val());
-				resources.description = description;
-				populateMarketingResources(recommendationsId, resources);
-				$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+thirdSelectBoxId).val())+"<br>");
+			case 'market':
 				$("#"+thirdSelectBoxId+"-action").html("3. Select the resource that you want to use.");
 				break;
 			default:
-				break;		
+				break;
 		}
-
+		$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+thirdSelectBoxId).val())+"<br>");					
+		$("#"+thirdSelectBoxId+"-action").show();
 		$("#"+thirdSelectBoxId).show();
+
 
 	});
 });
@@ -2213,8 +2233,8 @@ function resetElement(id){
 /**Populate Select Box Options**/
 function populateOptions(parentId, childId, arrayList){
 	resetElement(childId);
-	if(parentId == "what")
-		$("#"+childId).append("<option value=''>Select an option</option>");
+	
+	$("#"+childId).append("<option value=''>Select an option</option>");
 	$(arrayList).each(function(i){
 		$("#"+childId).append("<option value=\""+arrayList[i].value+"\">"+arrayList[i].display_name+"</option>");
 	});
