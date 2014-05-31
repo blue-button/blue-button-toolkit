@@ -305,6 +305,7 @@ div.intro-section {
   color: #ffffff;
   background-color: #0070c0;
   padding: 10px;
+	font-weight: bold;
 }
 
 div.intro-section:hover {
@@ -332,7 +333,7 @@ div.intro-section.odd {
 	width: 550px;
 	background: rgba(255, 255, 255, 0.15);
 	margin: 0 auto;
-	padding: 40px 40px 50px;
+	padding: 40px 175px 50px;
 	border-radius: 3px;
 	text-align: center;
 }
@@ -398,4 +399,8 @@ div.intro-section.odd {
 
 div nav ul {
 	padding: 10px 60px;
+}
+
+h2 {
+	margin-bottom: 1.5em;
 }
