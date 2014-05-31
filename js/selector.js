@@ -1559,7 +1559,7 @@ var main_data = {
                 "data_types": [
                     {
                         "name": "Immunization Records",
-                        "description": "State immunization registries should be able patients the ability to view, download and securely send their vacciantion records to a desitnation of their choice.",
+                        "description": "State immunization registries should provide patients with the ability to view, download and securely send their vacciantion records to a desitnation of their choice.",
                         "link": "",
                         "recommendations": {
                             "view": {
@@ -2079,9 +2079,9 @@ var developer_data = {
 };
 
 var market_descriptions = {
-	"Retail Pharmacy":"Pharmacies should use the Blue Button marketing materials to help communiate the Blue Button vision to their customers, and to help educate their customers on importance of using their pharmacy data with a growing ecoystem of products and services designed to help people better manage their medications and overall health goals.", 
+	"Retail Pharmacy":"Pharmacies should use the Blue Button marketing materials to help communiate the Blue Button vision to their customers, and to help educate their customers on importance of using their pharmacy data with a growing ecoystem of products and services designed to help people better manage their medications and meet their overall health goals.", 
 	"Diagnostic Lab":"Labs should use the Blue Button marketing materials to help communicate the Blue Button vision to their patients and educate them on the importance of having access to their records in a format that allows them to check and share their records electronically.", 
-	"Hospital / Provider":"Health care providers are in a great position to use the marketing material to communicate the Blue Button vision to their patients, and educate their patients on on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
+	"Hospital / Provider":"Health care providers are in a great position to use the marketing material to communicate the Blue Button vision to their patients, and educate their patients on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
 	"Health Insurance Company":"Health insurance companies should use these marketing materials to help communiate the Blue Button vision and let their members know that their health insurance company empowers them with access to their own health records so that they can not only get their records, but also check their records and use them with a growing ecoystem of apps and tools designed to help people better manage their healthcare expenses.", 
 	"State Health Information Exchange":"State health information exchanges are in a great position to use the marketing material to communicate the Blue Button vision to state residents and educate them on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
 	"State Immunization Registry":"State immunization registries are in a great position to use the marketing material to communicate the Blue Button vision to state residents and educate them on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
@@ -2094,7 +2094,7 @@ var general_descriptions = {
 	"Hospital / Provider":"Health care providers are in a great position to use the marketing material to communicate the Blue Button vision to their patients, and educate their patients on on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
 	"Health Insurance Company":"Health insurance providers should provide their members with medical insurance claims records in an electronic format that allows patients to view, download and securely send their data to a destination of their choice.", 
 	"State Health Information Exchange":"State health information exchanges should be able to ingest and aggregate structured health data from various providers within the state, in addition to making their aggregated health data portable so that consumers may securely send their data to a destination of their choice.", 
-	"State Immunization Registry":"State immunization registries should be able patients the ability to view, download and securely send their vacciantion records to a desitnation of their choice.", 
+	"State Immunization Registry":"State immunization registries should be provide patients with the ability to view, download and securely send their vacciantion records to a desitnation of their choice.", 
 	"Developer":"Third party applications should be able to ingest structured health data from an external source and also make any health data within the application/tool portable so that consumers may securely send their data to a destination of their choice."
 }
 	
