@@ -403,4 +403,12 @@ div nav ul {
 
 h2 {
 	margin-bottom: 1.5em;
+	color:#0070c0;
+	font-weight:bold;
+}
+
+div#recommendations {
+	border: 1px solid;
+	padding: 10px;
+	border-color: #0070c0;
 }

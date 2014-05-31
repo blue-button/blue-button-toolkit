@@ -163,7 +163,7 @@ var main_data = {
                                     },{
                                         "name": "Webservices",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Web Services",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -187,7 +187,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Secure Attachments",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -364,7 +364,7 @@ var main_data = {
                                     },{
                                         "name": "Webservices",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Web Services",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -388,7 +388,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Secure Attachments",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -570,7 +570,7 @@ var main_data = {
                                     },{
                                         "name": "Webservices",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Web Services",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -594,7 +594,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Secure Attachments",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -770,7 +770,7 @@ var main_data = {
                                     },{
                                         "name": "Webservices",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Web Services",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -794,7 +794,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Secure Attachments",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -964,7 +964,7 @@ var main_data = {
                                     },{
                                         "name": "Webservices",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Web Services",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -988,7 +988,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Secure Attachments",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -1136,7 +1136,7 @@ var main_data = {
                                     },{
                                         "name": "Webservices",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Web Services",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -1160,7 +1160,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Secure Attachments",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -1298,7 +1298,7 @@ var main_data = {
                                     },{
                                         "name": "Webservices",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Web Services",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -1322,7 +1322,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Secure Attachments",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -1502,7 +1502,7 @@ var main_data = {
                                     },{
                                         "name": "Webservices",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Web Services",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -1526,7 +1526,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Secure Attachments",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -1703,7 +1703,7 @@ var main_data = {
                                     },{
                                         "name": "Webservices",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Web Services",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -1727,7 +1727,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Secure Attachments",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -1874,7 +1874,7 @@ var main_data = {
                                     },{
                                         "name": "Webservices",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "This is a description of Web Services",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -2242,8 +2242,8 @@ function populateOptions(parentId, childId, arrayList){
 
 function populateRecommendations(id, recommendations){
 
-	var guidePanelHtml = "<h3> Standards for a "+ $("#"+secondSelectBoxId+ " :selected").text().toLowerCase() 
-	+ " sharing "+ $("#"+thirdSelectBoxId+ " :selected").text() +"</h3>";
+	var guidePanelHtml = "<h2> Standards for a "+ $("#"+secondSelectBoxId+ " :selected").text().toLowerCase() 
+	+ " sharing "+ $("#"+thirdSelectBoxId+ " :selected").text() +"</h2>";
 
 	/**VIEW**/
 	guidePanelHtml += "<h3>View</h3>";
@@ -2322,12 +2322,12 @@ function populateResources(id, resources, developer_flag){
 
 	if(developer_flag){
 		
-		guidePanelHtml += "<h3>" + $("#"+thirdSelectBoxId+ " :selected").text() +" designed for developers.</h3>";
+		guidePanelHtml += "<h2>" + $("#"+thirdSelectBoxId+ " :selected").text() +" designed for developers.</h2>";
 		guidePanelHtml += "<div>" + resources.description + "</div>";
 		guidePanelHtml += "<a target='_blank' href='" + resources.link + "'>View</a>";
 		
 	}else{		
-		guidePanelHtml += "<h3>" + $("#"+thirdSelectBoxId+ " :selected").text() +" resources for a " + $("#"+secondSelectBoxId+ " :selected").text()  + "</h3>";
+		guidePanelHtml += "<h2>" + $("#"+thirdSelectBoxId+ " :selected").text() +" resources for a " + $("#"+secondSelectBoxId+ " :selected").text()  + "</h2>";
 		guidePanelHtml += "<div>" + resources.description + " </div><br>";
 		$(resources).each(function(a){	
 			if(resources[a].hasOwnProperty("img")){
