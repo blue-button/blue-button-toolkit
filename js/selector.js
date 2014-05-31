@@ -2247,7 +2247,7 @@ function populateRecommendations(id, recommendations){
 
 	/**VIEW**/
 	guidePanelHtml += "<h3>View</h3>";
-	guidePanelHtml += "<p>Enabling a patient the ability to view their electronic health records within a secure patient portal interface. As the adoption of smart phones continues to increase, there is a growing expectation that patients be able to view their records on the go.</p>"
+	guidePanelHtml += "<p>Enabling patient's ability to view their electronic health records within a secure patient portal interface. As the adoption of smart phones continues to increase, there is a growing expectation that patients be able to view their records on the go.</p>"
 	guidePanelHtml += "<table><tr><th>File Type </th>";
 	$(recommendations.view.file_type).each(function(k){		
 		guidePanelHtml += "<td>" + recommendations.view.file_type[k].name + "</td>";
@@ -2260,7 +2260,7 @@ function populateRecommendations(id, recommendations){
 	
 	/**DOWNLOAD**/
 	guidePanelHtml += "<h3>Download</h3>";
-	guidePanelHtml += "<p>Enabling a patient the ability to download a machine readable copy of their health records so that a patient may securely store it or share it with a destination of their choice.</p>"
+	guidePanelHtml += "<p>Enabling patient's the ability to download a machine readable copy of their health records so that a patient may securely store it or share it with a destination of their choice.</p>"
 
 	guidePanelHtml += "<table><tr><th>File Type </th>";
 	$(recommendations.download.file_type).each(function(i){		
