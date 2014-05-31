@@ -246,6 +246,14 @@ img.avatar {
 
 /*Selector Styles*/
 
+.header {
+	color: white;
+	background: #1875c6;
+	font-size: 18px;
+	padding-top: 25px;
+	padding-bottom: 55px;
+}
+
 div.intro-section {
   font-size: 15px;
   color: #ffffff;
