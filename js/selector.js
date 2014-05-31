@@ -1026,7 +1026,7 @@ var main_data = {
                 "data_types": [
                     {
                         "name": "Explanation of Benefits",
-                        "description": "Provide medical insurance claims data to patients in a format that allows them to view, download and share their data with third party apps/services that can make this data more actionable and user friendly. ",
+                        "description": "Health insurance companies should provide medical insurance claims data to patients in a format that allows them to view, download and share their data with third party apps/services that can make this data more actionable and user friendly. ",
                         "link": "",
                         "recommendations": {
                             "view": {
