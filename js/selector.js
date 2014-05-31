@@ -2114,6 +2114,7 @@ var recommendationsId = "recommendations";
 $(document).ready(function(){
 
     $("#"+recommendationsId).hide();
+    $("#" + thirdSelectBoxId + "-action").hide();
     $("#"+thirdSelectBoxId).hide();
 
 	$('.intro-section').accordion({
@@ -2126,7 +2127,8 @@ $(document).ready(function(){
 		resetElement(thirdSelectBoxId);
 		resetElement(thirdSelectBoxId+"-description");
 		$("#"+recommendationsId).hide();
-
+		$("#"+thirdSelectBoxId).hide();
+		$("#"+ thirdSelectBoxId +"-action").hide();
 
 		var selection = $(this).val();
 		switch(selection){
@@ -2159,44 +2161,66 @@ $(document).ready(function(){
 		$("#"+recommendationsId).hide();
 
 		var selection = $(this).val();
-		var options = getDataTypePair(selection);
-		populateOptions(secondSelectBoxId, thirdSelectBoxId, options);		
+		console.log("This is what I selected: " + selection);
+		if(selection === ""){
+
+		}else{
+			console.log("I'm in!");
+			var options = getDataTypePair(selection);
+			populateOptions(secondSelectBoxId, thirdSelectBoxId, options);					
+			$("#"+thirdSelectBoxId).trigger("change");	
+		}
 		
-		$("#"+thirdSelectBoxId).trigger("change");
 	});
 
 	$("#"+thirdSelectBoxId).change(function(){
 		var selection = $(this).val();
-		
-
-
 		var keyword = $("#"+firstSelectBoxId).val();
+
+		if(selection === ""){
+
+		}else{
+			
+			switch(keyword){
+				case 'share':
+					var options = getDataTypeRecommendations($("#"+thirdSelectBoxId).val());		
+					populateRecommendations(recommendationsId, options, keyword);		
+					
+					break;
+				case 'build':	
+					var data_types = getDataTypeObject($("#"+thirdSelectBoxId).val());		
+					populateDeveloperResources(recommendationsId, data_types);		
+
+					break;
+				case 'market':	
+					var resources = getDataTypeResources($("#"+thirdSelectBoxId).val()); 
+					var description = getDataTypeDescription($("#"+thirdSelectBoxId).val());
+					resources.description = description;
+					populateMarketingResources(recommendationsId, resources);
+
+					break;
+				default:
+					break;		
+			}
+		}
+
 		switch(keyword){
 			case 'share':
-				var options = getDataTypeRecommendations($("#"+thirdSelectBoxId).val());		
-				populateRecommendations(recommendationsId, options, keyword);		
-				$("#"+thirdSelectBoxId+"-description").html(getDataTypeDescription($("#"+thirdSelectBoxId).val())+"<br>");
 				$("#"+thirdSelectBoxId+"-action").html("3. Select the type of data you want to share.");
 				break;
-			case 'build':	
-				var data_types = getDataTypeObject($("#"+thirdSelectBoxId).val());		
-				populateDeveloperResources(recommendationsId, data_types);		
-				$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+thirdSelectBoxId).val())+"<br>");
+			case 'build':
 				$("#"+thirdSelectBoxId+"-action").html("3. Select the resource that you want to use.");
 				break;
-			case 'market':	
-				var resources = getDataTypeResources($("#"+thirdSelectBoxId).val()); 
-				var description = getDataTypeDescription($("#"+thirdSelectBoxId).val());
-				resources.description = description;
-				populateMarketingResources(recommendationsId, resources);
-				$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+thirdSelectBoxId).val())+"<br>");
+			case 'market':
 				$("#"+thirdSelectBoxId+"-action").html("3. Select the resource that you want to use.");
 				break;
 			default:
-				break;		
+				break;
 		}
-
+		$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+thirdSelectBoxId).val())+"<br>");					
+		$("#"+thirdSelectBoxId+"-action").show();
 		$("#"+thirdSelectBoxId).show();
+
 
 	});
 });
@@ -2209,6 +2233,8 @@ function resetElement(id){
 /**Populate Select Box Options**/
 function populateOptions(parentId, childId, arrayList){
 	resetElement(childId);
+	
+	$("#"+childId).append("<option value=''>Select an option</option>");
 	$(arrayList).each(function(i){
 		$("#"+childId).append("<option value=\""+arrayList[i].value+"\">"+arrayList[i].display_name+"</option>");
 	});
@@ -2343,7 +2369,7 @@ function getStaticAudienceNames(value){
 function getDataTypePair(audience_path){
 	var data_type_pair = [];
 	var audience_path_array = audience_path.split("-");
-
+	console.log(audience_path_array);
 	var data_types_array = data[audience_path_array[0]].audience[parseInt(audience_path_array[1])].data_types;
 	
 	for(var key in data_types_array){
@@ -2406,6 +2432,7 @@ function getDataTypeDescription(data_type_path){
 
 /**Get Data Type Recommendations**/
 function getDataTypeRecommendations(data_type_path){
+	console.log(data_type_path);
 	var data_type_recommendations = [];
 	var data_type_path_array = data_type_path.split("-");
 	var data_type_recommendations = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].data_types[parseInt(data_type_path_array[2])].recommendations;
