@@ -56,6 +56,11 @@ p {
   line-height: 1.5em;
 }
 
+div p, div ul {
+  margin-bottom: 0em;
+  padding: 10px 45px;
+}
+
 ol, ul {
   list-style-position: inside;
   margin-left: 10px;
@@ -161,6 +166,7 @@ iframe {
 
 .section.page {
   margin-top: 25px;
+  padding: 10px 50px;
 }
 
 .page {
@@ -173,9 +179,9 @@ iframe {
 }
 
 .page img {
-  display: block;
+  /*display: block;*/
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 /* footer */
@@ -190,7 +196,7 @@ iframe {
 
 /* table */
 
-table {	
+table {
   text-align: left;
   border-collapse: collapse;
   margin: 20px;
@@ -236,4 +242,94 @@ img.avatar {
   border-radius: 3px;
   display: inline-block;
   vertical-align: middle;
+}
+
+/*Selector Styles*/
+
+div.intro-section, div.nav-section {
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #0070c0;
+  padding: 10px;
+}
+
+div.intro-section.odd, div.nav-section.odd {
+  color: #0070c0;
+  background-color: #c9e1f5;
+}
+
+.home.first {
+	color: white;
+	background: #1875c6;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#1875c6', endColorstr='#00a5ea');
+	background: linear-gradient(#1875c6, #00a5ea);
+	padding: 15px 0 35px 0;
+}
+
+.home.first .box {
+	width: 550px;
+	background: rgba(255, 255, 255, 0.15);
+	margin: 0 auto;
+	padding: 40px 40px 50px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.home.first .box h1 {
+	font-size: 25px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.home.first .box p {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.home.first .box a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.home.first .box .button {
+	text-align: center;
+	border-radius: 7px;
+	font-size: 20px;
+	border: 3px solid rgba(255, 255, 255, 0.5);
+	padding: 10px 30px;
+
+}
+
+.content .box .disclaimer {
+	padding-bottom:45px;
+}
+
+.home.first .box .button:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.centered {
+	position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+	background: url(../img/bb_logo.svg);
+	left: 45%;
+	position: relative;
+}
+
+.description {
+	padding: 25px;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.resource_img {
+
 }
