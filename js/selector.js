@@ -2159,17 +2159,21 @@ $(document).ready(function(){
 		$("#"+recommendationsId).hide();
 
 		var selection = $(this).val();
-		var options = getDataTypePair(selection);
-		populateOptions(secondSelectBoxId, thirdSelectBoxId, options);		
+		console.log("This is what I selected: " + selection);
+		if(selection === ""){
+
+		}else{
+			console.log("I'm in!");
+			var options = getDataTypePair(selection);
+			populateOptions(secondSelectBoxId, thirdSelectBoxId, options);					
+			$("#"+thirdSelectBoxId).trigger("change");	
+		}
 		
-		$("#"+thirdSelectBoxId).trigger("change");
 	});
 
 	$("#"+thirdSelectBoxId).change(function(){
 		var selection = $(this).val();
 		
-
-
 		var keyword = $("#"+firstSelectBoxId).val();
 		switch(keyword){
 			case 'share':
@@ -2209,6 +2213,8 @@ function resetElement(id){
 /**Populate Select Box Options**/
 function populateOptions(parentId, childId, arrayList){
 	resetElement(childId);
+	if(parentId == "what")
+		$("#"+childId).append("<option value=''>Select an option</option>");
 	$(arrayList).each(function(i){
 		$("#"+childId).append("<option value=\""+arrayList[i].value+"\">"+arrayList[i].display_name+"</option>");
 	});
@@ -2343,7 +2349,7 @@ function getStaticAudienceNames(value){
 function getDataTypePair(audience_path){
 	var data_type_pair = [];
 	var audience_path_array = audience_path.split("-");
-
+	console.log(audience_path_array);
 	var data_types_array = data[audience_path_array[0]].audience[parseInt(audience_path_array[1])].data_types;
 	
 	for(var key in data_types_array){
@@ -2406,6 +2412,7 @@ function getDataTypeDescription(data_type_path){
 
 /**Get Data Type Recommendations**/
 function getDataTypeRecommendations(data_type_path){
+	console.log(data_type_path);
 	var data_type_recommendations = [];
 	var data_type_path_array = data_type_path.split("-");
 	var data_type_recommendations = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].data_types[parseInt(data_type_path_array[2])].recommendations;
