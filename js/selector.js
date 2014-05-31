@@ -9,7 +9,7 @@ var main_data = {
                 "data_types": [
                     {
                         "name": "Pharmacy Records - CCDA",
-                        "description": "Retail pharmacies will provide customers with their pharmacy records (list of medications) through a secure portal that includes the ability to view, download and electronically share their data their pharmacy records securely with others and third party apps/services.",
+                        "description": "Retail pharmacies will provide customers with their pharmacy records (list of medications) through a secure portal that includes the ability to view, download and electronically share their pharmacy records securely with others and third party apps/services.",
                         "link": "",
                         "recommendations": {
                             "view": {
