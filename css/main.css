@@ -386,11 +386,12 @@ div.intro-section.odd {
 }
 
 .logo {
-	width: 50px;
-	height: 50px;
-	background: url(../img/bb_logo.svg);
+	/*width: 50px;*/
+	/*height: 50px;*/
+	/*background: url(../img/bb_logo.svg);*/
+	background: url(../img/blue-button-logo.png);
 	left: 45%;
-	position: relative;
+	/*position: relative;*/
 }
 
 .description {
@@ -420,6 +421,10 @@ h4 {
 		margin-left: 25px;
 }
 
+h5 {
+	font-size: 93%;
+}
+
 div#recommendations {
 	border: 1px solid;
 	padding: 10px;
@@ -431,4 +436,8 @@ hr {
     background-color: #0070c0;
     height: 2px;
     border: solid;
+}
+
+.new-logo {
+	height: 120px;
 }
