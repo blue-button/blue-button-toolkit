@@ -2114,16 +2114,16 @@ var market_descriptions = {
 	"Retail Pharmacy":"Pharmacies should use the Blue Button marketing materials to help communiate the Blue Button vision to their customers, and to help educate their customers on importance of using their pharmacy data with a growing ecoystem of products and services designed to help people better manage their medications and meet their overall health goals.", 
 	"Diagnostic Lab":"Labs should use the Blue Button marketing materials to help communicate the Blue Button vision to their patients and educate them on the importance of having access to their records in a format that allows them to check and share their records electronically.", 
 	"Hospital / Provider":"Health care providers are in a great position to use the marketing material to communicate the Blue Button vision to their patients, and educate their patients on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
-	"Health Insurance Company":"Health insurance companies should use these marketing materials to help communiate the Blue Button vision and let their members know that their health insurance company empowers them with access to their own health records so that they can not only get their records, but also check their records and use them with a growing ecoystem of apps and tools designed to help people better manage their healthcare expenses.", 
+	"Health Insurance Company":"Health insurance companies should use these marketing materials to help communicate the Blue Button vision and let their members know that their health insurance company empowers them with access to their own health records so that they can not only get their records, but also check their records and use them with a growing ecoystem of apps and tools designed to help people better manage their healthcare expenses.", 
 	"State Health Information Exchange":"State health information exchanges are in a great position to use the marketing material to communicate the Blue Button vision to state residents and educate them on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
 	"State Immunization Registry":"State immunization registries are in a great position to use the marketing material to communicate the Blue Button vision to state residents and educate them on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
 	"Developer":"App developers should use the Blue Button marketing material to increase patient awareness, education and demand for access to their own health records in a format that patients to send their records to any destination of their choice."
 }
 
 var general_descriptions = {
-	"Retail Pharmacy":"Retail pharmacies should be able to provide customers with their pharmacy records (current and past prescriptions) through a secure portal, ability to download a CCDA (medication section) and abilitty for customers to securely send their records to a destination of their choice.", 
+	"Retail Pharmacy":"Retail pharmacies should be able to provide customers with their pharmacy records (current and past prescriptions) through a secure portal, ability to download a CCDA (medication section) and ability for customers to securely send their records to a destination of their choice.", 
 	"Diagnostic Lab":"As of Oct 2014, HIPAA covered medical labs will be responsible for delivering lab results directly to patients. Labs should be able to provide patients with the ability to view, download and securely send their lab results to a destination of their choice.", 
-	"Hospital / Provider":"Health care providers are in a great position to use the marketing material to communicate the Blue Button vision to their patients, and educate their patients on on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
+	"Hospital / Provider":"Healthcare providers should enable a way for patients to view, download and securely send their health records to a destination of their choice.", 
 	"Health Insurance Company":"Health insurance providers should provide their members with medical insurance claims records in an electronic format that allows patients to view, download and securely send their data to a destination of their choice.", 
 	"State Health Information Exchange":"State health information exchanges should be able to ingest and aggregate structured health data from various providers within the state, in addition to making their aggregated health data portable so that consumers may securely send their data to a destination of their choice.", 
 	"State Immunization Registry":"State immunization registries should be provide patients with the ability to view, download and securely send their vacciantion records to a desitnation of their choice.", 
@@ -2193,11 +2193,11 @@ $(document).ready(function(){
 		$("#"+recommendationsId).hide();
 
 		var selection = $(this).val();
-		console.log("This is what I selected: " + selection);
+		
 		if(selection === ""){
 
 		}else{
-			console.log("I'm in!");
+			
 			var options = getDataTypePair(selection);
 			populateOptions(secondSelectBoxId, thirdSelectBoxId, options);					
 			$("#"+thirdSelectBoxId).trigger("change");	
@@ -2249,7 +2249,7 @@ $(document).ready(function(){
 			default:
 				break;
 		}
-		$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+thirdSelectBoxId).val())+"<br>");					
+		$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+firstSelectBoxId).val())+"<br>");					
 		$("#"+thirdSelectBoxId+"-action").show();
 		$("#"+thirdSelectBoxId).show();
 
@@ -2400,7 +2400,7 @@ function getStaticAudienceNames(value){
 function getDataTypePair(audience_path){
 	var data_type_pair = [];
 	var audience_path_array = audience_path.split("-");
-	console.log(audience_path_array);
+	
 	var data_types_array = data[audience_path_array[0]].audience[parseInt(audience_path_array[1])].data_types;
 	
 	for(var key in data_types_array){
@@ -2431,11 +2431,14 @@ function getAudienceDescription(data_type_path){
 /**Get Description**/
 function getDescription(data_type_path){
 	var description = "";
+    
 	var data_type_path_array = data_type_path.split("-");
 	
-	if(data_type_path_array[0] == "market"){
-		description = market_descriptions[$("#"+secondSelectBoxId+" option:selected").text()];
+	if(data_type_path_array[0] === "market"){
+		
+        description = market_descriptions[$("#"+secondSelectBoxId+" option:selected").text()];
 	}else{
+        
 		description = general_descriptions[$("#"+secondSelectBoxId+" option:selected").text()];
 	}
 
