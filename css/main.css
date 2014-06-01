@@ -243,7 +243,6 @@ iframe {
 /* table */
 
 table {
-  text-align: left;
   border-collapse: collapse;
   margin: 20px;
 }
@@ -252,9 +251,18 @@ table {
   border-bottom: 2px solid #1875c6;
 }
 
-td, th {
+td, th, tr {
+	text-align: left;
   border-bottom: 1px solid #1875c6;
   padding: 10px;
+}
+
+th {
+	width: 200px;
+}
+
+table .transport-description {
+	width: 150px;
 }
 
 /* news */
@@ -387,6 +395,7 @@ div.intro-section.odd {
 
 .description {
 	padding: 25px;
+	font-decoration: italic;
 }
 
 .inline {
@@ -407,8 +416,19 @@ h2 {
 	font-weight:bold;
 }
 
+h4 {
+		margin-left: 25px;
+}
+
 div#recommendations {
 	border: 1px solid;
 	padding: 10px;
 	border-color: #0070c0;
+}
+
+hr {
+    color: #0070c0;
+    background-color: #0070c0;
+    height: 2px;
+    border: solid;
 }
