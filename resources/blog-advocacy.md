@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: resource
 ---
 
 # Sample Blog Post
