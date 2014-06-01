@@ -107,7 +107,7 @@ var main_data = {
                                     {
                                         "name": "RESTful",
                                         "link": "",
-                                        "description": "This is a description of RESTful",
+                                        "description": "An application programming interface (API) is a set of routines, data structures, object classes and/or protocols provided by libraries and/or operating system services in order to support the building of applications.",
                                         "example": {
                                                     "name": "Blue Button API",
                                                     "link": "http://blue-button.github.io/blue-button-plus-pull/",
@@ -139,7 +139,7 @@ var main_data = {
                                     },{
                                         "name": "Direct",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "The Direct Project specifies a simple, secure, scalable, standards-based way for participants to send authenticated, encrypted health information directly to known, trusted recipients over the Internet.",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -161,9 +161,9 @@ var main_data = {
                                             }
                                         ]
                                     },{
-                                        "name": "Webservices",
+                                        "name": "Web Services",
                                         "link": "",
-                                        "description": "This is a description of Web Services",
+                                        "description": "A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -187,7 +187,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Secure Attachments",
+                                        "description": "Email encryption refers to encryption, and often authentication, of email messages, to protect the content from being read by any but the intended recipients. Email encryption has been used by journalists and regular users to protect privacy.",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -308,7 +308,7 @@ var main_data = {
                                     {
                                         "name": "RESTful",
                                         "link": "",
-                                        "description": "This is a description of RESTful",
+                                        "description": "An application programming interface (API) is a set of routines, data structures, object classes and/or protocols provided by libraries and/or operating system services in order to support the building of applications.",
                                         "example": {
                                                     "name": "Blue Button API",
                                                     "link": "http://blue-button.github.io/blue-button-plus-pull/",
@@ -340,7 +340,7 @@ var main_data = {
                                     },{
                                         "name": "Direct",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "The Direct Project specifies a simple, secure, scalable, standards-based way for participants to send authenticated, encrypted health information directly to known, trusted recipients over the Internet.",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -362,9 +362,9 @@ var main_data = {
                                             }
                                         ]
                                     },{
-                                        "name": "Webservices",
+                                        "name": "Web Services",
                                         "link": "",
-                                        "description": "This is a description of Web Services",
+                                        "description": "A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -388,7 +388,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Secure Attachments",
+                                        "description": "Email encryption refers to encryption, and often authentication, of email messages, to protect the content from being read by any but the intended recipients. Email encryption has been used by journalists and regular users to protect privacy.",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -514,7 +514,7 @@ var main_data = {
                                     {
                                         "name": "RESTful",
                                         "link": "",
-                                        "description": "This is a description of RESTful",
+                                        "description": "An application programming interface (API) is a set of routines, data structures, object classes and/or protocols provided by libraries and/or operating system services in order to support the building of applications.",
                                         "example": {
                                                     "name": "Blue Button API",
                                                     "link": "http://blue-button.github.io/blue-button-plus-pull/",
@@ -546,7 +546,7 @@ var main_data = {
                                     },{
                                         "name": "Direct",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "The Direct Project specifies a simple, secure, scalable, standards-based way for participants to send authenticated, encrypted health information directly to known, trusted recipients over the Internet.",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -568,9 +568,9 @@ var main_data = {
                                             }
                                         ]
                                     },{
-                                        "name": "Webservices",
+                                        "name": "Web Services",
                                         "link": "",
-                                        "description": "This is a description of Web Services",
+                                        "description": "A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -594,7 +594,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Secure Attachments",
+                                        "description": "Email encryption refers to encryption, and often authentication, of email messages, to protect the content from being read by any but the intended recipients. Email encryption has been used by journalists and regular users to protect privacy.",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -714,7 +714,7 @@ var main_data = {
                                     {
                                         "name": "RESTful",
                                         "link": "",
-                                        "description": "This is a description of RESTful",
+                                        "description": "An application programming interface (API) is a set of routines, data structures, object classes and/or protocols provided by libraries and/or operating system services in order to support the building of applications.",
                                         "example": {
                                                     "name": "Blue Button API",
                                                     "link": "http://blue-button.github.io/blue-button-plus-pull/",
@@ -746,7 +746,7 @@ var main_data = {
                                     },{
                                         "name": "Direct (Required)",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "The Direct Project specifies a simple, secure, scalable, standards-based way for participants to send authenticated, encrypted health information directly to known, trusted recipients over the Internet.",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -768,9 +768,9 @@ var main_data = {
                                             }
                                         ]
                                     },{
-                                        "name": "Webservices",
+                                        "name": "Web Services",
                                         "link": "",
-                                        "description": "This is a description of Web Services",
+                                        "description": "A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -794,7 +794,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Secure Attachments",
+                                        "description": "Email encryption refers to encryption, and often authentication, of email messages, to protect the content from being read by any but the intended recipients. Email encryption has been used by journalists and regular users to protect privacy.",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -904,7 +904,7 @@ var main_data = {
                                     {
                                         "name": "RESTful",
                                         "link": "",
-                                        "description": "This is a description of RESTful",
+                                        "description": "An application programming interface (API) is a set of routines, data structures, object classes and/or protocols provided by libraries and/or operating system services in order to support the building of applications.",
                                         "example": {
                                                     "name": "Blue Button API",
                                                     "link": "http://blue-button.github.io/blue-button-plus-pull/",
@@ -940,7 +940,7 @@ var main_data = {
                                     },{
                                         "name": "Direct",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "The Direct Project specifies a simple, secure, scalable, standards-based way for participants to send authenticated, encrypted health information directly to known, trusted recipients over the Internet.",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -962,9 +962,9 @@ var main_data = {
                                             }
                                         ]
                                     },{
-                                        "name": "Webservices",
+                                        "name": "Web Services",
                                         "link": "",
-                                        "description": "This is a description of Web Services",
+                                        "description": "A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -988,7 +988,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Secure Attachments",
+                                        "description": "Email encryption refers to encryption, and often authentication, of email messages, to protect the content from being read by any but the intended recipients. Email encryption has been used by journalists and regular users to protect privacy.",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -1104,7 +1104,7 @@ var main_data = {
                                     {
                                         "name": "RESTful",
                                         "link": "",
-                                        "description": "This is a description of RESTful",
+                                        "description": "An application programming interface (API) is a set of routines, data structures, object classes and/or protocols provided by libraries and/or operating system services in order to support the building of applications.",
                                         "example": {
                                                     "name": "Blue Button API",
                                                     "link": "http://blue-button.github.io/blue-button-plus-pull/",
@@ -1134,9 +1134,9 @@ var main_data = {
                                             }
                                         ]
                                     },{
-                                        "name": "Webservices",
+                                        "name": "Web Services",
                                         "link": "",
-                                        "description": "This is a description of Web Services",
+                                        "description": "A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -1160,7 +1160,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Secure Attachments",
+                                        "description": "Email encryption refers to encryption, and often authentication, of email messages, to protect the content from being read by any but the intended recipients. Email encryption has been used by journalists and regular users to protect privacy.",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -1266,7 +1266,7 @@ var main_data = {
                                     {
                                         "name": "RESTful",
                                         "link": "",
-                                        "description": "This is a description of RESTful",
+                                        "description": "An application programming interface (API) is a set of routines, data structures, object classes and/or protocols provided by libraries and/or operating system services in order to support the building of applications.",
                                         "example": {
                                                     "name": "Blue Button API",
                                                     "link": "http://blue-button.github.io/blue-button-plus-pull/",
@@ -1296,9 +1296,9 @@ var main_data = {
                                             }
                                         ]
                                     },{
-                                        "name": "Webservices",
+                                        "name": "Web Services",
                                         "link": "",
-                                        "description": "This is a description of Web Services",
+                                        "description": "A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -1322,7 +1322,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Secure Attachments",
+                                        "description": "Email encryption refers to encryption, and often authentication, of email messages, to protect the content from being read by any but the intended recipients. Email encryption has been used by journalists and regular users to protect privacy.",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -1446,7 +1446,7 @@ var main_data = {
                                     {
                                         "name": "RESTful",
                                         "link": "",
-                                        "description": "This is a description of RESTful",
+                                        "description": "An application programming interface (API) is a set of routines, data structures, object classes and/or protocols provided by libraries and/or operating system services in order to support the building of applications.",
                                         "example": {
                                                     "name": "Blue Button API",
                                                     "link": "http://blue-button.github.io/blue-button-plus-pull/",
@@ -1478,7 +1478,7 @@ var main_data = {
                                     },{
                                         "name": "Direct",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "The Direct Project specifies a simple, secure, scalable, standards-based way for participants to send authenticated, encrypted health information directly to known, trusted recipients over the Internet.",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -1500,9 +1500,9 @@ var main_data = {
                                             }
                                         ]
                                     },{
-                                        "name": "Webservices",
+                                        "name": "Web Services",
                                         "link": "",
-                                        "description": "This is a description of Web Services",
+                                        "description": "A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -1526,7 +1526,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Secure Attachments",
+                                        "description": "Email encryption refers to encryption, and often authentication, of email messages, to protect the content from being read by any but the intended recipients. Email encryption has been used by journalists and regular users to protect privacy.",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -1647,7 +1647,7 @@ var main_data = {
                                     {
                                         "name": "RESTful",
                                         "link": "",
-                                        "description": "This is a description of RESTful",
+                                        "description": "An application programming interface (API) is a set of routines, data structures, object classes and/or protocols provided by libraries and/or operating system services in order to support the building of applications.",
                                         "example": {
                                                     "name": "Blue Button API",
                                                     "link": "http://blue-button.github.io/blue-button-plus-pull/",
@@ -1679,7 +1679,7 @@ var main_data = {
                                     },{
                                         "name": "Direct",
                                         "link": "",
-                                        "description": "This is a description of Direct",
+                                        "description": "The Direct Project specifies a simple, secure, scalable, standards-based way for participants to send authenticated, encrypted health information directly to known, trusted recipients over the Internet.",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -1701,9 +1701,9 @@ var main_data = {
                                             }
                                         ]
                                     },{
-                                        "name": "Webservices",
+                                        "name": "Web Services",
                                         "link": "",
-                                        "description": "This is a description of Web Services",
+                                        "description": "A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -1727,7 +1727,7 @@ var main_data = {
                                     },{
                                         "name": "Secure Attachments",
                                         "link": "",
-                                        "description": "This is a description of Secure Attachments",
+                                        "description": "Email encryption refers to encryption, and often authentication, of email messages, to protect the content from being read by any but the intended recipients. Email encryption has been used by journalists and regular users to protect privacy.",
                                         "example": {
                                                     "name": "",
                                                     "link": "",
@@ -1842,7 +1842,7 @@ var main_data = {
                                     {
                                         "name": "RESTful",
                                         "link": "",
-                                        "description": "This is a description of RESTful",
+                                        "description": "An application programming interface (API) is a set of routines, data structures, object classes and/or protocols provided by libraries and/or operating system services in order to support the building of applications.",
                                         "example": {
                                                     "name": "Blue Button API",
                                                     "link": "http://blue-button.github.io/blue-button-plus-pull/",
@@ -1872,9 +1872,9 @@ var main_data = {
                                             }
                                         ]
                                     },{
-                                        "name": "Webservices",
+                                        "name": "Web Services",
                                         "link": "",
-                                        "description": "This is a description of Web Services",
+                                        "description": "A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'",
                                         "example": {
                                                     "name": "Blue Button Trust Bundles",
                                                     "link": "https://secure.bluebuttontrust.org",
@@ -2019,7 +2019,34 @@ var market_data = {
                                 "link": "http://www.healthit.gov/patients-families/blue-button/blue-button-image"
                             }
                         ]
-                    }
+                    },{
+                    	"name" : "Sample Blog Posts",
+                    	"description" : "Sample blog post to be used by organizations supporting Blue Button.",
+                    	"link":"",
+                    	"resources" : [
+                    		{
+                    			"name":"Sample Blog Post - Consumer Advocacy",
+                    			"description":"",
+                    			"link":"/resources/blog-advocacy.html"
+                    		},{
+                    			"name":"Sample Blog Post - Dataholder Organizations",
+                    			"description":"/resources/blog-dataholder.html",
+                    			"link":""
+                    		}
+                    	]
+                    },{
+                    	"name" : "Sample Tweets",
+                    	"description" : "Sample tweets to be used by organizations promoting Blue Button.",
+                    	"link":"",
+                    	"resources" : [
+                    		{
+                    			"name":"Sample Tweets",
+                    			"description":"",
+                    			"link":"/resources/blog-advocacy.html"
+                    		}
+                    	]
+                    },
+
                 ]
             }
         ]
@@ -2070,6 +2097,11 @@ var developer_data = {
                     	"name":"Health Record Design Challenge",
                     	"description":"Examples of redesigned health records submitted in 2013 in response to an open source challenge sponsored by HHS.",
                     	"link":"http://www.healthdesignchallenge.com",
+                    	"resources":[]
+                    },{
+                    	"name":"FAQs - Privacy & Security",
+                    	"description":"Frequently asked questions for organizations implementing Blue Button.",
+                    	"link":"/resources/faq.html",
                     	"resources":[]
                     }
                 ]
@@ -2259,7 +2291,7 @@ function populateRecommendations(id, recommendations){
 	guidePanelHtml += "</tr></table>";
 	
 	/**DOWNLOAD**/
-	guidePanelHtml += "<h3>Download</h3>";
+	guidePanelHtml += "<hr><h3>Download</h3>";
 	guidePanelHtml += "<p>Enabling a patient the ability to download a machine readable copy of their health records so that a patient may securely store it or share it with a destination of their choice.</p>"
 
 	guidePanelHtml += "<table><tr><th>File Type </th>";
@@ -2273,13 +2305,13 @@ function populateRecommendations(id, recommendations){
 	guidePanelHtml += "</tr></table>";
 	
 	/**TRANSMIT**/
-	guidePanelHtml += "<h3>Transmit</h3>";
+	guidePanelHtml += "<hr><h3>Transmit</h3>";
 	guidePanelHtml += "<p>Patients should have the ability to securely send their health data to a destination of their choice. This includes patients sharing their health records with a broader care team, informal caregivers and even sending their data to third party apps and tools designed to help them better manage their health and coordinate their healthcare.</p>"	
 	guidePanelHtml += "<table><tr><th> Structure </th>";
 	$(recommendations.transmit.content_structure).each(function(j){		
 		guidePanelHtml += "<td><a href='" + recommendations.transmit.content_structure[j].link + "'>" + recommendations.transmit.content_structure[j].name + "</a></td>";
 	}); 
-	guidePanelHtml += "</tr><tr><th>Vocabulary Code Sets</th>"
+	guidePanelHtml += "</tr><tr><th>Vocabulary</th>"
 	$(recommendations.transmit.vocabulary_code_sets).each(function(f){
 		guidePanelHtml += "<td>" + recommendations.transmit.vocabulary_code_sets[f].name + "</td>"
 	});
@@ -2288,21 +2320,19 @@ function populateRecommendations(id, recommendations){
 
 	/**TRANSPORT**/
 	$(recommendations.transmit.transport).each(function(g){		
-		guidePanelHtml += "<table><tr><th> "+ recommendations.transmit.transport[g].name + "<br />" + 
-		recommendations.transmit.transport[g].description + "</th></tr><tr><th>Content Type</th>";
+		guidePanelHtml += "<h4> " + parseInt(g+1) + ". " + recommendations.transmit.transport[g].name + "</h4><p class='transport-description'>" + 
+		recommendations.transmit.transport[g].description + "</p><table><tr><td></td><th>Content Type</th>";
 		$(recommendations.transmit.transport[g].content_type).each(function(f){
 			guidePanelHtml += "<td>" + recommendations.transmit.transport[g].content_type[f].name + "</td>"
 		});
-		guidePanelHtml += "</tr><tr><th>Security</th>"
+		guidePanelHtml += "</tr><tr><td></td><th>Security</th>"
 		$(recommendations.transmit.transport[g].security).each(function(c){
 			guidePanelHtml += "<td>" + recommendations.transmit.transport[g].security[c].name + "</td>"
 		});
-		guidePanelHtml += "</tr><tr><th>Example</th>"
+		guidePanelHtml += "</tr><tr><td></td><th>Example</th>"
 		guidePanelHtml += "<td><a target='_blank' href='"+ recommendations.transmit.transport[g].link + "'>" + recommendations.transmit.transport[g].example.name + "</a><br />" + recommendations.transmit.transport[g].example.description + "</td>";
 		guidePanelHtml += "</tr></table>";
 	}); 
-
-	
 
 	$("#"+id).html(guidePanelHtml);
 	$("#"+id).show();
