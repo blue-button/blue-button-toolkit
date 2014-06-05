@@ -2076,7 +2076,7 @@ var developer_data = {
                     },{
                     	"name":"Connector API",
                     	"description":"The Blue Button Connector provides a free, public, read-only API to access the directory of healthcare organizations that are making health records available to patients and apps that ingest structured health information.",
-                    	"link":"http://bluebuttonconnector.healthit.gov/developers.html",
+                    	"link":"http://bluebuttonconnector.healthit.gov/developers/",
                     	"resources":[]
                     },{
                     	"name":"S&I Framework",
