@@ -2331,7 +2331,7 @@ function populateRecommendations(id, recommendations){
 			guidePanelHtml += "<td>" + recommendations.transmit.transport[g].security[c].name + "</td>"
 		});
 		guidePanelHtml += "</tr><tr><td></td><th>Example</th>"
-		guidePanelHtml += "<td><a target='_blank' href='"+ recommendations.transmit.transport[g].link + "'>" + recommendations.transmit.transport[g].example.name + "</a><br />" + recommendations.transmit.transport[g].example.description + "</td>";
+		guidePanelHtml += "<td><a target='_blank' href='"+ recommendations.transmit.transport[g].example.link + "'>" + recommendations.transmit.transport[g].example.name + "</a><br />" + recommendations.transmit.transport[g].example.description + "</td>";
 		guidePanelHtml += "</tr></table>";
 	}); 
 
