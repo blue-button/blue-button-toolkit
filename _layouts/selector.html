@@ -5,13 +5,12 @@ layout: main
 	<div class="content">
 		<div class="box">
 			<h1><div class="logo"></div><br />Blue Button Toolkit</h1>
-			<img class="new-logo" src='../img/blue-button.png' />
+			<img class="new-logo" alt="This is the Blue Button Logo, the symbol for paitent access to health data." src='../img/blue-button.png' />
 			<p>A Kit for Organizations to Support Consumers in Getting &amp; Using Their Health Records</p>
 			
 			<div class="disclaimer">
 				<a class="button scroll" href="#what"><span>Get Started</span></a>
 			</div>
-			<h5>This site is under development and is not yet formally endorsed by ONC.</h5>
     </div>
   </div>
 </div>
@@ -87,7 +86,7 @@ layout: main
 	</div>
 	<br>
 	<h2>Get Started</h2>
-	<div>Step 1. What would you like to do?
+	<div><form><label for="what">Step 1. What would you like to do?</label>
 		<select id="what">
 			<option value="">Select an option</option>
 			<option value="share">Share Data with Patients</option>
@@ -99,18 +98,19 @@ layout: main
 	<br>
 
 	<div>
-		Step 2. What type of organization are you? 
+		<label for="who">Step 2. What type of organization are you? </label>
 		<select id="who"></select>
 	</div>
 	
 	<i><div id="how-description" class="description"></div></i>
 
 	<div>
-		<div id="how-action" class="inline"></div> <select id="how"></select> 
+		<label for="how"><div id="how-action" class="inline"></div></label><select id="how"></select> 
 	</div>	
 	<br>
 	<br>
 	<div id="recommendations">
 	</div>
+	</form>
 </div>
 

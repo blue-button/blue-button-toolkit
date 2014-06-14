@@ -129,7 +129,7 @@ var main_data = {
                                                 "name": "OAuth",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             },{
                                                 "name": "SAML",
                                                 "link": "",
@@ -157,7 +157,7 @@ var main_data = {
                                                 "name": "X.509",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -181,7 +181,7 @@ var main_data = {
                                                 "name": "SAML",
                                                 "link": "",
                                                 "description": "This is a description of SAML"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -205,7 +205,7 @@ var main_data = {
                                                 "name": "Various File Encryption",
                                                 "link": "",
                                                 "description": "This is a description of file encryption"
-                                                
+
                                             }
                                         ]
                                     }
@@ -330,7 +330,7 @@ var main_data = {
                                                 "name": "OAuth",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             },{
                                                 "name": "SAML",
                                                 "link": "",
@@ -358,7 +358,7 @@ var main_data = {
                                                 "name": "X.509",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -382,7 +382,7 @@ var main_data = {
                                                 "name": "SAML",
                                                 "link": "",
                                                 "description": "This is a description of SAML"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -406,7 +406,7 @@ var main_data = {
                                                 "name": "Various File Encryption",
                                                 "link": "",
                                                 "description": "This is a description of file encryption"
-                                                
+
                                             }
                                         ]
                                     }
@@ -536,7 +536,7 @@ var main_data = {
                                                 "name": "OAuth",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             },{
                                                 "name": "SAML",
                                                 "link": "",
@@ -564,7 +564,7 @@ var main_data = {
                                                 "name": "X.509",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -588,7 +588,7 @@ var main_data = {
                                                 "name": "SAML",
                                                 "link": "",
                                                 "description": "This is a description of SAML"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -612,7 +612,7 @@ var main_data = {
                                                 "name": "Various File Encryption",
                                                 "link": "",
                                                 "description": "This is a description of file encryption"
-                                                
+
                                             }
                                         ]
                                     }
@@ -736,7 +736,7 @@ var main_data = {
                                                 "name": "OAuth",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             },{
                                                 "name": "SAML",
                                                 "link": "",
@@ -764,7 +764,7 @@ var main_data = {
                                                 "name": "X.509",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -788,7 +788,7 @@ var main_data = {
                                                 "name": "SAML",
                                                 "link": "",
                                                 "description": "This is a description of SAML"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -812,7 +812,7 @@ var main_data = {
                                                 "name": "Various File Encryption",
                                                 "link": "",
                                                 "description": "This is a description of file encryption"
-                                                
+
                                             }
                                         ]
                                     }
@@ -930,7 +930,7 @@ var main_data = {
                                                 "name": "OAuth",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             },{
                                                 "name": "SAML",
                                                 "link": "",
@@ -958,7 +958,7 @@ var main_data = {
                                                 "name": "X.509",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -982,7 +982,7 @@ var main_data = {
                                                 "name": "SAML",
                                                 "link": "",
                                                 "description": "This is a description of SAML"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -1006,7 +1006,7 @@ var main_data = {
                                                 "name": "Various File Encryption",
                                                 "link": "",
                                                 "description": "This is a description of file encryption"
-                                                
+
                                             }
                                         ]
                                     }
@@ -1126,7 +1126,7 @@ var main_data = {
                                                 "name": "OAuth",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             },{
                                                 "name": "SAML",
                                                 "link": "",
@@ -1154,7 +1154,7 @@ var main_data = {
                                                 "name": "SAML",
                                                 "link": "",
                                                 "description": "This is a description of SAML"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -1178,7 +1178,7 @@ var main_data = {
                                                 "name": "Various File Encryption",
                                                 "link": "",
                                                 "description": "This is a description of file encryption"
-                                                
+
                                             }
                                         ]
                                     }
@@ -1288,7 +1288,7 @@ var main_data = {
                                                 "name": "OAuth",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             },{
                                                 "name": "SAML",
                                                 "link": "",
@@ -1316,7 +1316,7 @@ var main_data = {
                                                 "name": "SAML",
                                                 "link": "",
                                                 "description": "This is a description of SAML"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -1340,7 +1340,7 @@ var main_data = {
                                                 "name": "Various File Encryption",
                                                 "link": "",
                                                 "description": "This is a description of file encryption"
-                                                
+
                                             }
                                         ]
                                     }
@@ -1418,7 +1418,7 @@ var main_data = {
                                         "example": {
                                             "name": "HTTPS",
                                             "link": "#",
-                                      	}    
+                                      	}
                                 	}
                                 ],
                                 "security": {
@@ -1468,7 +1468,7 @@ var main_data = {
                                                 "name": "OAuth",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             },{
                                                 "name": "SAML",
                                                 "link": "",
@@ -1496,7 +1496,7 @@ var main_data = {
                                                 "name": "X.509",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -1520,7 +1520,7 @@ var main_data = {
                                                 "name": "SAML",
                                                 "link": "",
                                                 "description": "This is a description of SAML"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -1544,7 +1544,7 @@ var main_data = {
                                                 "name": "Various File Encryption",
                                                 "link": "",
                                                 "description": "This is a description of file encryption"
-                                                
+
                                             }
                                         ]
                                     }
@@ -1669,7 +1669,7 @@ var main_data = {
                                                 "name": "OAuth",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             },{
                                                 "name": "SAML",
                                                 "link": "",
@@ -1697,7 +1697,7 @@ var main_data = {
                                                 "name": "X.509",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -1721,7 +1721,7 @@ var main_data = {
                                                 "name": "SAML",
                                                 "link": "",
                                                 "description": "This is a description of SAML"
-                                                
+
                                             }
                                         ]
                                     },{
@@ -1745,7 +1745,7 @@ var main_data = {
                                                 "name": "Various File Encryption",
                                                 "link": "",
                                                 "description": "This is a description of file encryption"
-                                                
+
                                             }
                                         ]
                                     }
@@ -1779,7 +1779,7 @@ var main_data = {
                                             "link": "#",
                                             "description": "View/Download via Authenticated Web Portal"
                                         }
-                                    }                                   
+                                    }
                                 ],
                                 "security": {
                                     "name": "TLS/SSL",
@@ -1814,7 +1814,7 @@ var main_data = {
                                         "example": {
                                             "name": "HTTPS",
                                             "link": "#",
-                                      	}    
+                                      	}
                                 	}
                                 ],
                                 "security": {
@@ -1864,7 +1864,7 @@ var main_data = {
                                                 "name": "OAuth",
                                                 "link": "",
                                                 "description": "This is a description of OAuth"
-                                                
+
                                             },{
                                                 "name": "SAML",
                                                 "link": "",
@@ -1892,7 +1892,7 @@ var main_data = {
                                                 "name": "SAML",
                                                 "link": "",
                                                 "description": "This is a description of SAML"
-                                                
+
                                             }
                                         ]
                                     }
@@ -2055,7 +2055,7 @@ var market_data = {
 
 var developer_data = {
     "developer": {
-        "display_name": "Developer Resources",         
+        "display_name": "Developer Resources",
         "audience": [
             {
                 "display_name": "Developer",
@@ -2065,7 +2065,13 @@ var developer_data = {
                         "name": "GitHub Blue Button Project Page",
                         "description": "Various open source development projects that support Blue Button ",
                         "link": "https://github.com/blue-button",
-                        "resources": [                    
+                        "resources": [
+                        ]
+                    },{
+                        "name": "Blue Button Clear",
+                        "description": "bbClear is an open-source framework for rendering more usable health records.",
+                        "link": "http://blue-button.github.io/bbClear/",
+                        "resources": [
                         ]
                     },{
                         "name": "Standards Implementation &amp; Testing Environment",
@@ -2111,25 +2117,25 @@ var developer_data = {
 };
 
 var market_descriptions = {
-	"Retail Pharmacy":"Pharmacies should use the Blue Button marketing materials to help communiate the Blue Button vision to their customers, and to help educate their customers on importance of using their pharmacy data with a growing ecoystem of products and services designed to help people better manage their medications and meet their overall health goals.", 
-	"Diagnostic Lab":"Labs should use the Blue Button marketing materials to help communicate the Blue Button vision to their patients and educate them on the importance of having access to their records in a format that allows them to check and share their records electronically.", 
-	"Hospital / Provider":"Health care providers are in a great position to use the marketing material to communicate the Blue Button vision to their patients, and educate their patients on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
-	"Health Insurance Company":"Health insurance companies should use these marketing materials to help communicate the Blue Button vision and let their members know that their health insurance company empowers them with access to their own health records so that they can not only get their records, but also check their records and use them with a growing ecoystem of apps and tools designed to help people better manage their healthcare expenses.", 
-	"State Health Information Exchange":"State health information exchanges are in a great position to use the marketing material to communicate the Blue Button vision to state residents and educate them on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
-	"State Immunization Registry":"State immunization registries are in a great position to use the marketing material to communicate the Blue Button vision to state residents and educate them on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.", 
+	"Retail Pharmacy":"Pharmacies should use the Blue Button marketing materials to help communiate the Blue Button vision to their customers, and to help educate their customers on importance of using their pharmacy data with a growing ecoystem of products and services designed to help people better manage their medications and meet their overall health goals.",
+	"Diagnostic Lab":"Labs should use the Blue Button marketing materials to help communicate the Blue Button vision to their patients and educate them on the importance of having access to their records in a format that allows them to check and share their records electronically.",
+	"Hospital / Provider":"Health care providers are in a great position to use the marketing material to communicate the Blue Button vision to their patients, and educate their patients on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.",
+	"Health Insurance Company":"Health insurance companies should use these marketing materials to help communicate the Blue Button vision and let their members know that their health insurance company empowers them with access to their own health records so that they can not only get their records, but also check their records and use them with a growing ecoystem of apps and tools designed to help people better manage their healthcare expenses.",
+	"State Health Information Exchange":"State health information exchanges are in a great position to use the marketing material to communicate the Blue Button vision to state residents and educate them on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.",
+	"State Immunization Registry":"State immunization registries are in a great position to use the marketing material to communicate the Blue Button vision to state residents and educate them on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.",
 	"Developer":"App developers should use the Blue Button marketing material to increase patient awareness, education and demand for access to their own health records in a format that patients to send their records to any destination of their choice."
 }
 
 var general_descriptions = {
-	"Retail Pharmacy":"Retail pharmacies should be able to provide customers with their pharmacy records (current and past prescriptions) through a secure portal, ability to download a CCDA (medication section) and ability for customers to securely send their records to a destination of their choice.", 
-	"Diagnostic Lab":"As of Oct 2014, HIPAA covered medical labs will be responsible for delivering lab results directly to patients. Labs should be able to provide patients with the ability to view, download and securely send their lab results to a destination of their choice.", 
-	"Hospital / Provider":"Healthcare providers should enable a way for patients to view, download and securely send their health records to a destination of their choice.", 
-	"Health Insurance Company":"Health insurance providers should provide their members with medical insurance claims records in an electronic format that allows patients to view, download and securely send their data to a destination of their choice.", 
-	"State Health Information Exchange":"State health information exchanges should be able to ingest and aggregate structured health data from various providers within the state, in addition to making their aggregated health data portable so that consumers may securely send their data to a destination of their choice.", 
-	"State Immunization Registry":"State immunization registries should be provide patients with the ability to view, download and securely send their vacciantion records to a desitnation of their choice.", 
+	"Retail Pharmacy":"Retail pharmacies should be able to provide customers with their pharmacy records (current and past prescriptions) through a secure portal, ability to download a CCDA (medication section) and ability for customers to securely send their records to a destination of their choice.",
+	"Diagnostic Lab":"As of Oct 2014, HIPAA covered medical labs will be responsible for delivering lab results directly to patients. Labs should be able to provide patients with the ability to view, download and securely send their lab results to a destination of their choice.",
+	"Hospital / Provider":"Healthcare providers should enable a way for patients to view, download and securely send their health records to a destination of their choice.",
+	"Health Insurance Company":"Health insurance providers should provide their members with medical insurance claims records in an electronic format that allows patients to view, download and securely send their data to a destination of their choice.",
+	"State Health Information Exchange":"State health information exchanges should be able to ingest and aggregate structured health data from various providers within the state, in addition to making their aggregated health data portable so that consumers may securely send their data to a destination of their choice.",
+	"State Immunization Registry":"State immunization registries should be provide patients with the ability to view, download and securely send their vacciantion records to a desitnation of their choice.",
 	"Developer":"Third party applications should be able to ingest structured health data from an external source and also make any health data within the application/tool portable so that consumers may securely send their data to a destination of their choice."
 }
-	
+
 var firstSelectBoxId = "what";
 var secondSelectBoxId = "who";
 var thirdSelectBoxId = "how";
@@ -2154,7 +2160,7 @@ $(document).ready(function(){
 	});
 
 	$("#"+firstSelectBoxId).change(function(){
-		
+
 		resetElement(secondSelectBoxId);
 		resetElement(thirdSelectBoxId);
 		resetElement(thirdSelectBoxId+"-description");
@@ -2188,21 +2194,21 @@ $(document).ready(function(){
 	});
 
 	$("#"+secondSelectBoxId).change(function(){
-		
+
 		resetElement(thirdSelectBoxId);
 		$("#"+recommendationsId).hide();
 
 		var selection = $(this).val();
-		
+
 		if(selection === ""){
 
 		}else{
-			
+
 			var options = getDataTypePair(selection);
-			populateOptions(secondSelectBoxId, thirdSelectBoxId, options);					
-			$("#"+thirdSelectBoxId).trigger("change");	
+			populateOptions(secondSelectBoxId, thirdSelectBoxId, options);
+			$("#"+thirdSelectBoxId).trigger("change");
 		}
-		
+
 	});
 
 	$("#"+thirdSelectBoxId).change(function(){
@@ -2212,27 +2218,27 @@ $(document).ready(function(){
 		if(selection === ""){
 
 		}else{
-			
+
 			switch(keyword){
 				case 'share':
-					var options = getDataTypeRecommendations($("#"+thirdSelectBoxId).val());		
-					populateRecommendations(recommendationsId, options, keyword);		
-					
-					break;
-				case 'build':	
-					var data_types = getDataTypeObject($("#"+thirdSelectBoxId).val());		
-					populateDeveloperResources(recommendationsId, data_types);		
+					var options = getDataTypeRecommendations($("#"+thirdSelectBoxId).val());
+					populateRecommendations(recommendationsId, options, keyword);
 
 					break;
-				case 'market':	
-					var resources = getDataTypeResources($("#"+thirdSelectBoxId).val()); 
+				case 'build':
+					var data_types = getDataTypeObject($("#"+thirdSelectBoxId).val());
+					populateDeveloperResources(recommendationsId, data_types);
+
+					break;
+				case 'market':
+					var resources = getDataTypeResources($("#"+thirdSelectBoxId).val());
 					var description = getDataTypeDescription($("#"+thirdSelectBoxId).val());
 					resources.description = description;
 					populateMarketingResources(recommendationsId, resources);
 
 					break;
 				default:
-					break;		
+					break;
 			}
 		}
 
@@ -2249,7 +2255,7 @@ $(document).ready(function(){
 			default:
 				break;
 		}
-		$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+firstSelectBoxId).val())+"<br>");					
+		$("#"+thirdSelectBoxId+"-description").html(getDescription($("#"+firstSelectBoxId).val())+"<br>");
 		$("#"+thirdSelectBoxId+"-action").show();
 		$("#"+thirdSelectBoxId).show();
 
@@ -2265,7 +2271,7 @@ function resetElement(id){
 /**Populate Select Box Options**/
 function populateOptions(parentId, childId, arrayList){
 	resetElement(childId);
-	
+
 	$("#"+childId).append("<option value=''>Select an option</option>");
 	$(arrayList).each(function(i){
 		$("#"+childId).append("<option value=\""+arrayList[i].value+"\">"+arrayList[i].display_name+"</option>");
@@ -2274,54 +2280,54 @@ function populateOptions(parentId, childId, arrayList){
 
 function populateRecommendations(id, recommendations){
 
-	var guidePanelHtml = "<h2> Standards for a "+ $("#"+secondSelectBoxId+ " :selected").text().toLowerCase() 
+	var guidePanelHtml = "<h2> Standards for a "+ $("#"+secondSelectBoxId+ " :selected").text().toLowerCase()
 	+ " sharing "+ $("#"+thirdSelectBoxId+ " :selected").text() +"</h2>";
 
 	/**VIEW**/
 	guidePanelHtml += "<h3>View</h3>";
 	guidePanelHtml += "<p>Enabling patient's the ability to view their electronic health records within a secure patient portal interface. As the adoption of smart phones continues to increase, there is a growing expectation that patients be able to view their records on the go.</p>"
 	guidePanelHtml += "<table><tr><th>File Type </th>";
-	$(recommendations.view.file_type).each(function(k){		
+	$(recommendations.view.file_type).each(function(k){
 		guidePanelHtml += "<td>" + recommendations.view.file_type[k].name + "</td>";
-	}); 
+	});
 	guidePanelHtml += "</tr><tr><th>Security </th>"
-	
+
 	guidePanelHtml += "<td>" + recommendations.view.security.name + "</td>"
-	
+
 	guidePanelHtml += "</tr></table>";
-	
+
 	/**DOWNLOAD**/
 
 	guidePanelHtml += "<h3>Download</h3>";
 	guidePanelHtml += "<p>Enabling patient's the ability to download a machine readable copy of their health records so that a patient may securely store it or share it with a destination of their choice.</p>"
 
 	guidePanelHtml += "<table><tr><th>File Type </th>";
-	$(recommendations.download.file_type).each(function(i){		
+	$(recommendations.download.file_type).each(function(i){
 		guidePanelHtml += "<td>" + recommendations.download.file_type[i].name + "</td>";
-	}); 
+	});
 	guidePanelHtml += "</tr><tr><th>Security </th>"
-	
+
 	guidePanelHtml += "<td>" + recommendations.download.security.name + "</td>"
-	
+
 	guidePanelHtml += "</tr></table>";
-	
+
 	/**TRANSMIT**/
 	guidePanelHtml += "<hr><h3>Transmit</h3>";
-	guidePanelHtml += "<p>Patients should have the ability to securely send their health data to a destination of their choice. This includes patients sharing their health records with a broader care team, informal caregivers and even sending their data to third party apps and tools designed to help them better manage their health and coordinate their healthcare.</p>"	
+	guidePanelHtml += "<p>Patients should have the ability to securely send their health data to a destination of their choice. This includes patients sharing their health records with a broader care team, informal caregivers and even sending their data to third party apps and tools designed to help them better manage their health and coordinate their healthcare.</p>"
 	guidePanelHtml += "<table><tr><th> Structure </th>";
-	$(recommendations.transmit.content_structure).each(function(j){		
+	$(recommendations.transmit.content_structure).each(function(j){
 		guidePanelHtml += "<td><a href='" + recommendations.transmit.content_structure[j].link + "'>" + recommendations.transmit.content_structure[j].name + "</a></td>";
-	}); 
+	});
 	guidePanelHtml += "</tr><tr><th>Vocabulary</th>"
 	$(recommendations.transmit.vocabulary_code_sets).each(function(f){
 		guidePanelHtml += "<td>" + recommendations.transmit.vocabulary_code_sets[f].name + "</td>"
 	});
-	
+
 	guidePanelHtml += "</tr></table>";
 
 	/**TRANSPORT**/
-	$(recommendations.transmit.transport).each(function(g){		
-		guidePanelHtml += "<h4> " + parseInt(g+1) + ". " + recommendations.transmit.transport[g].name + "</h4><p class='transport-description'>" + 
+	$(recommendations.transmit.transport).each(function(g){
+		guidePanelHtml += "<h4> " + parseInt(g+1) + ". " + recommendations.transmit.transport[g].name + "</h4><p class='transport-description'>" +
 		recommendations.transmit.transport[g].description + "</p><table><tr><td></td><th>Content Type</th>";
 		$(recommendations.transmit.transport[g].content_type).each(function(f){
 			guidePanelHtml += "<td>" + recommendations.transmit.transport[g].content_type[f].name + "</td>"
@@ -2333,7 +2339,7 @@ function populateRecommendations(id, recommendations){
 		guidePanelHtml += "</tr><tr><td></td><th>Example</th>"
 		guidePanelHtml += "<td><a target='_blank' href='"+ recommendations.transmit.transport[g].example.link + "'>" + recommendations.transmit.transport[g].example.name + "</a><br />" + recommendations.transmit.transport[g].example.description + "</td>";
 		guidePanelHtml += "</tr></table>";
-	}); 
+	});
 
 	$("#"+id).html(guidePanelHtml);
 	$("#"+id).show();
@@ -2352,24 +2358,24 @@ function populateResources(id, resources, developer_flag){
 	var guidePanelHtml = "";
 
 	if(developer_flag){
-		
+
 		guidePanelHtml += "<h2>" + $("#"+thirdSelectBoxId+ " :selected").text() +" designed for developers.</h2>";
 		guidePanelHtml += "<div>" + resources.description + "</div>";
 		guidePanelHtml += "<a target='_blank' href='" + resources.link + "'>View</a>";
-		
-	}else{		
+
+	}else{
 		guidePanelHtml += "<h2>" + $("#"+thirdSelectBoxId+ " :selected").text() +" resources for a " + $("#"+secondSelectBoxId+ " :selected").text()  + "</h2>";
 		guidePanelHtml += "<div>" + resources.description + " </div><br>";
-		$(resources).each(function(a){	
+		$(resources).each(function(a){
 			if(resources[a].hasOwnProperty("img")){
-				guidePanelHtml += "<a target='_blank' href='" + resources[a].link + "'><img src='" + resources[a].img + "' /></a></div> <br>";
+				guidePanelHtml += "<a target='_blank' href='" + resources[a].link + "'><img alt='" + resources[a].description + "' src='" + resources[a].img + "' /></a></div> <br>";
 			}else{
 				guidePanelHtml += "<div>" + resources[a].name + " - ";
-				guidePanelHtml += "<a target='_blank' href='" + resources[a].link + "'>View</a></div> <br>";				
+				guidePanelHtml += "<a target='_blank' href='" + resources[a].link + "'>View</a></div> <br>";
 			}
-			
-		});	
-	}	
+
+		});
+	}
 
 
 	$("#"+id).html(guidePanelHtml);
@@ -2384,7 +2390,7 @@ function getAudienceNames(){
 			for(var audienceKey in data[key].audience){
 				audience_names.push({"value":key+"-"+audienceKey, "display_name":data[key].audience[audienceKey].display_name});
 			}
-			
+
 		}
 	}
 	return audience_names;
@@ -2400,9 +2406,9 @@ function getStaticAudienceNames(value){
 function getDataTypePair(audience_path){
 	var data_type_pair = [];
 	var audience_path_array = audience_path.split("-");
-	
+
 	var data_types_array = data[audience_path_array[0]].audience[parseInt(audience_path_array[1])].data_types;
-	
+
 	for(var key in data_types_array){
 		data_type_pair.push({"value":audience_path+"-"+key, "display_name":data_types_array[key].name});
 	}
@@ -2411,11 +2417,11 @@ function getDataTypePair(audience_path){
 }
 
 /**Get Data Type By Audience Path**/
-function getDataTypes(audience_path){	
-	
+function getDataTypes(audience_path){
+
 	var audience_path_array = audience_path.split("-");
 	var data_types_array = data[audience_path_array[0]].audience[parseInt(audience_path_array[1])].data_types;
-	
+
 	return data_types_array;
 }
 
@@ -2424,21 +2430,21 @@ function getAudienceDescription(data_type_path){
 	var audience_description = "";
 	var data_type_path_array = data_type_path.split("-");
 	var audience_description = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].description;
-	
+
 	return audience_description;
 }
 
 /**Get Description**/
 function getDescription(data_type_path){
 	var description = "";
-    
+
 	var data_type_path_array = data_type_path.split("-");
-	
+
 	if(data_type_path_array[0] === "market"){
-		
+
         description = market_descriptions[$("#"+secondSelectBoxId+" option:selected").text()];
 	}else{
-        
+
 		description = general_descriptions[$("#"+secondSelectBoxId+" option:selected").text()];
 	}
 
@@ -2451,7 +2457,7 @@ function getDataTypeObject(data_type_path){
 	var data_type_object = "";
 	var data_type_path_array = data_type_path.split("-");
 	var data_type_object = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].data_types[parseInt(data_type_path_array[2])];
-	
+
 	return data_type_object;
 }
 
@@ -2470,7 +2476,7 @@ function getDataTypeRecommendations(data_type_path){
 	var data_type_recommendations = [];
 	var data_type_path_array = data_type_path.split("-");
 	var data_type_recommendations = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].data_types[parseInt(data_type_path_array[2])].recommendations;
-	return data_type_recommendations;	
+	return data_type_recommendations;
 }
 
 /**Get Data Type Resources**/
@@ -2478,6 +2484,5 @@ function getDataTypeResources(data_type_path){
 	var data_type_recommendations = [];
 	var data_type_path_array = data_type_path.split("-");
 	var data_type_recommendations = data[data_type_path_array[0]].audience[parseInt(data_type_path_array[1])].data_types[parseInt(data_type_path_array[2])].resources;
-	return data_type_recommendations;	
+	return data_type_recommendations;
 }
-
