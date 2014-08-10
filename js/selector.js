@@ -2097,7 +2097,7 @@ var developer_data = {
                     },{
                     	"name":"PHR Model Privacy Notice",
                     	"description":"PHR Model Privacy Notice - The personal health record model privacy notice is designed to be a standardized template that a PHR company can use to succinctly inform customers about its privacy and security policies.",
-                    	"link":"http://www.healthit.gov/policy-researchers-implementers/personal-health-record-phr-model-priva",
+                    	"link":"http://www.healthit.gov/policy-researchers-implementers/personal-health-record-phr-model-privacy-notice",
                     	"resources":[]
                     },{
                     	"name":"Health Record Design Challenge",
