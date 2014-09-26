@@ -1,7 +1,0 @@
-name: Blue Button
-markdown: redcarpet
-pygments: true
-permalink: /news/:year/:month/:day/:title/
-
-redcarpet:
-  extensions: ['hard_wrap', 'autolink']
