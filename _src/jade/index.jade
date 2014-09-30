@@ -3,22 +3,27 @@ extends layout
 block content
 
   .section.splash-section.bg-white
-    img.logo-big(src='img/bb-logo-depth.jpg')
+    a(href="index.html")
+      img.logo-big(src='img/bb-logo-depth.jpg')
     ul.top-nav.nav.nav-pills.pull-right
       li: a(href='#faqs') Introduction
+      li: a(href='/privacy-security-faqs.html') Privacy and Security FAQs
     .splash-title.text-center
       h1.fg-mblue Blue Button<sup>&#174;</sup> Toolkit
       h3.fg-mblue Support Consumers in Getting <br>& Using Their Health Records
 
     #select-goals
       .container
-        ul.goal-list.nav.nav-pills.nav-justified.clearfix(role='tablist')
-          li.active
-            a.goal-title.fs-xsmall.fg-lblue.fw-strong(href='#sharedata', role='tab', data-toggle='tab') Share data with patients
-          li
-            a.goal-title.fs-xsmall.fg-lblue.fw-strong(href='#buildtools', role='tab', data-toggle='tab') Builds tools & apps
-          li
-            a.goal-title.fs-xsmall.fg-lblue.fw-strong(href='#communicatevision', role='tab', data-toggle='tab') Communicate Blue Button vision
+          .splash-title.text-center 
+             h3.fg-mblue What would you like to do?
+
+          ul.goal-list.nav.nav-pills.nav-justified.clearfix(role='tablist')
+            li.active
+              a.goal-title.fs-xsmall.fg-lblue.fw-strong(href='#sharedata', role='tab', data-toggle='tab') Share data with patients
+            li
+              a.goal-title.fs-xsmall.fg-lblue.fw-strong(href='#buildtools', role='tab', data-toggle='tab') Builds tools & apps
+            li
+              a.goal-title.fs-xsmall.fg-lblue.fw-strong(href='#communicatevision', role='tab', data-toggle='tab') Communicate Blue Button vision
 
 
     #resources.tab-content.container
@@ -42,12 +47,12 @@ block content
               a.box-link-rapper(data-org='pharmacy')
                 .wrap-source-icon.wrap-pharmacy-icon
                   i.fa.fa-medkit.isize-36
-                p.data-source-title.fs-small.fw-strong Pharmacy
+                p.data-source-title.fs-small.fw-strong Retail Pharmacy
             li
               a.box-link-rapper(data-org='lab')
                 .wrap-source-icon
                   i.fa.fa-flask.isize-36
-                p.data-source-title.fs-small.fw-strong Lab
+                p.data-source-title.fs-small.fw-strong Diagnostic Lab
             li
               a.box-link-rapper(data-org='immunization')
                 .wrap-source-icon
@@ -147,6 +152,7 @@ block content
 
   .section.bg-mblue
     .container
+      .col-md-offset-1.col-md-10 
       h2.fw-normal.fg-white Introduction & Frequent Questions
       .readable-width
         #faqs.panel-group
