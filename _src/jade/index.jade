@@ -86,7 +86,7 @@ block content
             p
               span.ccda-list-title File Types
               each ft in share_options.download.file_type
-                span.ccda-list-item(data-download-type=ft.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, '')) #{ft.name}
+                span.ccda-list-item(data-view-type=ft.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, '')) #{ft.name}
             p
               span.ccda-list-title Security
               span.ccda-list-item #{share_options.download.security.name}
@@ -102,7 +102,7 @@ block content
               span.ccda-list-title Vocabulary
               each v in share_options.transmit.vocabulary_code_sets
                 span.ccda-list-item(data-transmit-vocabulary=v.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, ''))
-                  a(href=v.link) #{v.name}
+                  a(href=v.link) #{v.name} 
 
             each t, ind in share_options.transmit.transport
               h4.fg-dgrey  #{(ind+1)}. #{t.name}
