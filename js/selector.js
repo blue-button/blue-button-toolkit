@@ -2102,7 +2102,7 @@ var developer_data = {
                     },{
                     	"name":"Health Record Design Challenge",
                     	"description":"Examples of redesigned health records submitted in 2013 in response to an open source challenge sponsored by HHS.",
-                    	"link":"http://www.healthdesignchallenge.com",
+                    	"link":"http://healthdesignchallenge.com",
                     	"resources":[]
                     },{
                     	"name":"FAQs - Privacy & Security",
