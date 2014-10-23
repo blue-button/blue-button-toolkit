@@ -14,7 +14,7 @@ block content
 
     #select-goals
       .container
-          .splash-title.text-center 
+          .splash-title.text-center
              h3.fg-mblue What would you like to do?
 
           ul.goal-list.nav.nav-pills.nav-justified.clearfix(role='tablist')
@@ -33,44 +33,49 @@ block content
           h4.fg-mgrey.mb-25 Organization type
 
           ul.data-sources.list-unstyled.clearfix(role='tablist')
+
+            - orgShareData = {};
+            - organizations.forEach(function(o){ orgShareData[o.id] = o.share.options; orgShareData[o.id].name = o.share.name })
+
+            //- TODO if I map the icons to the ids in some simple object, I can then use a mixin for these.
             li
-              a.box-link-rapper(data-org='insurance')
+              a.box-link-rapper(data-org='insurance', data-share-name=orgShareData.insurance.name, data-view-security=orgShareData.insurance.view.security.join(','), data-view-type=orgShareData.insurance.view.fileType.join(','), data-download-security=orgShareData.insurance.download.security.join(','), data-download-type=orgShareData.insurance.download.fileType.join(','), data-transmit-structure=orgShareData.insurance.transmit.content_structures.join(','), data-transmit-vocabulary=orgShareData.insurance.transmit.vocabulary_code_sets.join(','))
                 .wrap-source-icon
                   i.insurance-icon.fa.fa-umbrella.isize-36
                 p.data-source-title.fs-small.fw-strong Health Insurance
             li
-              a.box-link-rapper(data-org='physician')
+              a.box-link-rapper(data-org='physician', data-share-name=orgShareData.physician.name, data-view-security=orgShareData.physician.view.security.join(','), data-view-type=orgShareData.physician.view.fileType.join(','), data-download-security=orgShareData.physician.download.security.join(','), data-download-type=orgShareData.physician.download.fileType.join(','), data-transmit-structure=orgShareData.physician.transmit.content_structures.join(','), data-transmit-vocabulary=orgShareData.physician.transmit.vocabulary_code_sets.join(','))
                 .wrap-source-icon
                   i.fa.fa-user-md.isize-36
                 p.data-source-title.fs-small.fw-strong Hospital or Clinic
             li
-              a.box-link-rapper(data-org='pharmacy')
+              a.box-link-rapper(data-org='pharmacy', data-share-name=orgShareData.pharmacy.name, data-view-security=orgShareData.pharmacy.view.security.join(','), data-view-type=orgShareData.pharmacy.view.fileType.join(','), data-download-security=orgShareData.pharmacy.download.security.join(','), data-download-type=orgShareData.pharmacy.download.fileType.join(','), data-transmit-structure=orgShareData.pharmacy.transmit.content_structures.join(','), data-transmit-vocabulary=orgShareData.pharmacy.transmit.vocabulary_code_sets.join(','))
                 .wrap-source-icon.wrap-pharmacy-icon
                   i.fa.fa-medkit.isize-36
                 p.data-source-title.fs-small.fw-strong Retail Pharmacy
             li
-              a.box-link-rapper(data-org='lab')
+              a.box-link-rapper(data-org='lab', data-share-name=orgShareData.lab.name, data-view-security=orgShareData.lab.view.security.join(','), data-view-type=orgShareData.lab.view.fileType.join(','), data-download-security=orgShareData.lab.download.security.join(','), data-download-type=orgShareData.lab.download.fileType.join(','), data-transmit-structure=orgShareData.lab.transmit.content_structures.join(','), data-transmit-vocabulary=orgShareData.lab.transmit.vocabulary_code_sets.join(','))
                 .wrap-source-icon
                   i.fa.fa-flask.isize-36
                 p.data-source-title.fs-small.fw-strong Diagnostic Lab
             li
-              a.box-link-rapper(data-org='immunization')
+              a.box-link-rapper(data-org='immunization', data-share-name=orgShareData.immunization.name, data-view-security=orgShareData.immunization.view.security.join(','), data-view-type=orgShareData.immunization.view.fileType.join(','), data-download-security=orgShareData.immunization.download.security.join(','), data-download-type=orgShareData.immunization.download.fileType.join(','), data-transmit-structure=orgShareData.immunization.transmit.content_structures.join(','), data-transmit-vocabulary=orgShareData.immunization.transmit.vocabulary_code_sets.join(','))
                 .wrap-source-icon
                   i.fa.fa-file-text-o.isize-36
                 p.data-source-title.fs-small.fw-strong Immunization Registry
             li
-              a.box-link-rapper(data-org='hie')
+              a.box-link-rapper(data-org='hie', data-share-name=orgShareData.hie.name, data-view-security=orgShareData.hie.view.security.join(','), data-view-type=orgShareData.hie.view.fileType.join(','), data-download-security=orgShareData.hie.download.security.join(','), data-download-type=orgShareData.hie.download.fileType.join(','), data-transmit-structure=orgShareData.hie.transmit.content_structures.join(','), data-transmit-vocabulary=orgShareData.hie.transmit.vocabulary_code_sets.join(','))
                 .wrap-source-icon
                   i.fa.fa-random.isize-36
                 p.data-source-title.fs-small.fw-strong Health Information Exchange
             li
-              a.box-link-rapper(data-org='developer')
+              a.box-link-rapper(data-org='developer', data-share-name=orgShareData.developer.name, data-view-security=orgShareData.developer.view.security.join(','), data-view-type=orgShareData.developer.view.fileType.join(','), data-download-security=orgShareData.developer.download.security.join(','), data-download-type=orgShareData.developer.download.fileType.join(','), data-transmit-structure=orgShareData.developer.transmit.content_structures.join(','), data-transmit-vocabulary=orgShareData.developer.transmit.vocabulary_code_sets.join(','))
                 .wrap-source-icon
                   i.fa.fa-mobile.isize-36
                 p.data-source-title.fs-small.fw-strong Developer
 
         #sharedetails.col-sm-8.fade
-          h2 CCDA
+          h2.share-name CCDA
             h3.fg-maqua View
             p Enabling patient's the ability to view their electronic health records within a secure patient portal interface. As the adoption of smart phones continues to increase, there is a growing expectation that patients be able to view their records on the go.
             p
@@ -79,7 +84,7 @@ block content
                 span.ccda-list-item(data-view-type=ft.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, '')) #{ft.name}
             p
               span.ccda-list-title Security
-              span.ccda-list-item #{share_options.view.security.name}
+              span.ccda-list-item.keeper #{share_options.view.security.name}
 
             h3.fg-maqua Download
             p Enabling patient's the ability to download a machine readable copy of their health records so that a patient may securely store it or share it with a destination of their choice.
@@ -89,7 +94,7 @@ block content
                 span.ccda-list-item(data-download-type=ft.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, '')) #{ft.name}
             p
               span.ccda-list-title Security
-              span.ccda-list-item #{share_options.download.security.name}
+              span.ccda-list-item.keeper #{share_options.download.security.name}
 
             h3.fg-maqua Transmit
             p Patients should have the ability to securely send their health data to a destination of their choice. This includes patients sharing their health records with a broader care team, informal caregivers and even sending their data to third party apps and tools designed to help them better manage their health and coordinate their healthcare.
@@ -110,15 +115,15 @@ block content
               p
                 span.ccda-list-title Content Type
                 each ct in t.content_type
-                  span.ccda-list-item #{ct.name}
+                  span.ccda-list-item.keeper #{ct.name}
               p
                 span.ccda-list-title Security
                 each s in t.security
-                  span.ccda-list-item #{s.name}
+                  span.ccda-list-item.keeper #{s.name}
 
               p
                 span.ccda-list-title Example
-                span.ccda-list-item
+                span.ccda-list-item.keeper
                   a(target='_blank', href=t.example.link) #{t.example.name}
                   //- br
                   //- | #{t.example.description}
@@ -152,7 +157,7 @@ block content
 
   .section.bg-mblue
     .container
-      .col-md-offset-1.col-md-10 
+      .col-md-offset-1.col-md-10
       h2.fw-normal.fg-white Introduction & Frequent Questions
       .readable-width
         #faqs.panel-group
