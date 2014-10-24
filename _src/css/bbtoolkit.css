@@ -887,3 +887,14 @@ p a:hover {
 #sharedetails .ccda-list-title {
   font-weight: bold;
 }
+.alt-share {
+  font-size: 16px;
+  font-style: italic;
+}
+.alt-share a {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bold;
+}

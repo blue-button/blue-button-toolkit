@@ -27,176 +27,250 @@
       "id": "pharmacy",
       "general_description": "Retail pharmacies should be able to provide customers with their pharmacy records (current and past prescriptions) through a secure portal, ability to download a CCDA (medication section) and ability for customers to securely send their records to a destination of their choice.",
       "marketing_description": "Pharmacies should use the Blue Button marketing materials to help communiate the Blue Button vision to their customers, and to help educate their customers on importance of using their pharmacy data with a growing ecoystem of products and services designed to help people better manage their medications and meet their overall health goals.",
-      "share": {
-        "name": "Pharmacy Records - CCDA",
-        "description": "Retail pharmacies will provide customers with their pharmacy records (list of medications) through a secure portal that includes the ability to view, download and electronically share their pharmacy records securely with others and third party apps/services.",
-        "link": "",
-        "options": {
-          "view": {
-            "fileType": ["txt","html"],
-            "security": ["tls/ssl"]
-          },
-          "download":{
-            "fileType": ["pdf","xml"],
-            "security": ["tls/ssl"]
-          },
-          "transmit": {
-            "content_structures": ["fhir-resources", "fhir", "site-ccda", "hl7-ccda"],
-            "vocabulary_code_sets":["rxnorm-nih"],
-            "transports":[]
+      "shares": [
+        {
+          "name": "Pharmacy Records - CCDA",
+          "description": "Retail pharmacies will provide customers with their pharmacy records (list of medications) through a secure portal that includes the ability to view, download and electronically share their pharmacy records securely with others and third party apps/services.",
+          "link": "",
+          "options": {
+            "view": {
+              "file_type": ["txt","html"],
+              "security": ["tls/ssl"]
+            },
+            "download":{
+              "file_type": ["pdf","xml"],
+              "security": ["tls/ssl"]
+            },
+            "transmit": {
+              "content_structures": ["fhir-resources", "fhir", "site-ccda", "hl7-ccda"],
+              "vocabulary_code_sets":["rxnorm-nih"],
+              "transports":[]
+            }
           }
         }
-      }
+      ]
     },{
       "name": "Diagnostic Lab",
       "id": "lab",
       "general_description": "As of Oct 2014, HIPAA covered medical labs will be responsible for delivering lab results directly to patients. Labs should be able to provide patients with the ability to view, download and securely send their lab results to a destination of their choice.",
       "marketing_description": "Labs should use the Blue Button marketing materials to help communicate the Blue Button vision to their patients and educate them on the importance of having access to their records in a format that allows them to check and share their records electronically.",
-      "share": {
-        "name": "Lab Results - CCDA",
-        "description": "As of Oct 2014, HIPAA covered medical labs will be responsible for delivering lab results directly to patients. We encourage labs to be able to provide patients with the ability to view, download and securely share their lab results.",
-        "link": "",
-        "options": {
-          "view": {
-            "fileType": ["txt","html"],
-            "security": ["tls/ssl"]
-          },
-          "download":{
-            "fileType": ["pdf","xml"],
-            "security": ["tls/ssl"]
-          },
-          "transmit": {
-            "content_structures": ["fhir-resources", "site-ccda", "hl7-ccda"],
-            "vocabulary_code_sets":["loinc"],
-            "transports":[]
+      "shares": [
+        {
+          "name": "Lab Results - CCDA",
+          "description": "As of Oct 2014, HIPAA covered medical labs will be responsible for delivering lab results directly to patients. We encourage labs to be able to provide patients with the ability to view, download and securely share their lab results.",
+          "link": "",
+          "options": {
+            "view": {
+              "file_type": ["txt","html"],
+              "security": ["tls/ssl"]
+            },
+            "download":{
+              "file_type": ["pdf","xml"],
+              "security": ["tls/ssl"]
+            },
+            "transmit": {
+              "content_structures": ["fhir-resources", "site-ccda", "hl7-ccda"],
+              "vocabulary_code_sets":["loinc"],
+              "transports":[]
+            }
           }
         }
-      }
+      ]
     },{
       "name": "Hospital / Provider",
       "id": "physician",
       "general_description": "Healthcare providers should enable a way for patients to view, download and securely send their health records to a destination of their choice.",
       "marketing_description": "Healthcare providers are in a great position to use the marketing material to communicate the Blue Button vision to their patients, and educate their patients on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.",
-      "share": {
-        "name": "Clinical Summary - CCDA",
-        "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
-        "link": "",
-        "options": {
-          "view": {
-            "fileType": ["txt","html"],
-            "security": ["tls/ssl"]
-          },
-          "download":{
-            "fileType": ["pdf","xml"],
-            "security": ["tls/ssl"]
-          },
-          "transmit": {
-            "content_structures": ["fhir-resources", "hl7-ccda"],
-            "vocabulary_code_sets":["cpt", "icd", "snomed"],
-            "transports":[]
+      "shares": [
+        {
+          "name": "Clinical Summary - CCDA",
+          "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
+          "link": "",
+          "options": {
+            "view": {
+              "file_type": ["txt","html"],
+              "security": ["tls/ssl"]
+            },
+            "download":{
+              "file_type": ["pdf","xml"],
+              "security": ["tls/ssl"]
+            },
+            "transmit": {
+              "content_structures": ["fhir-resources", "hl7-ccda"],
+              "vocabulary_code_sets":["cpt", "icd", "snomed"],
+              "transports":[]
+            }
+          }
+        },
+        {
+          "name": "Transitions of Care",
+          "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
+          "link": "",
+          "options": {
+            "view": {
+              "file_type": ["txt","html"],
+              "security": ["tls/ssl"]
+            },
+            "download":{
+              "file_type": ["pdf","xml"],
+              "security": ["tls/ssl"]
+            },
+            "transmit": {
+              "content_structures": ["fhir-resources", "hl7-ccda"],
+              "vocabulary_code_sets":["cpt", "icd", "snomed"],
+              "transports":[]
+            }
+          }
+        },
+        {
+          "name": "Imaging",
+          "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
+          "link": "",
+          "options": {
+            "view": {
+              "file_type": ["jpg/png","html"],
+              "security": ["tls/ssl"]
+            },
+            "download":{
+              "file_type": ["pdf","xml"],
+              "security": ["tls/ssl"]
+            },
+            "transmit": {
+              "content_structures": ["fhir-resources", "hl7-ccda"],
+              "vocabulary_code_sets":[],
+              "transports":[]
+            }
           }
         }
-      }
+      ]
     },{
       "name": "Health Insurance Company",
       "id": "insurance",
       "general_description": "Health insurance providers should provide their members with medical insurance claims records in an electronic format that allows patients to view, download and securely send their data to a destination of their choice.",
       "marketing_description": "Health insurance companies should use these marketing materials to help communicate the Blue Button vision and let their members know that their health insurance company empowers them with access to their own health records so that they can not only get their records, but also check their records and use them with a growing ecoystem of apps and tools designed to help people better manage their healthcare expenses.",
-      "share": {
-        "name": "Clinical Summary - CCDA",
-        "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
-        "link": "",
-        "options": {
-          "view": {
-            "fileType": ["txt","html","jpg/png"],
-            "security": ["tls/ssl"]
-          },
-          "download":{
-            "fileType": ["pdf","xml","csv","json","doc"],
-            "security": ["tls/ssl"]
-          },
-          "transmit": {
-            "content_structures": ["fhir-resources", "fhir", "site-ccda", "hl7-ccda", "various-standards", "hl7-251", "draft-specification", "various-edi-transactions"],
-            "vocabulary_code_sets":["rxnorm-nih", "various-code-sets", "loinc", "cpt", "icd", "snomed", "cvx"],
-            "transports":[]
+      "shares": [
+        {
+          "name": "Estimated Cost",
+          "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
+          "link": "",
+          "options": {
+            "view": {
+              "file_type": ["txt","html"],
+              "security": ["tls/ssl"]
+            },
+            "download":{
+              "file_type": ["pdf","csv"],
+              "security": ["tls/ssl"]
+            },
+            "transmit": {
+              "content_structures": ["various-edi-transactions"],
+              "vocabulary_code_sets":["various-code-sets"],
+              "transports":[]
+            }
+          }
+        },
+        {
+          "name": "Explanation of Benefits",
+          "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
+          "link": "",
+          "options": {
+            "view": {
+              "file_type": ["txt","html"],
+              "security": ["tls/ssl"]
+            },
+            "download":{
+              "file_type": ["pdf","csv"],
+              "security": ["tls/ssl"]
+            },
+            "transmit": {
+              "content_structures": ["draft-specification"],
+              "vocabulary_code_sets":["various-code-sets"],
+              "transports":[]
+            }
           }
         }
-      }
+      ]
     },{
       "name": "State Health Information Exchange",
       "id": "hie",
       "general_description": "State health information exchanges should be able to ingest and aggregate structured health data from various providers within the state, in addition to making their aggregated health data portable so that consumers may securely send their data to a destination of their choice.",
       "marketing_description": "State health information exchanges are in a great position to use the marketing material to communicate the Blue Button vision to state residents and educate them on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.",
-      "share": {
-        "name": "Various Health Data",
-        "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
-        "link": "",
-        "options": {
-          "view": {
-            "fileType": ["txt","html"],
-            "security": ["tls-ssl"]
-          },
-          "download":{
-            "fileType": ["pdf","xml","doc"],
-            "security": ["tls/ssl"]
-          },
-          "transmit": {
-            "content_structures": ["various-standards"],
-            "vocabulary_code_sets":["various-code-sets"],
-            "transports":[]
+      "shares": [
+        {
+          "name": "Various Health Data",
+          "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
+          "link": "",
+          "options": {
+            "view": {
+              "file_type": ["txt","html"],
+              "security": ["tls-ssl"]
+            },
+            "download":{
+              "file_type": ["pdf","xml","doc"],
+              "security": ["tls/ssl"]
+            },
+            "transmit": {
+              "content_structures": ["various-standards"],
+              "vocabulary_code_sets":["various-code-sets"],
+              "transports":[]
+            }
           }
         }
-      }
+      ]
     },{
       "name": "State Immunization Registry",
       "id": "immunization",
       "general_description": "State immunization registries should be provide patients with the ability to view, download and securely send their vacciantion records to a desitnation of their choice.",
       "marketing_description": "State immunization registries are in a great position to use the marketing material to communicate the Blue Button vision to state residents and educate them on the importance of having access to their records, checking them for accuracy and using them with a growing number of apps and tools designed to help them manage their health and coordinate their healthcare.",
-      "share": {
-        "name": "Immunization Records",
-        "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
-        "link": "",
-        "options": {
-          "view": {
-            "fileType": ["txt","html"],
-            "security": ["tls/ssl"]
-          },
-          "download":{
-            "fileType": ["pdf","xml"],
-            "security": ["tls/ssl"]
-          },
-          "transmit": {
-            "content_structures": ["fhir-resources", "hl7-ccda", "hl7-251"],
-            "vocabulary_code_sets":["cvx"],
-            "transports":[]
+      "shares": [
+        {
+          "name": "Immunization Records",
+          "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
+          "link": "",
+          "options": {
+            "view": {
+              "file_type": ["txt","html"],
+              "security": ["tls/ssl"]
+            },
+            "download":{
+              "file_type": ["pdf","xml"],
+              "security": ["tls/ssl"]
+            },
+            "transmit": {
+              "content_structures": ["fhir-resources", "hl7-ccda", "hl7-251"],
+              "vocabulary_code_sets":["cvx"],
+              "transports":[]
+            }
           }
         }
-      }
+      ]
     },{
       "name": "Developer",
       "id": "developer",
       "general_description": "Third party applications should be able to ingest structured health data from an external source and also make any health data within the application/tool portable so that consumers may securely send their data to a destination of their choice.",
       "marketing_descripiton": "App developers should use the Blue Button marketing material to increase patient awareness, education and demand for access to their own health records in a format that patients to send their records to any destination of their choice.",
-      "share": {
-        "name": "Consumer Generated Health Data",
-        "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
-        "link": "",
-        "options": {
-          "view": {
-            "fileType": ["html"],
-            "security": ["tls/ssl"]
-          },
-          "download":{
-            "fileType": ["xml","csv","json"],
-            "security": ["tls/ssl"]
-          },
-          "transmit": {
-            "content_structures": ["various-standards"],
-            "vocabulary_code_sets":["various-code-sets"],
-            "transports":[]
+      "shares": [
+        {
+          "name": "Consumer Generated Health Data",
+          "description": "Eligible providers should provide a way for patients to view, download and share their health records with other providers, care givers and/or third party applications/services.",
+          "link": "",
+          "options": {
+            "view": {
+              "file_type": ["html"],
+              "security": ["tls/ssl"]
+            },
+            "download":{
+              "file_type": ["xml","csv","json"],
+              "security": ["tls/ssl"]
+            },
+            "transmit": {
+              "content_structures": ["various-standards"],
+              "vocabulary_code_sets":["various-code-sets"],
+              "transports":[]
+            }
           }
         }
-      }
+      ]
     }
   ],
 
