@@ -613,12 +613,12 @@
         {
           "name":"Sample Blog Post - Consumer Advocacy",
           "description":"",
-          "link":"/resources/blog-advocacy.html",
+          "link":"blog-advocacy.html",
           "link_text": "View sample blog post"
         },{
           "name":"Sample Blog Post - Dataholder Organizations",
           "description": "",
-          "link":"/resources/blog-dataholder.html",
+          "link":"blog-dataholder.html",
           "link_text": "View sample blog post"
         }
       ]
@@ -629,7 +629,8 @@
       "resources": [
         {
           "name":"Sample Tweets",
-          "description":"","link":"/resources/blog-advocacy.html",
+          "description":"",
+          "link":"",
           "link_text": "View sample tweet"
         }
       ]
