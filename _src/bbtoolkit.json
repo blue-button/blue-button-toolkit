@@ -590,7 +590,7 @@
           "name":"Patient Stories",
           "description":"Use the VA Blue Button to Access Your Personal Health Information",
           "link":"https://www.youtube.com/watch?v=lGGnda44Yik&list=UUqynwrKIXFPyUCxqkAZ001w",
-          "img":"../img/patient_stories.jpg"
+          "img":"img/patient_stories.jpg"
         }
       ]
     },{
@@ -617,8 +617,8 @@
           "link_text": "View sample blog post"
         },{
           "name":"Sample Blog Post - Dataholder Organizations",
-          "description": "/resources/blog-dataholder.html",
-          "link":"",
+          "description": "",
+          "link":"/resources/blog-dataholder.html",
           "link_text": "View sample blog post"
         }
       ]
@@ -642,32 +642,32 @@
           "name":":60 sec Blue Button PSA for Cancer Patients and Survivors",
           "description":"60 sec Latina woman in her forties who is living with cancer",
           "link":"http://www.healthit.gov/patients-families/video/60-sec-latina-woman-her-forties-who-living-cancer",
-          "img":"../img/cancer60.jpg"
+          "img":"img/cancer60.jpg"
         },{
           "name":":60 sec Blue Button PSA for Seniors 65+ with chronic conditions",
           "description":"60 seconds Blue Button PSA for senior 65+ with chronic conditions",
           "link":"http://www.healthit.gov/patients-families/video/60-seconds-blue-button-psa-senior-65-chronic-condition",
-          "img":"../img/chronic60.jpg"
+          "img":"img/chronic60.jpg"
         },{
           "name":":60 sec Blue Button PSA for Caregivers",
           "description":"60 sec Blue Button PSA for Caregivers",
           "link":"http://www.healthit.gov/patients-families/video/60-sec-blue-button-psa-caregivers",
-          "img":"../img/caregiver60.jpg"
+          "img":"img/caregiver60.jpg"
         },{
           "name":":30 sec Blue Button PSA for Cancer Patients and Survivors",
           "description":"30 sec Latina woman in her forties who is living with cancer",
           "link":"http://www.healthit.gov/patients-families/video/30-sec-latina-woman-her-forties-who-living-cancer",
-          "img":"../img/cancer30.jpg"
+          "img":"img/cancer30.jpg"
         },{
           "name":":30 sec Blue Button PSA for Seniors 65+ with chronic conditions",
           "description":"30 sec 65+ African American man living with diabetes",
           "link":"http://www.healthit.gov/patients-families/video/30-sec-65-african-american-man-living-diabetes",
-          "img":"../img/diabetes30.jpg"
+          "img":"img/diabetes30.jpg"
         },{
           "name":":30 sec Blue Button PSA video for Caregivers",
           "description":"30 sec Blue Button PSA for Caregivers",
           "link":"http://www.healthit.gov/patients-families/video/30-sec-blue-button-psa-video-caregivers",
-          "img":"../img/caregiver30.jpg"
+          "img":"img/caregiver30.jpg"
         }
       ]
     }
