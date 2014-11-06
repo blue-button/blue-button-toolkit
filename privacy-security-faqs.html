@@ -18,9 +18,7 @@
       //- ga('create', 'UA-23987631-4', 'auto');
       //- ga('send', 'pageview');
       $(document).ready(function() {
-    </script>
-    <script>
-      $("a.goal-title, a.box-link-rapper, a.collapsed").each(function() {
+        $("a.goal-title, a.box-link-rapper, a.collapsed").each(function() {
           var href = $(this).attr("href");
           var target = $(this).attr("target");
           var text = $(this).text();
@@ -31,6 +29,7 @@
                   window.open(href,(!target?"_self":target)); // ...and open the link as usual
               },300);
           });
+        });
       });
       
     </script>
