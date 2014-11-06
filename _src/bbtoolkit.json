@@ -615,23 +615,6 @@
           "description":"",
           "link":"blog-advocacy.html",
           "link_text": "Blog Post - Consumer Advocacy"
-        },{
-          "name":"Sample Blog Post - Dataholder Organizations",
-          "description": "",
-          "link":"blog-dataholder.html",
-          "link_text": "View sample blog post"
-        }
-      ]
-    },{
-      "name":"Sample Tweets",
-      "description": "Sample tweets to be used by organizations promoting Blue Button.",
-      "link":"",
-      "resources": [
-        {
-          "name":"Sample Tweets",
-          "description":"",
-          "link":"",
-          "link_text": "View sample tweet"
         }
       ]
     },{
