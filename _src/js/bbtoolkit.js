@@ -4,7 +4,7 @@ $(function() {
     canPush = true;
   }
 
-  $('body').on('click', '.data-sources li a', function(evt) {
+  $(document).on('click', '.data-sources li a', function(evt) {
     $('.data-sources li a.active').removeClass('active')
     $(this).addClass('active');
     evt.preventDefault();
@@ -12,7 +12,7 @@ $(function() {
     filterShareType($(this).data('org'));
   });
 
-  $('body').on('click', '.alt-share a', function(evt) {
+  $(document).on('click', '.alt-share a', function(evt) {
     var selOrg = $('.data-sources li a.active').data('org');
     evt.preventDefault();
     filterShareType(selOrg, $(this).data('alt-index'));
