@@ -776,6 +776,12 @@ img.little-logo {
   border-top: solid 1px #25c2dc;
   border-bottom: solid 1px #25c2dc;
 }
+.goal-statement {
+  margin-right: 20px;
+}
+.goal-title {
+  width: 350px;
+}
 .no-data {
   margin-top: 0px;
   padding-left: 20px;

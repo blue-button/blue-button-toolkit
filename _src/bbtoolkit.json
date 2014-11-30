@@ -618,6 +618,18 @@
         }
       ]
     },{
+      "name":"Sample Tweets",
+      "description":"Sample Tweets to be used by your organization to promote your use of Blue Button",
+      "link":"sample-tweets.html",
+      "resources": [
+        {
+          "name":"Sample Tweets - Blue Button Promotional Tweets",
+          "description":"",
+          "link":"sample-tweets.html",
+          "link_text": "Sample Tweets - Blue Button Promotional Tweets"
+        }
+      ]
+    },{
       "name":"The Blue Button PSAs",
       "description":"30-60 sec Blue Button PSAs",
       "link":"",
