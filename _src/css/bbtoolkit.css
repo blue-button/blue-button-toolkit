@@ -410,6 +410,11 @@ body.modal-open {
   position: relative;
   z-index: 2;
 }
+@media (max-width:767px) {
+  .top-nav {
+    margin-top: 0px;
+  }
+}
 .minimal-back-nav {
   border-bottom: solid 2px #0070bb;
   padding: 0 15px;

@@ -58,13 +58,15 @@ html
   
   body
     block content
-
+         
     block footer
       .section.footer
         .container
           ul.footer-links.list-inline.inline
             li.hidden-xs.force-inline: img.little-logo(src='#{nestLevel}img/bb-logo-depth-small-greybg.jpg')
             li: a(href='mailto:bluebutton@hhs.gov?subject=Feedback%20on%20Blue%20Button%20Toolkit', target='_blank') Send feedback
+            li: a(href='www.hhs.gov', target='_blank') Privacy Policy
+            li: a(href= 'http://bluebuttonconnector.healthit.gov') Visit the Blue Button Connector
           p.fs-xxsmall The ‘Blue Button’ logo is a registered Service Mark of the U.S. Department of Health and Human Services.
     block mainscript
       script(src='#{nestLevel}js/bbtoolkit-combined.min.js')
