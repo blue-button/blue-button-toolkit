@@ -681,7 +681,7 @@
       "link": "http://blue-button.github.io/bbClear/",
       "link_text": "View Blue Button Clear"
     },{
-      "name": "Standards Implementation &amp; Testing Environment",
+      "name": "Standards Implementation & Testing Environment",
       "description": "The 'SITE' aims to provide a central collaboration environment for developers and the standards community, and thus facilitate the rapid adoption of those standards in EHRs.  The SITE is divided into sandboxes, one for each standard supported by the SITE.",
       "link": "http://sitenv.org/",
       "link_text": "View SITE"
@@ -708,12 +708,12 @@
     },{
       "name":"Health Record Design Challenge",
       "description":"Examples of redesigned health records submitted in 2013 in response to an open source challenge sponsored by HHS.",
-      "link":"http://www.healthdesignchallenge.com",
+      "link":"http://healthdesignchallenge.com",
       "link_text": "View design challenge"
     },{
       "name":"FAQs - Privacy & Security",
       "description":"Frequently asked questions for organizations implementing Blue Button.",
-      "link":"privacy-security-faq.html",
+      "link":"privacy-security-faqs.html",
       "link_text": "View FAQs"
     }
   ]
