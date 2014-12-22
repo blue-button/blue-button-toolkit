@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blue Button Toolkit | FAQs on Privacy and Security</title>
+    <title>Blue Button Toolkit | Sample Blog Posts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,8 +17,9 @@
       
       ga('create', 'UA-23987631-4', 'auto');
       ga('send', 'pageview');
-      //- $('body').on('click', 'a.goal-title, a.box-link-rapper, a.collapsed, #sharedetails a, .alt-share a', function(evt) {
+      
       $(document).on('click', 'a', function(evt) {
+        if (evt.isDefaultPrevented() || typeof ga !== "function") return;
         var $self = $(this);
         var href = $self.attr("href");
         var target = $self.attr("target");
@@ -28,24 +29,18 @@
         if ((this.protocol === 'http:' || this.protocol === 'https:') && this.hostname.indexOf(document.location.hostname) === -1) {
           evt.preventDefault();
           window.waitingForGA = true;
-          setTimeout(function(){
-            if (window.waitingForGA) {
-              window.waitingForGA = false;
-              window.open(href,(!target?"_self":target)); // ...and open the link as usual
-            }
-          }, 3000);
-          ga('send', 'event', 'Outbound', this.hostname, this.pathname, 0, { hitCallback: function() {
-                                                                                if (window.waitingForGA) {
-                                                                                  window.waitingForGA = false;
-                                                                                  window.open(href,(!target?"_self":target)); // ...and open the link as usual
-                                                                                }
-          }
-                                                                            }
-          );
+          setTimeout(loadPage, 1);
+          ga('send', 'event', 'Outbound', this.hostname, this.pathname, 0, { hitCallback: loadPage });
         } else { // internal link
           ga('send', 'event', 'Links', 'Clicked', text);
         }
         
+        function loadPage(){
+          if (window.waitingForGA) {
+            window.waitingForGA = false;
+            window.location = href; // ...and open the link as usual
+          }
+        }
       });
       
       
@@ -55,7 +50,8 @@
     <div class="section splash-section bg-white"><a href="index.html"><img src="img/bb-logo-depth.jpg" alt="Blue Button Logo" class="logo-big"></a>
       <ul class="top-nav nav nav-pills pull-right">
         <li><a href="index.html#faqs">Introduction</a></li>
-        <li><a href="privacy-security-faqs.html">Privacy and Security FAQs</a></li>
+        <li><a href="privacy-security-faqs.html">Privacy and Security</a></li>
+        <li><a href="http://bluebuttonconnector.healthit.gov">Join the Movement</a></li>
       </ul>
       <div class="splash-title text-center">
         <h1 class="fg-mblue">Blue Button<sup>&#174;</sup> Toolkit</h1>
@@ -91,8 +87,8 @@
       <div class="container">
         <ul class="footer-links list-inline inline">
           <li class="hidden-xs force-inline"><img src="img/bb-logo-depth-small-greybg.jpg" class="little-logo"></li>
-          <li><a href="mailto:bluebutton@hhs.gov?subject=Feedback%20on%20Blue%20Button%20Toolkit" target="_blank">Send feedback</a></li>
-          <li><a href="www.hhs.gov" target="_blank">Privacy Policy</a></li>
+          <li><a href="mailto:bluebutton@hhs.gov?subject=Feedback%20on%20Blue%20Button%20Toolkit">Send feedback</a></li>
+          <li><a href="http://www.hhs.gov">Privacy Policy</a></li>
           <li><a href="http://bluebuttonconnector.healthit.gov">Visit the Blue Button Connector</a></li>
         </ul>
         <p class="fs-xxsmall">The ‘Blue Button’ logo is a registered Service Mark of the U.S. Department of Health and Human Services.</p>

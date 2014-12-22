@@ -1,6 +1,6 @@
 block vars
-  - var nestLevel = ''
-  - var pgTitle = 'Blue Button Toolkit | Support Consumers in Getting & Using Their Health Records'
+  - nestLevel = ''
+  - pgTitle = 'Blue Button Toolkit | Support Consumers in Getting & Using Their Health Records'
 !!! 5
 html
   block head
@@ -24,8 +24,9 @@ html
 
         ga('create', 'UA-23987631-4', 'auto');
         ga('send', 'pageview');
-        //- $('body').on('click', 'a.goal-title, a.box-link-rapper, a.collapsed, #sharedetails a, .alt-share a', function(evt) {
+
         $(document).on('click', 'a', function(evt) {
+          if (evt.isDefaultPrevented() || typeof ga !== "function") return;
           var $self = $(this);
           var href = $self.attr("href");
           var target = $self.attr("target");
@@ -35,37 +36,31 @@ html
           if ((this.protocol === 'http:' || this.protocol === 'https:') && this.hostname.indexOf(document.location.hostname) === -1) {
             evt.preventDefault();
             window.waitingForGA = true;
-            setTimeout(function(){
-              if (window.waitingForGA) {
-                window.waitingForGA = false;
-                window.open(href,(!target?"_self":target)); // ...and open the link as usual
-              }
-            }, 3000);
-            ga('send', 'event', 'Outbound', this.hostname, this.pathname, 0, { hitCallback: function() {
-                                                                                  if (window.waitingForGA) {
-                                                                                    window.waitingForGA = false;
-                                                                                    window.open(href,(!target?"_self":target)); // ...and open the link as usual
-                                                                                  }
-                                                                                }
-                                                                              }
-            );
+            setTimeout(loadPage, 1);
+            ga('send', 'event', 'Outbound', this.hostname, this.pathname, 0, { hitCallback: loadPage });
           } else { // internal link
             ga('send', 'event', 'Links', 'Clicked', text);
           }
 
+          function loadPage(){
+            if (window.waitingForGA) {
+              window.waitingForGA = false;
+              window.location = href; // ...and open the link as usual
+            }
+          }
         });
 
-  
+
   body
     block content
-         
+
     block footer
       .section.footer
         .container
           ul.footer-links.list-inline.inline
             li.hidden-xs.force-inline: img.little-logo(src='#{nestLevel}img/bb-logo-depth-small-greybg.jpg')
-            li: a(href='mailto:bluebutton@hhs.gov?subject=Feedback%20on%20Blue%20Button%20Toolkit', target='_blank') Send feedback
-            li: a(href='www.hhs.gov', target='_blank') Privacy Policy
+            li: a(href='mailto:bluebutton@hhs.gov?subject=Feedback%20on%20Blue%20Button%20Toolkit') Send feedback
+            li: a(href='http://www.hhs.gov') Privacy Policy
             li: a(href= 'http://bluebuttonconnector.healthit.gov') Visit the Blue Button Connector
           p.fs-xxsmall The ‘Blue Button’ logo is a registered Service Mark of the U.S. Department of Health and Human Services.
     block mainscript

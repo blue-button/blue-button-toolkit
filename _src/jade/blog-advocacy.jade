@@ -1,8 +1,7 @@
-extends layout
+extends _layout
 
 append vars
-  - var nestLevel = ''
-  - var pgTitle = 'Blue Button Toolkit | FAQs on Privacy and Security'
+  - pgTitle = 'Blue Button Toolkit | Sample Blog Posts'
 
 block content
 
@@ -10,9 +9,7 @@ block content
 
         a(href="index.html")
             img.logo-big(src='img/bb-logo-depth.jpg', alt = "Blue Button Logo")
-        ul.top-nav.nav.nav-pills.pull-right
-          li: a(href='index.html#faqs') Introduction
-          li: a(href='privacy-security-faqs.html') Privacy and Security FAQs
+        include _topnav
         .splash-title.text-center
           h1.fg-mblue Blue Button<sup>&#174;</sup> Toolkit
           h3.fg-mblue Support Consumers in Getting <br>& Using Their Health Records

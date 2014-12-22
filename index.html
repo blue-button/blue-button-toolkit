@@ -17,8 +17,9 @@
       
       ga('create', 'UA-23987631-4', 'auto');
       ga('send', 'pageview');
-      //- $('body').on('click', 'a.goal-title, a.box-link-rapper, a.collapsed, #sharedetails a, .alt-share a', function(evt) {
+      
       $(document).on('click', 'a', function(evt) {
+        if (evt.isDefaultPrevented() || typeof ga !== "function") return;
         var $self = $(this);
         var href = $self.attr("href");
         var target = $self.attr("target");
@@ -28,24 +29,18 @@
         if ((this.protocol === 'http:' || this.protocol === 'https:') && this.hostname.indexOf(document.location.hostname) === -1) {
           evt.preventDefault();
           window.waitingForGA = true;
-          setTimeout(function(){
-            if (window.waitingForGA) {
-              window.waitingForGA = false;
-              window.open(href,(!target?"_self":target)); // ...and open the link as usual
-            }
-          }, 3000);
-          ga('send', 'event', 'Outbound', this.hostname, this.pathname, 0, { hitCallback: function() {
-                                                                                if (window.waitingForGA) {
-                                                                                  window.waitingForGA = false;
-                                                                                  window.open(href,(!target?"_self":target)); // ...and open the link as usual
-                                                                                }
-          }
-                                                                            }
-          );
+          setTimeout(loadPage, 1);
+          ga('send', 'event', 'Outbound', this.hostname, this.pathname, 0, { hitCallback: loadPage });
         } else { // internal link
           ga('send', 'event', 'Links', 'Clicked', text);
         }
         
+        function loadPage(){
+          if (window.waitingForGA) {
+            window.waitingForGA = false;
+            window.location = href; // ...and open the link as usual
+          }
+        }
       });
       
       
@@ -54,7 +49,7 @@
   <body>
     <div class="section splash-section bg-white"><a href="index.html"><img src="img/bb-logo-depth.jpg" alt="Blue Button Logo" class="logo-big"></a>
       <ul class="top-nav nav nav-pills pull-right">
-        <li><a href="#faqs">Introduction</a></li>
+        <li><a href="index.html#faqs">Introduction</a></li>
         <li><a href="privacy-security-faqs.html">Privacy and Security</a></li>
         <li><a href="http://bluebuttonconnector.healthit.gov">Join the Movement</a></li>
       </ul>
@@ -67,7 +62,7 @@
       <div class="container">
         <div class="text-center">
           <div class="row">
-            <div class="col-md-10 col-lg-offset-1"> 
+            <div class="col-md-10 col-lg-offset-1">
               <h3 class="fg-mblue goal-statement">What would you like to do?</h3>
             </div>
           </div>
@@ -136,107 +131,107 @@
           </p>
           <p><span class="ccda-list-title">Security</span><span class="ccda-list-item keeper">OAuth</span><span class="ccda-list-item keeper">SAML</span>
           </p>
-          <p><span class="ccda-list-title">Example</span><span class="ccda-list-item keeper"><a target="_blank" href="http://blue-button.github.io/blue-button-plus-pull/">Blue Button API</a></span></p>
+          <p><span class="ccda-list-title">Example</span><span class="ccda-list-item keeper"><a href="http://blue-button.github.io/blue-button-plus-pull/">Blue Button API</a></span></p>
           <h4 class="fg-dgrey"> 2. Direct</h4>
           <p class="transport-description">The Direct Project specifies a simple, secure, scalable, standards-based way for participants to send authenticated, encrypted health information directly to known, trusted recipients over the Internet.</p>
           <p><span class="ccda-list-title">Content Type</span><span class="ccda-list-item keeper">S/MIME</span>
           </p>
           <p><span class="ccda-list-title">Security</span><span class="ccda-list-item keeper">X.509</span>
           </p>
-          <p><span class="ccda-list-title">Example</span><span class="ccda-list-item keeper"><a target="_blank" href="https://secure.bluebuttontrust.org">Blue Button Trust Bundles</a></span></p>
+          <p><span class="ccda-list-title">Example</span><span class="ccda-list-item keeper"><a href="https://secure.bluebuttontrust.org">Blue Button Trust Bundles</a></span></p>
           <h4 class="fg-dgrey"> 3. Web Services</h4>
           <p class="transport-description">A Web service (also Web Service) is defined by the W3C as 'a software system designed to support interoperable machine-to-machine interaction over a network'</p>
           <p><span class="ccda-list-title">Content Type</span><span class="ccda-list-item keeper">XML</span>
           </p>
           <p><span class="ccda-list-title">Security</span><span class="ccda-list-item keeper">SAML</span>
           </p>
-          <p><span class="ccda-list-title">Example</span><span class="ccda-list-item keeper"><a target="_blank" href="">SOAP</a></span></p>
+          <p><span class="ccda-list-title">Example</span><span class="ccda-list-item keeper"><a href="">SOAP</a></span></p>
           <h4 class="fg-dgrey"> 4. Secure Attachments</h4>
           <p class="transport-description">Email encryption refers to encryption, and often authentication, of email messages, to protect the content from being read by any but the intended recipients. Email encryption has been used by journalists and regular users to protect privacy.</p>
           <p><span class="ccda-list-title">Content Type</span><span class="ccda-list-item keeper">Encrypted Files</span>
           </p>
           <p><span class="ccda-list-title">Security</span><span class="ccda-list-item keeper">Various File Encryption</span>
           </p>
-          <p><span class="ccda-list-title">Example</span><span class="ccda-list-item keeper"><a target="_blank" href=""></a></span></p>
+          <p><span class="ccda-list-title">Example</span><span class="ccda-list-item keeper"><a href=""></a></span></p>
         </div>
       </div>
       <div id="buildtools" class="tab-pane">
         <h4 class="fg-maqua">GitHub Blue Button Project Page</h4>
         <p class="fs-small readable-width">Various open source development projects that support Blue Button.</p>
-        <p><a href="https://github.com/blue-button" target="_blank" class="fw-strong fs-small">View Github dashboard</a></p>
+        <p><a href="https://github.com/blue-button" class="fw-strong fs-small">View Github dashboard</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">Blue Button Clear</h4>
         <p class="fs-small readable-width">bbClear is an open-source framework for rendering more usable health records.</p>
-        <p><a href="http://blue-button.github.io/bbClear/" target="_blank" class="fw-strong fs-small">View Blue Button Clear</a></p>
+        <p><a href="http://blue-button.github.io/bbClear/" class="fw-strong fs-small">View Blue Button Clear</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">Standards Implementation &amp; Testing Environment</h4>
         <p class="fs-small readable-width">The 'SITE' aims to provide a central collaboration environment for developers and the standards community, and thus facilitate the rapid adoption of those standards in EHRs.  The SITE is divided into sandboxes, one for each standard supported by the SITE.</p>
-        <p><a href="http://sitenv.org/" target="_blank" class="fw-strong fs-small">View SITE</a></p>
+        <p><a href="http://sitenv.org/" class="fw-strong fs-small">View SITE</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">Connector API</h4>
         <p class="fs-small readable-width">The Blue Button Connector provides a free, public, read-only API to access the directory of healthcare organizations that are making health records available to patients and apps that ingest structured health information.</p>
-        <p><a href="http://bluebuttonconnector.healthit.gov/developers/" target="_blank" class="fw-strong fs-small">View the Connector</a></p>
+        <p><a href="http://bluebuttonconnector.healthit.gov/developers/" class="fw-strong fs-small">View the Connector</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">S&amp;I Framework</h4>
         <p class="fs-small readable-width">The Standards &amp; Interoperability Framework creates a forum – enabled by integrated functions, processes, and tools – where healthcare stakeholders can focus on solving real-world interoperability challenges.</p>
-        <p><a href="http://www.siframework.org/" target="_blank" class="fw-strong fs-small">View S&amp;I framework</a></p>
+        <p><a href="http://www.siframework.org/" class="fw-strong fs-small">View S&amp;I framework</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">Blue Button Logo</h4>
         <p class="fs-small readable-width">The words 'Blue Button,' the Blue Button logo, the Blue Button Combined Logo and the slogan 'Download My Data' are what consumers look for when they want electronic access to their health data.</p>
-        <p><a href="http://www.healthit.gov/patients-families/blue-button/blue-button-image" target="_blank" class="fw-strong fs-small">View Blue Button logo files</a></p>
+        <p><a href="http://www.healthit.gov/patients-families/blue-button/blue-button-image" class="fw-strong fs-small">View Blue Button logo files</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">PHR Model Privacy Notice</h4>
         <p class="fs-small readable-width">PHR Model Privacy Notice - The personal health record model privacy notice is designed to be a standardized template that a PHR company can use to succinctly inform customers about its privacy and security policies.</p>
-        <p><a href="http://www.healthit.gov/policy-researchers-implementers/personal-health-record-phr-model-privacy-notice" target="_blank" class="fw-strong fs-small">View PHR notice</a></p>
+        <p><a href="http://www.healthit.gov/policy-researchers-implementers/personal-health-record-phr-model-privacy-notice" class="fw-strong fs-small">View PHR notice</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">Health Record Design Challenge</h4>
         <p class="fs-small readable-width">Examples of redesigned health records submitted in 2013 in response to an open source challenge sponsored by HHS.</p>
-        <p><a href="http://healthdesignchallenge.com" target="_blank" class="fw-strong fs-small">View design challenge</a></p>
+        <p><a href="http://healthdesignchallenge.com" class="fw-strong fs-small">View design challenge</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">FAQs - Privacy &amp; Security</h4>
         <p class="fs-small readable-width">Frequently asked questions for organizations implementing Blue Button.</p>
-        <p><a href="privacy-security-faqs.html" target="_blank" class="fw-strong fs-small">View FAQs</a></p>
+        <p><a href="privacy-security-faqs.html" class="fw-strong fs-small">View FAQs</a></p>
         <hr class="grey">
       </div>
       <div id="communicatevision" class="tab-pane panel-group">
         <h4 class="fg-maqua">The Blue Button Print Ads</h4>
         <p class="fs-small readable-width">Print PSAs feature various images of the Blue Button that can be used in electronic or hard copy magazines, newsletters, and newspapers. Downloadable photos and graphics, including the print PSAs, are available in the Image Library.</p>
-        <p><a href="http://www.healthit.gov/sites/default/files/document_fonts.zip" target="_blank" class="fw-strong fs-small">Download PSA assets</a></p>
+        <p><a href="http://www.healthit.gov/sites/default/files/document_fonts.zip" class="fw-strong fs-small">Download PSA assets</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">The Blue Button Web Banner Ads</h4>
         <p class="fs-small readable-width">Web banner advertising for Blue Button</p>
-        <p><a href="http://www.healthit.gov/sites/default/files/psa_web_banner_ads.zip" target="_blank" class="fw-strong fs-small">Download banner ads</a></p>
+        <p><a href="http://www.healthit.gov/sites/default/files/psa_web_banner_ads.zip" class="fw-strong fs-small">Download banner ads</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">Fact Sheets</h4>
         <p class="fs-small readable-width">These easy-to-read fact sheets provide essential information for people to find out about the importance of having online access to their medical records and what they can do with their information once they have it.</p>
-        <p><a href="http://www.healthit.gov/sites/default/files/2013_0809_consumer_fact_sheet_final.pdf" target="_blank" class="fw-strong fs-small">View fact sheet (PDF)</a></p>
+        <p><a href="http://www.healthit.gov/sites/default/files/2013_0809_consumer_fact_sheet_final.pdf" class="fw-strong fs-small">View fact sheet (PDF)</a></p>
         <p class="fs-small readable-width">These easy-to-read fact sheets provide essential information for people to find out about the importance of having online access to their medical records and what they can do with their information once they have it.</p>
-        <p><a href="http://www.healthit.gov/sites/default/files/blue-button-fact-sheet-2014-feb_0.pdf" target="_blank" class="fw-strong fs-small">View fact sheet (PDF)</a></p>
+        <p><a href="http://www.healthit.gov/sites/default/files/blue-button-fact-sheet-2014-feb_0.pdf" class="fw-strong fs-small">View fact sheet (PDF)</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">Patient Stories</h4>
         <p class="fs-small readable-width">These messages are underscored by the moving stories of people who have benefited from Blue Button.</p>
-        <p class="readable-width"><a href="https://www.youtube.com/watch?v=lGGnda44Yik&amp;list=UUqynwrKIXFPyUCxqkAZ001w" target="_blank"><img src="img/patient_stories.jpg" class="img-responsive"></a></p>
+        <p class="readable-width"><a href="https://www.youtube.com/watch?v=lGGnda44Yik&amp;list=UUqynwrKIXFPyUCxqkAZ001w"><img src="img/patient_stories.jpg" class="img-responsive"></a></p>
         <hr class="grey">
         <h4 class="fg-maqua">Blue Button Logo</h4>
         <p class="fs-small readable-width">The words 'Blue Button,' the Blue Button logo, the Blue Button Combined Logo and the slogan 'Download My Data' are what consumers look for when they want electronic access to their health data.</p>
-        <p><a href="http://www.healthit.gov/patients-families/blue-button/blue-button-image" target="_blank" class="fw-strong fs-small">View Blue Button logo files</a></p>
+        <p><a href="http://www.healthit.gov/patients-families/blue-button/blue-button-image" class="fw-strong fs-small">View Blue Button logo files</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">Sample Blog Posts</h4>
         <p class="fs-small readable-width">Sample blog post to be used by organizations supporting Blue Button.</p>
-        <p><a href="blog-advocacy.html" target="_blank" class="fw-strong fs-small">Blog Post - Consumer Advocacy</a></p>
+        <p><a href="blog-advocacy.html" class="fw-strong fs-small">Blog Post - Consumer Advocacy</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">Sample Tweets</h4>
         <p class="fs-small readable-width">Sample Tweets to be used by your organization to promote your use of Blue Button</p>
-        <p><a href="sample-tweets.html" target="_blank" class="fw-strong fs-small">Sample Tweets - Blue Button Promotional Tweets</a></p>
+        <p><a href="sample-tweets.html" class="fw-strong fs-small">Sample Tweets - Blue Button Promotional Tweets</a></p>
         <hr class="grey">
         <h4 class="fg-maqua">The Blue Button PSAs</h4>
         <p class="fs-small readable-width">30-60 sec Blue Button PSAs</p>
-        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/60-sec-latina-woman-her-forties-who-living-cancer" target="_blank"><img src="img/cancer60.jpg" class="img-responsive"></a></p>
-        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/60-seconds-blue-button-psa-senior-65-chronic-condition" target="_blank"><img src="img/chronic60.jpg" class="img-responsive"></a></p>
-        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/60-sec-blue-button-psa-caregivers" target="_blank"><img src="img/caregiver60.jpg" class="img-responsive"></a></p>
-        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/30-sec-latina-woman-her-forties-who-living-cancer" target="_blank"><img src="img/cancer30.jpg" class="img-responsive"></a></p>
-        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/30-sec-65-african-american-man-living-diabetes" target="_blank"><img src="img/diabetes30.jpg" class="img-responsive"></a></p>
-        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/30-sec-blue-button-psa-video-caregivers" target="_blank"><img src="img/caregiver30.jpg" class="img-responsive"></a></p>
+        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/60-sec-latina-woman-her-forties-who-living-cancer"><img src="img/cancer60.jpg" class="img-responsive"></a></p>
+        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/60-seconds-blue-button-psa-senior-65-chronic-condition"><img src="img/chronic60.jpg" class="img-responsive"></a></p>
+        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/60-sec-blue-button-psa-caregivers"><img src="img/caregiver60.jpg" class="img-responsive"></a></p>
+        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/30-sec-latina-woman-her-forties-who-living-cancer"><img src="img/cancer30.jpg" class="img-responsive"></a></p>
+        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/30-sec-65-african-american-man-living-diabetes"><img src="img/diabetes30.jpg" class="img-responsive"></a></p>
+        <p class="readable-width"><a href="http://www.healthit.gov/patients-families/video/30-sec-blue-button-psa-video-caregivers"><img src="img/caregiver30.jpg" class="img-responsive"></a></p>
         <hr class="grey">
       </div>
       <div class="section bg-mblue">
@@ -250,7 +245,7 @@
                     <h4 class="panel-title"><a data-toggle="collapse" data-parent="#faqs" href="#faq0" class="collapsed">What is “Blue Button”?</a></h4>
                   </div>
                   <div id="faq0" class="panel-collapse collapse">
-                    <div class="panel-body"><p>Blue Button is a nationally recognized symbol indicating to consumers that they can get their own health records electronically from doctors, hospitals, and other health care providers, such as pharmacies and health insurance plans.  With electronic access to their health records, consumers can check them for accuracy and completeness, share them with people they trust—in case of emergency or to coordinate care among different providers—and reference them as needed. Health records may include clinical information from doctors and hospitals, health insurance claims, prescription histories, and lab/diagnostic test results.</p><p>The Blue Button Initiative is a public-private partnership to empower consumers with easy and secure access to their health records from a variety of sources in a format they can use.  More than 500 companies have <a target="_blank" href="http://healthit.gov/pledge">pledged</a> their support to increase consumer access to and use of their health data and as a result, more than 150 million Americans are already able to access their health information online from a variety of <a target="_blank" href="http://bluebuttonconnector.healthit.gov/records/">sources</a>. The Blue Button Initiative is supported by a growing portfolio of national standards that support individual consumers in using tools developed by the private sector, including applications and services that help individuals to analyze data and make better use of it to manage their health.</p></div>
+                    <div class="panel-body"><p>Blue Button is a nationally recognized symbol indicating to consumers that they can get their own health records electronically from doctors, hospitals, and other health care providers, such as pharmacies and health insurance plans.  With electronic access to their health records, consumers can check them for accuracy and completeness, share them with people they trust—in case of emergency or to coordinate care among different providers—and reference them as needed. Health records may include clinical information from doctors and hospitals, health insurance claims, prescription histories, and lab/diagnostic test results.</p><p>The Blue Button Initiative is a public-private partnership to empower consumers with easy and secure access to their health records from a variety of sources in a format they can use.  More than 500 companies have <a href="http://healthit.gov/pledge">pledged</a> their support to increase consumer access to and use of their health data and as a result, more than 150 million Americans are already able to access their health information online from a variety of <a href="http://bluebuttonconnector.healthit.gov/records/">sources</a>. The Blue Button Initiative is supported by a growing portfolio of national standards that support individual consumers in using tools developed by the private sector, including applications and services that help individuals to analyze data and make better use of it to manage their health.</p></div>
                   </div>
                 </div>
                 <div class="panel panel-default">
@@ -282,7 +277,7 @@
                     <h4 class="panel-title"><a data-toggle="collapse" data-parent="#faqs" href="#faq4" class="collapsed">Who is Behind the Blue Button Initiative?</a></h4>
                   </div>
                   <div id="faq4" class="panel-collapse collapse">
-                    <div class="panel-body"><p>The Blue Button Initiative is a public-private partnership based out of the Office of the National Coordinator for Health Information Technology at the US Department of Health &amp; Human Services (ONC) with strong support from other federal agencies, including the White House, VA, CMS, DoD, IHS and the private sector. Watch Todd Park, Chief Technology Officer of the U.S. explain the <a target="_blank" href="https://www.youtube.com/watch?v=dEcIh0Rzssk">significance of Blue Button</a></p><p>More than 500 private sector organizations participate in the Blue Button Pledge Program, including Aetna, United, Walgreens, CVS, Quest, Microsoft, the Mayo Clinic, AARP and the American Cancer Society. For a full list of participating members, please see <a target="_blank" href="http://www.healthit.gov/pledge">www.healthit.gov/pledge</a>. You can also see how far along specific organizations are with respect to enabling electronic access to their health data via the Blue Button Connector website at <a target="_blank" href="http://bluebuttonconnector.healthit.gov">http://bluebuttonconnector.healthit.gov</a>. Although many healthcare providers do not yet offer such access, the majority of Americans have electronic access to their own health records electronically via one or more organizations listed on the Blue Button Connector, including health plans and pharmacies.</p></div>
+                    <div class="panel-body"><p>The Blue Button Initiative is a public-private partnership based out of the Office of the National Coordinator for Health Information Technology at the US Department of Health &amp; Human Services (ONC) with strong support from other federal agencies, including the White House, VA, CMS, DoD, IHS and the private sector. Watch Todd Park, Chief Technology Officer of the U.S. explain the <a href="https://www.youtube.com/watch?v=dEcIh0Rzssk">significance of Blue Button</a></p><p>More than 500 private sector organizations participate in the Blue Button Pledge Program, including Aetna, United, Walgreens, CVS, Quest, Microsoft, the Mayo Clinic, AARP and the American Cancer Society. For a full list of participating members, please see <a href="http://www.healthit.gov/pledge">www.healthit.gov/pledge</a>. You can also see how far along specific organizations are with respect to enabling electronic access to their health data via the Blue Button Connector website at <a href="http://bluebuttonconnector.healthit.gov">http://bluebuttonconnector.healthit.gov</a>. Although many healthcare providers do not yet offer such access, the majority of Americans have electronic access to their own health records electronically via one or more organizations listed on the Blue Button Connector, including health plans and pharmacies.</p></div>
                   </div>
                 </div>
                 <div class="panel panel-default">
@@ -290,7 +285,7 @@
                     <h4 class="panel-title"><a data-toggle="collapse" data-parent="#faqs" href="#faq5" class="collapsed">How Does Blue Button Guide Relate to the Blue Button+ Implementation Guide?</a></h4>
                   </div>
                   <div id="faq5" class="panel-collapse collapse">
-                    <div class="panel-body"><p>In 2013 the Office of the National Coordinator for Health Information Technology (ONC) issued the <a target="_blank" href="http://bluebuttonplus.org/">Blue Button+ Implementation Guide</a> to support data holders/providers and third party applications in implementing Blue Button standards. This Blue Button Toolkit is the evolution of that original implementation guide, but with a few significant changes:</p><ul><li>The standards and other technical guidelines in the Blue Button Toolkit are drawn from a portfolio of national standards that support the Blue Button Initiative. They can be referred to as “Blue Button recommended standards.” We are no longer promoting the term “Blue Button+” or “Blue Button Plus” because it was confusing to people relative to “Blue Button” or the “Blue Button Initiative”.</li><li>We have diversified the technical approaches that support consumer exchange of information to keep pace with industry norms. Specifically, in addition to Direct protocols for the secure exchange of information, we now recommend the use of APIs (Application Programming Interfaces), Secure Attachments, and Web Services.</li><li>We have expanded the audience for the technical guidelines to include labs, pharmacies, immunization registries, and HIEs.</li><li>We have added marketing materials incorporating the Blue Button symbol that can be co-branded and used free of charge to assist with outreach to consumers to convey the importance of access to health information and support for consumer empowerment.</li><li>We have also improved the user experience of the guide so that it can be filtered and tailored based on audience (developer, pharmacy, consumer organization, etc).</li></ul></div>
+                    <div class="panel-body"><p>In 2013 the Office of the National Coordinator for Health Information Technology (ONC) issued the <a href="http://bluebuttonplus.org/">Blue Button+ Implementation Guide</a> to support data holders/providers and third party applications in implementing Blue Button standards. This Blue Button Toolkit is the evolution of that original implementation guide, but with a few significant changes:</p><ul><li>The standards and other technical guidelines in the Blue Button Toolkit are drawn from a portfolio of national standards that support the Blue Button Initiative. They can be referred to as “Blue Button recommended standards.” We are no longer promoting the term “Blue Button+” or “Blue Button Plus” because it was confusing to people relative to “Blue Button” or the “Blue Button Initiative”.</li><li>We have diversified the technical approaches that support consumer exchange of information to keep pace with industry norms. Specifically, in addition to Direct protocols for the secure exchange of information, we now recommend the use of APIs (Application Programming Interfaces), Secure Attachments, and Web Services.</li><li>We have expanded the audience for the technical guidelines to include labs, pharmacies, immunization registries, and HIEs.</li><li>We have added marketing materials incorporating the Blue Button symbol that can be co-branded and used free of charge to assist with outreach to consumers to convey the importance of access to health information and support for consumer empowerment.</li><li>We have also improved the user experience of the guide so that it can be filtered and tailored based on audience (developer, pharmacy, consumer organization, etc).</li></ul></div>
                   </div>
                 </div>
               </div>
@@ -303,8 +298,8 @@
       <div class="container">
         <ul class="footer-links list-inline inline">
           <li class="hidden-xs force-inline"><img src="img/bb-logo-depth-small-greybg.jpg" class="little-logo"></li>
-          <li><a href="mailto:bluebutton@hhs.gov?subject=Feedback%20on%20Blue%20Button%20Toolkit" target="_blank">Send feedback</a></li>
-          <li><a href="www.hhs.gov" target="_blank">Privacy Policy</a></li>
+          <li><a href="mailto:bluebutton@hhs.gov?subject=Feedback%20on%20Blue%20Button%20Toolkit">Send feedback</a></li>
+          <li><a href="http://www.hhs.gov">Privacy Policy</a></li>
           <li><a href="http://bluebuttonconnector.healthit.gov">Visit the Blue Button Connector</a></li>
         </ul>
         <p class="fs-xxsmall">The ‘Blue Button’ logo is a registered Service Mark of the U.S. Department of Health and Human Services.</p>

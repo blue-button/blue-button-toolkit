@@ -1,182 +1,179 @@
-extends layout
+extends _layout
 block content
 
-   
-    .section.splash-section.bg-white
-      a(href="index.html")
-        img.logo-big(src='img/bb-logo-depth.jpg', alt = "Blue Button Logo")
-      
-      ul.top-nav.nav.nav-pills.pull-right
-        li: a(href='#faqs') Introduction
-        li: a(href='privacy-security-faqs.html') Privacy and Security
-        li: a(href='http://bluebuttonconnector.healthit.gov') Join the Movement
-      
-      .splash-title.text-center
-        h1.fg-mblue Blue Button<sup>&#174;</sup> Toolkit
-        h3.fg-mblue Support Consumers in Getting <br>& Using Their Health Records
 
-    #select-goals
-      .container
-        .text-center
-         .row
-          .col-md-10.col-lg-offset-1 
-           h3.fg-mblue.goal-statement What would you like to do?
-      .row
+  .section.splash-section.bg-white
+    a(href="index.html")
+      img.logo-big(src='img/bb-logo-depth.jpg', alt = "Blue Button Logo")
+
+    include _topnav
+
+    .splash-title.text-center
+      h1.fg-mblue Blue Button<sup>&#174;</sup> Toolkit
+      h3.fg-mblue Support Consumers in Getting <br>& Using Their Health Records
+
+  #select-goals
+    .container
+      .text-center
+       .row
         .col-md-10.col-lg-offset-1
-          ul.goal-list.nav.nav-pills.nav-justified.clearfix(role='tablist')
-            
-            li.active
-              a.goal-title.fs-small.fg-lblue.fw-strong.text-center(href='#sharedata', role='tab', data-toggle='tab') Share data with patients
-            li
-              a.goal-title.fs-small.fg-lblue.fw-strong.text-center(href='#buildtools', role='tab', data-toggle='tab') Build tools & apps
-            li
-              a.goal-title.fs-small.fg-lblue.fw-strong.text-center(href='#communicatevision', role='tab', data-toggle='tab') Communicate Blue Button vision
+         h3.fg-mblue.goal-statement What would you like to do?
+    .row
+      .col-md-10.col-lg-offset-1
+        ul.goal-list.nav.nav-pills.nav-justified.clearfix(role='tablist')
+
+          li.active
+            a.goal-title.fs-small.fg-lblue.fw-strong.text-center(href='#sharedata', role='tab', data-toggle='tab') Share data with patients
+          li
+            a.goal-title.fs-small.fg-lblue.fw-strong.text-center(href='#buildtools', role='tab', data-toggle='tab') Build tools & apps
+          li
+            a.goal-title.fs-small.fg-lblue.fw-strong.text-center(href='#communicatevision', role='tab', data-toggle='tab') Communicate Blue Button vision
 
 
-    #resources.tab-content.container
+  #resources.tab-content.container
 
-      #sharedata.tab-pane.active.row
-        #orgtype.col-sm-4
-          h4.fg-mgrey.mb-25 Organization type
+    #sharedata.tab-pane.active.row
+      #orgtype.col-sm-4
+        h4.fg-mgrey.mb-25 Organization type
 
-          ul.data-sources.list-unstyled.clearfix(role='tablist')
+        ul.data-sources.list-unstyled.clearfix(role='tablist')
 
-            //- TODO if I map the icons to the ids in some simple object, I can then use a mixin for these.
-            li
-              a.box-link-rapper(data-org='insurance')
-                .wrap-source-icon
-                  i.insurance-icon.fa.fa-umbrella.isize-36
-                p.data-source-title.fs-small.fw-strong Health Insurance
-            li
-              a.box-link-rapper(data-org='physician')
-                .wrap-source-icon
-                  i.fa.fa-user-md.isize-36
-                p.data-source-title.fs-small.fw-strong Hospital or Clinic
-            li
-              a.box-link-rapper(data-org='pharmacy')
-                .wrap-source-icon.wrap-pharmacy-icon
-                  i.fa.fa-medkit.isize-36
-                p.data-source-title.fs-small.fw-strong Retail Pharmacy
-            li
-              a.box-link-rapper(data-org='lab')
-                .wrap-source-icon
-                  i.fa.fa-flask.isize-36
-                p.data-source-title.fs-small.fw-strong Diagnostic Lab
-            li
-              a.box-link-rapper(data-org='immunization')
-                .wrap-source-icon
-                  i.fa.fa-file-text-o.isize-36
-                p.data-source-title.fs-small.fw-strong Immunization Registry
-            li
-              a.box-link-rapper(data-org='hie')
-                .wrap-source-icon
-                  i.fa.fa-random.isize-36
-                p.data-source-title.fs-small.fw-strong Health Information Exchange
-            li
-              a.box-link-rapper(data-org='developer')
-                .wrap-source-icon
-                  i.fa.fa-mobile.isize-36
-                p.data-source-title.fs-small.fw-strong Developer
+          //- TODO if I map the icons to the ids in some simple object, I can then use a mixin for these.
+          li
+            a.box-link-rapper(data-org='insurance')
+              .wrap-source-icon
+                i.insurance-icon.fa.fa-umbrella.isize-36
+              p.data-source-title.fs-small.fw-strong Health Insurance
+          li
+            a.box-link-rapper(data-org='physician')
+              .wrap-source-icon
+                i.fa.fa-user-md.isize-36
+              p.data-source-title.fs-small.fw-strong Hospital or Clinic
+          li
+            a.box-link-rapper(data-org='pharmacy')
+              .wrap-source-icon.wrap-pharmacy-icon
+                i.fa.fa-medkit.isize-36
+              p.data-source-title.fs-small.fw-strong Retail Pharmacy
+          li
+            a.box-link-rapper(data-org='lab')
+              .wrap-source-icon
+                i.fa.fa-flask.isize-36
+              p.data-source-title.fs-small.fw-strong Diagnostic Lab
+          li
+            a.box-link-rapper(data-org='immunization')
+              .wrap-source-icon
+                i.fa.fa-file-text-o.isize-36
+              p.data-source-title.fs-small.fw-strong Immunization Registry
+          li
+            a.box-link-rapper(data-org='hie')
+              .wrap-source-icon
+                i.fa.fa-random.isize-36
+              p.data-source-title.fs-small.fw-strong Health Information Exchange
+          li
+            a.box-link-rapper(data-org='developer')
+              .wrap-source-icon
+                i.fa.fa-mobile.isize-36
+              p.data-source-title.fs-small.fw-strong Developer
 
-        #sharedetails.col-sm-8.hide
-          h2.share-name CCDA
-          .alt-share.hide
-          h3.fg-maqua View
-          p Enabling patient's the ability to view their electronic health records within a secure patient portal interface. As the adoption of smart phones continues to increase, there is a growing expectation that patients be able to view their records on the go.
+      #sharedetails.col-sm-8.hide
+        h2.share-name CCDA
+        .alt-share.hide
+        h3.fg-maqua View
+        p Enabling patient's the ability to view their electronic health records within a secure patient portal interface. As the adoption of smart phones continues to increase, there is a growing expectation that patients be able to view their records on the go.
+        p
+          span.ccda-list-title File Types
+          each ft in share_options.view.file_type
+            span.ccda-list-item(data-view-type=ft.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, '')) #{ft.name}
+        p
+          span.ccda-list-title Security
+          span.ccda-list-item.keeper #{share_options.view.security.name}
+
+        h3.fg-maqua Download
+        p Enabling patient's the ability to download a machine readable copy of their health records so that a patient may securely store it or share it with a destination of their choice.
+        p
+          span.ccda-list-title File Types
+          each ft in share_options.download.file_type
+            span.ccda-list-item(data-download-type=ft.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, '')) #{ft.name}
+        p
+          span.ccda-list-title Security
+          span.ccda-list-item.keeper #{share_options.download.security.name}
+
+        h3.fg-maqua Transmit
+        p Patients should have the ability to securely send their health data to a destination of their choice. This includes patients sharing their health records with a broader care team, informal caregivers and even sending their data to third party apps and tools designed to help them better manage their health and coordinate their healthcare.
+        p
+          span.ccda-list-title Structure
+          each cs in share_options.transmit.content_structure
+            span.ccda-list-item(data-transmit-structure=cs.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, ''))
+              a(href=cs.link) #{cs.name}
+        p
+          span.ccda-list-title Vocabulary
+          each v in share_options.transmit.vocabulary_code_sets
+            span.ccda-list-item(data-transmit-vocabulary=v.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, ''))
+              a(href=v.link) #{v.name}
+
+        each t, ind in share_options.transmit.transport
+          h4.fg-dgrey  #{(ind+1)}. #{t.name}
+          p.transport-description #{t.description}
           p
-            span.ccda-list-title File Types
-            each ft in share_options.view.file_type
-              span.ccda-list-item(data-view-type=ft.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, '')) #{ft.name}
+            span.ccda-list-title Content Type
+            each ct in t.content_type
+              span.ccda-list-item.keeper #{ct.name}
           p
             span.ccda-list-title Security
-            span.ccda-list-item.keeper #{share_options.view.security.name}
+            each s in t.security
+              span.ccda-list-item.keeper #{s.name}
 
-          h3.fg-maqua Download
-          p Enabling patient's the ability to download a machine readable copy of their health records so that a patient may securely store it or share it with a destination of their choice.
           p
-            span.ccda-list-title File Types
-            each ft in share_options.download.file_type
-              span.ccda-list-item(data-download-type=ft.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, '')) #{ft.name}
-          p
-            span.ccda-list-title Security
-            span.ccda-list-item.keeper #{share_options.download.security.name}
+            span.ccda-list-title Example
+            span.ccda-list-item.keeper
+              a(href=t.example.link) #{t.example.name}
+              //- br
+              //- | #{t.example.description}
 
-          h3.fg-maqua Transmit
-          p Patients should have the ability to securely send their health data to a destination of their choice. This includes patients sharing their health records with a broader care team, informal caregivers and even sending their data to third party apps and tools designed to help them better manage their health and coordinate their healthcare.
-          p
-            span.ccda-list-title Structure
-            each cs in share_options.transmit.content_structure
-              span.ccda-list-item(data-transmit-structure=cs.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, ''))
-                a(href=cs.link) #{cs.name}
-          p
-            span.ccda-list-title Vocabulary
-            each v in share_options.transmit.vocabulary_code_sets
-              span.ccda-list-item(data-transmit-vocabulary=v.name.toLowerCase().replace(/(\.|\-|\s|\/)/g, ''))
-                a(href=v.link) #{v.name}
 
-          each t, ind in share_options.transmit.transport
-            h4.fg-dgrey  #{(ind+1)}. #{t.name}
-            p.transport-description #{t.description}
+
+    #buildtools.tab-pane
+      each dev_resource in developer_resources
+        h4.fg-maqua #{dev_resource.name}
+        p.fs-small.readable-width #{dev_resource.description}
+        p
+          a.fw-strong.fs-small(href=dev_resource.link) #{dev_resource.link_text}
+        hr.grey
+
+    #communicatevision.tab-pane.panel-group
+      each resource_type in marketing_resources
+        h4.fg-maqua #{resource_type.name}
+        p.fs-small.readable-width #{resource_type.description}
+        each source, sInd in resource_type.resources
+          if source.img
+            p.readable-width
+              a(href=source.link)
+                img.img-responsive(src=source.img)
+          else
+            if sInd > 0
+              p.fs-small.readable-width #{source.description}
             p
-              span.ccda-list-title Content Type
-              each ct in t.content_type
-                span.ccda-list-item.keeper #{ct.name}
-            p
-              span.ccda-list-title Security
-              each s in t.security
-                span.ccda-list-item.keeper #{s.name}
-
-            p
-              span.ccda-list-title Example
-              span.ccda-list-item.keeper
-                a(target='_blank', href=t.example.link) #{t.example.name}
-                //- br
-                //- | #{t.example.description}
+              a.fw-strong.fs-small(href=source.link) #{source.link_text}
+        hr.grey
 
 
+    .section.bg-mblue
+          .container
+            .col-md-offset-1.col-md-10
+              h2.fw-normal.fg-white Introduction & Frequent Questions
+              .readable-width
+                #faqs.panel-group
+                  each faq, index in faqs
+                    .panel.panel-default
+                      .panel-heading
+                        h4.panel-title
+                          a.collapsed(data-toggle='collapse', data-parent='#faqs', href='#faq'+index)!= faq.question
+                      .panel-collapse.collapse(id='faq'+index)
+                        .panel-body!= faq.answer
 
-      #buildtools.tab-pane
-        each dev_resource in developer_resources
-          h4.fg-maqua #{dev_resource.name}
-          p.fs-small.readable-width #{dev_resource.description}
-          p
-            a.fw-strong.fs-small(href=dev_resource.link, target='_blank') #{dev_resource.link_text}
-          hr.grey
-
-      #communicatevision.tab-pane.panel-group
-        each resource_type in marketing_resources
-          h4.fg-maqua #{resource_type.name}
-          p.fs-small.readable-width #{resource_type.description}
-          each source, sInd in resource_type.resources
-            if source.img
-              p.readable-width
-                a(href=source.link, target='_blank')
-                  img.img-responsive(src=source.img)
-            else
-              if sInd > 0
-                p.fs-small.readable-width #{source.description}
-              p
-                a.fw-strong.fs-small(href=source.link, target='_blank') #{source.link_text}
-          hr.grey
-
-
-      .section.bg-mblue
-            .container
-              .col-md-offset-1.col-md-10
-                h2.fw-normal.fg-white Introduction & Frequent Questions
-                .readable-width
-                  #faqs.panel-group
-                    each faq, index in faqs
-                      .panel.panel-default
-                        .panel-heading
-                          h4.panel-title
-                            a.collapsed(data-toggle='collapse', data-parent='#faqs', href='#faq'+index)!= faq.question
-                        .panel-collapse.collapse(id='faq'+index)
-                          .panel-body!= faq.answer
-
-  append mainscript
-    - orgShareData = {};
-    - organizations.forEach(function(o){ orgShareData[o.id] = o})
-    script.
-      var orgShareData = !{JSON.stringify(orgShareData)}
+append mainscript
+  - orgShareData = {};
+  - organizations.forEach(function(o){ orgShareData[o.id] = o})
+  script.
+    var orgShareData = !{JSON.stringify(orgShareData)}
 

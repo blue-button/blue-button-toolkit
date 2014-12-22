@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           data: grunt.file.readJSON('_src/bbtoolkit.json')
         },
         files: [
-          {expand: true, cwd: '_src/jade', src: ['**/*.jade', '!layout.jade', '!menu.jade', '!cglayout.jade'], dest: '<%=meta.endpoint%>/', ext: '.html'}
+          {expand: true, cwd: '_src/jade', src: ['**/*.jade', '!_*'], dest: '<%=meta.endpoint%>/', ext: '.html'}
         ]
       }
     },
