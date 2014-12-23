@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blue Button Toolkit | Sample Tweets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js">\x3C/script>')</script>
+    <link rel="stylesheet" href="css/bbtoolkit-combined.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-23987631-4', 'auto');
+      ga('send', 'pageview');
+      
+      $(document).on('click', 'a', function(evt) {
+        if (evt.isDefaultPrevented() || typeof ga !== "function") return;
+        var $self = $(this);
+        var href = $self.attr("href");
+        var target = $self.attr("target");
+        var text = $self.text();
+        
+        // is this an outbound link?
+        if ((this.protocol === 'http:' || this.protocol === 'https:') && this.hostname.indexOf(document.location.hostname) === -1) {
+          evt.preventDefault();
+          window.waitingForGA = true;
+          setTimeout(loadPage, 1);
+          ga('send', 'event', 'Outbound', this.hostname, this.pathname, 0, { hitCallback: loadPage });
+        } else { // internal link
+          ga('send', 'event', 'Links', 'Clicked', text);
+        }
+        
+        function loadPage(){
+          if (window.waitingForGA) {
+            window.waitingForGA = false;
+            window.location = href; // ...and open the link as usual
+          }
+        }
+      });
+      
+      
+    </script>
+  </head>
+  <body>
+    <div class="section splash-section bg-white"><a href="index.html"><img src="img/bb-logo-depth.jpg" alt="Blue Button Logo" class="logo-big"></a>
+      <ul class="top-nav nav nav-pills pull-right">
+        <li><a href="index.html#faqs">Introduction</a></li>
+        <li><a href="privacy-security-faqs.html">Privacy and Security</a></li>
+        <li><a href="http://bluebuttonconnector.healthit.gov">Join the Movement</a></li>
+      </ul>
+      <div class="splash-title text-center">
+        <h1 class="fg-mblue">Blue Button<sup>&#174;</sup> Toolkit</h1>
+        <h3 class="fg-mblue">Support Consumers in Getting <br>& Using Their Health Records</h3>
+      </div>
+    </div>
+    <div class="container readable-width">
+      <div class="row">
+        <h2 class="fg-mblue text-center">Sample Tweets</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <p class="fs-large">More & more healthcare providers are going digital. Ask them to send you your records electronically  #BlueButton! <a href=bit.ly/1iicQ6K>href=bit.ly/1iicQ6K</a></p>
+        <p class="fs-large">Hard to remember & manage your mom’s prescriptions? There is an app for that: <a href="bit.ly/RkqjB0">bit.ly/RkqjB0</a>. Get #BlueButton!</p>
+        <p class="fs-large">Quick, can you recall your entire medical history & medication lists? No? You’re not alone. #BlueButton can help <a href= "bit.ly/1kHXcyQ">bit.ly/1kHXcyQ</a></p>
+        <p class="fs-large">Your health is just as important as your finances. Why mange one online and not the other? Learn about #BlueButton: http://bit.ly/1iicQ6K</p>
+        <p class="fs-large">Stay healthy, ask your doctor about #BlueButton access to your records… & use health apps to track your health <a href = "http://bit.ly/1jxrZ4k"> bit.ly/1jxrZ4k</a></p>
+        <p class="fs-large">Find out if your provider offers #BlueButton access to your health records:  <a href = "http://bit.ly/MVvPrv"> bit.ly/MVvPrv</a></p>
+        <p class="fs-large">Find out if your pharmacy offers #BlueButton access to your prescription records:  <a href = "bit.ly/MVvPrv">bit.ly/MVvPrv</a></p>
+        <p class="fs-large">37 million Medicare beneficiaries can access their health claims online with #BlueButton  Are you one of them? <a href = "http://bit.ly/MVvPrv">bit.ly/MVvPrv</a></p>
+        <p class="fs-large">#BlueButton lets you take control of your health: <a href = "http://bit.ly/1iiAJLo" >bit.ly/1iiAJLo</a></p>
+        <p class="fs-large">Don’t let healthcare happen to you. Get involved! #BlueButton <a href = "http://bit.ly/1o2Xw1o">bit.ly/1o2Xw1o</a></p>
+      </div>
+    </div>
+    <div class="section footer">
+      <div class="container">
+        <ul class="footer-links list-inline inline">
+          <li class="hidden-xs force-inline"><img src="img/bb-logo-depth-small-greybg.jpg" class="little-logo"></li>
+          <li><a href="mailto:bluebutton@hhs.gov?subject=Feedback%20on%20Blue%20Button%20Toolkit">Send feedback</a></li>
+          <li><a href="http://www.hhs.gov">Privacy Policy</a></li>
+          <li><a href="http://bluebuttonconnector.healthit.gov">Visit the Blue Button Connector</a></li>
+        </ul>
+        <p class="fs-xxsmall">The ‘Blue Button’ logo is a registered Service Mark of the U.S. Department of Health and Human Services.</p>
+      </div>
+    </div>
+    <script src="js/bbtoolkit-combined.min.js"></script>
+  </body>
+</html>

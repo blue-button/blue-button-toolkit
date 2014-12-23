@@ -1,0 +1,67 @@
+block vars
+  - nestLevel = ''
+  - pgTitle = 'Blue Button Toolkit | Support Consumers in Getting & Using Their Health Records'
+!!! 5
+html
+  block head
+    head
+      title= pgTitle
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      meta(content='text/html; charset=UTF-8', http-equiv='Content-Type')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      link(rel='shortcut icon', href='#{nestLevel}favicon.ico')
+
+      script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+      script.
+        window.jQuery || document.write('<script src="#{nestLevel}js/jquery-1.10.2.min.js">\x3C/script>')
+      block mainstyle
+        link(rel='stylesheet', href='#{nestLevel}css/bbtoolkit-combined.css')
+      script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-23987631-4', 'auto');
+        ga('send', 'pageview');
+
+        $(document).on('click', 'a', function(evt) {
+          if (evt.isDefaultPrevented() || typeof ga !== "function") return;
+          var $self = $(this);
+          var href = $self.attr("href");
+          var target = $self.attr("target");
+          var text = $self.text();
+
+          // is this an outbound link?
+          if ((this.protocol === 'http:' || this.protocol === 'https:') && this.hostname.indexOf(document.location.hostname) === -1) {
+            evt.preventDefault();
+            window.waitingForGA = true;
+            setTimeout(loadPage, 1);
+            ga('send', 'event', 'Outbound', this.hostname, this.pathname, 0, { hitCallback: loadPage });
+          } else { // internal link
+            ga('send', 'event', 'Links', 'Clicked', text);
+          }
+
+          function loadPage(){
+            if (window.waitingForGA) {
+              window.waitingForGA = false;
+              window.location = href; // ...and open the link as usual
+            }
+          }
+        });
+
+
+  body
+    block content
+
+    block footer
+      .section.footer
+        .container
+          ul.footer-links.list-inline.inline
+            li.hidden-xs.force-inline: img.little-logo(src='#{nestLevel}img/bb-logo-depth-small-greybg.jpg')
+            li: a(href='mailto:bluebutton@hhs.gov?subject=Feedback%20on%20Blue%20Button%20Toolkit') Send feedback
+            li: a(href='http://www.hhs.gov') Privacy Policy
+            li: a(href= 'http://bluebuttonconnector.healthit.gov') Visit the Blue Button Connector
+          p.fs-xxsmall The ‘Blue Button’ logo is a registered Service Mark of the U.S. Department of Health and Human Services.
+    block mainscript
+      script(src='#{nestLevel}js/bbtoolkit-combined.min.js')
