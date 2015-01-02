@@ -29,7 +29,7 @@
         if ((this.protocol === 'http:' || this.protocol === 'https:') && this.hostname.indexOf(document.location.hostname) === -1) {
           evt.preventDefault();
           window.waitingForGA = true;
-          setTimeout(loadPage, 1);
+          setTimeout(loadPage, 1000);
           ga('send', 'event', 'Outbound', this.hostname, this.pathname, 0, { hitCallback: loadPage });
         } else { // internal link
           ga('send', 'event', 'Links', 'Clicked', text);
