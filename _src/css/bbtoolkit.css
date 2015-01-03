@@ -4,8 +4,7 @@
 .inline {
   display: inline;
 }
-.clearfix,
-.offerings {
+.clearfix {
   overflow: hidden;
 }
 .no-pad {
@@ -21,8 +20,7 @@
   margin-top: 25px;
 }
 .bg-dgrey,
-.btn-warning,
-.share-icon {
+.btn-warning {
   background-color: #474b5a;
 }
 .fg-dgrey,
@@ -45,8 +43,7 @@ h3,
 .section-title,
 h4,
 .h4,
-.title-description,
-.main-nav a {
+.title-description {
   color: #959dac;
 }
 .bg-lmgrey {
@@ -61,27 +58,20 @@ h4,
 .fg-lgrey {
   color: #e4e6ea;
 }
-.bg-daqua,
-.section.why-bb .why-share .wrap-icon,
-.section.why-bb .why-apps .wrap-icon,
-.section.why-bb .why-check .wrap-icon,
-.section.why-bb .why-recall .wrap-icon {
+.bg-daqua {
   background-color: #0a94bb;
 }
 .fg-daqua,
 .btn-info {
   color: #0a94bb;
 }
-.bg-maqua,
-.section.why-bb,
-.offerings {
+.bg-maqua {
   background-color: #25c2dc;
 }
 .fg-maqua,
 h1,
 .h1,
-.page-title,
-.main-nav a {
+.page-title {
   color: #25c2dc;
 }
 .bg-laqua,
@@ -121,10 +111,7 @@ body {
 .fg-white,
 h5,
 .h5,
-.photo-title,
-.share-icon,
-.section.why-bb,
-.offerings {
+.photo-title {
   color: #fff;
 }
 .fs-xxlarge,
@@ -167,8 +154,7 @@ h3,
 .section-title,
 h4,
 .h4,
-.title-description,
-.main-nav a {
+.title-description {
   font-size: 24px;
 }
 @media (max-width:767px) {
@@ -179,22 +165,19 @@ h4,
   h4,
   .h4,
   .title-description,
-  .main-nav a,
 h3,
 .h3,
 .section-title,
 h4,
 .h4,
-.title-description,
-.main-nav a {
+.title-description {
     font-size: 20px;
   }
 }
 .fs-medium,
 h5,
 .h5,
-.photo-title,
-.main-nav a {
+.photo-title {
   font-size: 21px;
 }
 @media (max-width:767px) {
@@ -202,11 +185,9 @@ h5,
   h5,
   .h5,
   .photo-title,
-  .main-nav a,
 h5,
 .h5,
-.photo-title,
-.main-nav a {
+.photo-title {
     font-size: 18px;
   }
 }
@@ -268,8 +249,7 @@ li,
 .fw-light,
 h4,
 .h4,
-.title-description,
-.main-nav a {
+.title-description {
   font-weight: 200;
 }
 .td-underline {
@@ -292,8 +272,7 @@ h3,
 }
 h4,
 .h4,
-.title-description,
-.main-nav a {
+.title-description {
   line-height: 1.2em;
 }
 h5,
@@ -317,8 +296,7 @@ h2 a,
 h3 a,
 h4 a,
 h5 a,
-h6 a,
-.main-nav a a {
+h6 a {
   color: inherit;
 }
 a,
@@ -415,10 +393,6 @@ body.modal-open {
     margin-top: 0px;
   }
 }
-.minimal-back-nav {
-  border-bottom: solid 2px #0070bb;
-  padding: 0 15px;
-}
 .logo-big {
   width: 213px;
   height: 211px;
@@ -432,21 +406,6 @@ body.modal-open {
     top: 45px;
   }
 }
-.next-btn {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-  font-size: 18px;
-  line-height: 5px;
-}
-.next-btn i {
-  font-size: 2.5em;
-}
-.next-btn-fixed {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-}
 .readable-width {
   max-width: 620px;
 }
@@ -457,49 +416,6 @@ body.modal-open {
 }
 .alt-use a {
   text-decoration: underline;
-}
-.share-blurb {
-  margin-top: 12px;
-  margin-bottom: 32px;
-  padding-right: 0;
-}
-.share-blurb p {
-  line-height: 2em;
-}
-@media (max-width:767px) {
-  .share-blurb {
-    margin-top: 8px;
-  }
-}
-.share-btn {
-  margin-left: 10px;
-}
-.share-icon {
-  height: 40px;
-  width: 40px;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  display: block;
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-}
-@media (max-width:767px) {
-  .share-icon {
-    height: 32px;
-    width: 32px;
-    line-height: 32px;
-    font-size: 16px;
-  }
-}
-.main-nav {
-  border: none;
-  border-bottom: solid 6px #0070bb;
-  padding: 5px 0 24px 0;
-  background: none;
-}
-.main-nav .navbar-header {
-  padding-left: 0;
 }
 @media screen and (min-width: 768px) {
 }
@@ -563,31 +479,8 @@ img.little-logo {
 .splash-section .top-nav.nav-pills >li >a:hover {
   color: #25c2dc;
 }
-.wrap-outer-icon .wrap-icon {
-  height: 140px;
-  width: 140px;
-  margin: auto;
-  padding-top: 22px;
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-  border: solid 5px #fff;
-}
 .circ-col {
   padding: 40px 42px 10px;
-}
-.little-circ {
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  position: relative;
-  width: 75px;
-  height: 75px;
-}
-.little-circ .circ-label {
-  margin: auto;
-  position: absolute;
-  top: 25px;
-  left: 0;
-  right: 0;
 }
 .privacy-list {
   margin-left: 80px;
@@ -667,12 +560,6 @@ img.little-logo {
   float: none;
   display: inline-block;
 }
-.section.why-bb {
-  padding-top: 40px;
-}
-.section.why-bb h5 {
-  font-size: 1.1em;
-}
 @media screen and (min-width: 992px) {
   h2.big-header,
   .lead {
@@ -701,15 +588,6 @@ img.little-logo {
 }
 .load-profile {
   min-height: 400px;
-}
-.feature-list li i {
-  margin-right: 10px;
-}
-.feature-list li em {
-  display: none;
-}
-.feature-list li h6 {
-  color: #474b5a;
 }
 .box-link-rapper {
   cursor: pointer;
@@ -747,11 +625,6 @@ img.little-logo {
 .box-link-rapper.active .wrap-source-icon {
   background-color: #0a94bb;
 }
-.use-records-description {
-  color: #25c2dc;
-  border-bottom: none;
-  padding-bottom: 8px;
-}
 .nav-pills>li >a {
   color: #328cc8;
 }
@@ -780,82 +653,18 @@ img.little-logo {
 .goal-title {
   width: 350px;
 }
-.no-data {
-  margin-top: 0px;
-  padding-left: 20px;
-}
-@media screen and (max-width: 767px) {
-  .no-data {
-    border-left: none;
-    padding-left: 0px;
-    margin-top: 15px;
-    border-top: solid 1px #474b5a;
-  }
-}
-.view-profile-btn {
-  text-decoration: underline;
-}
-.get-data-btn {
-  font-size: 18px;
-}
 .or {
   padding: 0 15px;
-}
-.not-listed-learn-more {
-  text-decoration: underline;
-}
-.get-records-wrapper-link {
-  padding-right: 40px;
-  display: inline-block;
-}
-.provider-about-header,
-.provider-description {
-  padding-right: 20px;
-}
-ul.additional-features-list {
-  margin-top: 10px;
-  margin-left: 18px;
-}
-ul.additional-features-list li {
-  line-height: 1.5em;
-}
-.open-notes-learn-more {
-  color: #999;
-  margin-left: 5px;
 }
 p.fs-medium {
   margin-top: 10px;
   margin-bottom: 20px;
-}
-.offerings {
-  padding: 0 15px 15px;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.offerings ul>li {
-  font-size: 16px;
-  padding-bottom: 7px;
 }
 .privacy-last-section {
   padding-bottom: 60px;
 }
 .profile-img {
   width: 400px;
-}
-.scroll-hint-wrapper {
-  height: 30px;
-}
-.scroll-hint-wrapper .scroll-hint {
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  -ms-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-.scroll-hint-wrapper .scroll-hint.no-show {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
 }
 .section.footer {
   padding-top: 20px;

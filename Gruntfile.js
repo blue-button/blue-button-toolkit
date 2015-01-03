@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         options: {
           separator: ';'
         },
-        src: ['_src/js/respond.js', '_src/js/bootstrap.min.js', '_src/js/jquery.cookie.js', '_src/js/smoothscroll.min.js', '_src/js/list.min.js', '_src/js/fastclick.min.js', '_src/js/bbtoolkit.js'],
+        src: ['_src/js/respond.js', '_src/js/bootstrap.min.js', '_src/js/fastclick.min.js', '_src/js/bbtoolkit.js'],
         dest: '<%=meta.endpoint%>/js/bbtoolkit-combined.js',
         nonull: true
       },

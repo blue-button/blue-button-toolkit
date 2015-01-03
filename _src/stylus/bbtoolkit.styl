@@ -55,10 +55,6 @@ body.modal-open
     mt 0px
 
 
-.minimal-back-nav
-  border-bottom solid 2px $dblue
-  padding 0 15px
-
 .logo-big
   width 213px
   height 211px
@@ -68,20 +64,6 @@ body.modal-open
   top 10px
   @media(max-width:767px)
     top 45px
-
-.next-btn
-  position absolute
-  bottom 40px
-  left 40px
-  fs 18px
-  line-height 5px
-  i
-    fs 2.5em
-
-.next-btn-fixed
-  position fixed
-  bottom 20px
-  left 20px
 
 .readable-width
   max-width 620px
@@ -95,43 +77,6 @@ body.modal-open
   a
     text-decoration underline
     @extend .fg-dblue
-
-.share-blurb
-  mt 12px
-  mb 32px
-  pr 0
-  p
-    line-height 2em
-  @media(max-width:767px)
-    mt 8px
-
-.share-btn
-  ml 10px
-
-.share-icon
-  @extend .bg-dgrey
-  @extend .fg-white
-  height 40px
-  width 40px
-  border-radius 50%
-  display block
-  text-align center
-  line-height 40px
-  font-size 20px
-  @media(max-width:767px)
-    height 32px
-    width 32px
-    line-height 32px
-    font-size 16px
-
-.main-nav
-  border none
-  border-bottom solid 6px $dblue
-  border-radius none
-  padding 5px 0 24px 0
-  background none
-  .navbar-header
-    pl 0
 
 .navbar
   border-radius none !important
@@ -194,29 +139,8 @@ body
         &:hover
           color $maqua
 
-.wrap-outer-icon
-  .wrap-icon
-    height 140px
-    width 140px
-    margin auto
-    pt 22px
-    border-radius 100px
-    border solid 5px #fff
-
 .circ-col
   padding 40px 42px 10px
-
-.little-circ
-  border-radius 50px
-  position relative
-  width 75px
-  height 75px
-  .circ-label
-    margin auto
-    position absolute
-    top 25px
-    left 0
-    right 0
 
 .privacy-list
   ml 80px
@@ -298,25 +222,6 @@ body
     display inline-block
 
 
-.section.why-bb
-  @extend .fg-white
-  @extend .bg-maqua
-
-  pt 40px
-  .why-share, .why-apps
-    .wrap-icon
-      @extend .bg-daqua
-  .why-check
-    .wrap-icon
-      @extend .bg-daqua
-  .why-recall
-    .wrap-icon
-      @extend .bg-daqua
-
-  h5
-    fs 1.1em
-
-
 @media screen and (min-width: 992px)
   h2.big-header, .lead
     color $maqua
@@ -344,15 +249,6 @@ body
 
 .load-profile
   min-height 400px
-
-.feature-list
-  li
-    i
-      mr 10px
-    em
-      display none
-    h6
-      color $dgrey
 
 .box-link-rapper
   cursor pointer
@@ -383,12 +279,6 @@ body
     .wrap-source-icon
       bgc $daqua
 
-.use-records-description
-  color $maqua
-  border-bottom none
-  pb 8px
-
-
 .nav-pills>li
   >a
     color $mblue
@@ -413,73 +303,18 @@ body
 .goal-title
   width 350px
 
-.no-data
-  mt 0px
-  pl 20px
-  @media screen and (max-width: 767px)
-    border-left none
-    pl 0px
-    mt 15px
-    border-top solid 1px $dgrey
-
-.view-profile-btn
-  text-decoration underline
-
-.get-data-btn
-  fs 18px
-
 .or
   padding 0 15px
-
-.not-listed-learn-more
-  text-decoration underline
-
-.get-records-wrapper-link
-  pr 40px
-  display inline-block
-
-.provider-about-header, .provider-description
-  pr 20px
-
-ul.additional-features-list
-  mt 10px
-  ml 18px
-
-  li
-    line-height 1.5em
-
-.open-notes-learn-more
-  color #999
-  ml 5px
 
 p.fs-medium
   mt 10px
   mb 20px
-
-.offerings
-  @extend .bg-maqua
-  @extend .fg-white
-  @extend .clearfix
-  padding 0 15px 15px
-  margin-left -15px
-  margin-right -15px
-  ul>li
-    fs 16px
-    pb 7px
 
 .privacy-last-section
   pb 60px
 
 .profile-img
   width 400px
-
-
-.scroll-hint-wrapper
-  height 30px
-  .scroll-hint
-    transition opacity 0.5s
-    &.no-show
-      opacity 0
 
 .section.footer
   pt 20px
