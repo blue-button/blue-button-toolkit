@@ -34,7 +34,7 @@ block content
 
     #sharedata.tab-pane.active.row
       #orgtype.col-sm-4
-        h4.fg-mgrey.mb-25 Organization type
+        h4.fg-mblue.mb-25 Organization type
 
         ul.data-sources.list-unstyled.clearfix(role='tablist')
 
@@ -78,7 +78,7 @@ block content
       #sharedetails.col-sm-8.hide
         h2.share-name CCDA
         .alt-share.hide
-        h3.fg-maqua View
+        h3.fg-mblue View
         p Enabling patient's the ability to view their electronic health records within a secure patient portal interface. As the adoption of smart phones continues to increase, there is a growing expectation that patients be able to view their records on the go.
         p
           span.ccda-list-title File Types
@@ -88,7 +88,7 @@ block content
           span.ccda-list-title Security
           span.ccda-list-item.keeper #{share_options.view.security.name}
 
-        h3.fg-maqua Download
+        h3.fg-mblue Download
         p Enabling patient's the ability to download a machine readable copy of their health records so that a patient may securely store it or share it with a destination of their choice.
         p
           span.ccda-list-title File Types
@@ -98,7 +98,7 @@ block content
           span.ccda-list-title Security
           span.ccda-list-item.keeper #{share_options.download.security.name}
 
-        h3.fg-maqua Transmit
+        h3.fg-mblue Transmit
         p Patients should have the ability to securely send their health data to a destination of their choice. This includes patients sharing their health records with a broader care team, informal caregivers and even sending their data to third party apps and tools designed to help them better manage their health and coordinate their healthcare.
         p
           span.ccda-list-title Structure
@@ -134,7 +134,7 @@ block content
 
     #buildtools.tab-pane
       each dev_resource in developer_resources
-        h4.fg-maqua #{dev_resource.name}
+        h4.fg-mblue #{dev_resource.name}
         p.fs-small.readable-width #{dev_resource.description}
         p
           a.fw-strong.fs-small(href=dev_resource.link) #{dev_resource.link_text}
@@ -142,13 +142,13 @@ block content
 
     #communicatevision.tab-pane.panel-group
       each resource_type in marketing_resources
-        h4.fg-maqua #{resource_type.name}
+        h4.fg-mblue #{resource_type.name}
         p.fs-small.readable-width #{resource_type.description}
         each source, sInd in resource_type.resources
           if source.img
             p.readable-width
               a(href=source.link)
-                img.img-responsive(src=source.img)
+                img.img-responsive(src=source.img, alt=source.description)
           else
             if sInd > 0
               p.fs-small.readable-width #{source.description}

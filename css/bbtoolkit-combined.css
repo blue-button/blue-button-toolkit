@@ -90,20 +90,20 @@ h1,
 }
 .bg-dblue,
 .btn-primary {
-  background-color: #0070bb;
+  background-color: #316796;
 }
 .fg-dblue,
 h2,
 .h2,
 .sub-title,
 .alt-use a {
-  color: #0070bb;
+  color: #316796;
 }
 .bg-mblue {
-  background-color: #328cc8;
+  background-color: #266b99;
 }
 .fg-mblue {
-  color: #328cc8;
+  color: #266b99;
 }
 .bg-lblue {
   background-color: #80c0dd;
@@ -336,14 +336,14 @@ sup {
 }
 .sub-title {
   padding-bottom: 16px;
-  border-bottom: 3px solid #0070bb;
+  border-bottom: 3px solid #316796;
 }
 hr {
   height: 0;
   border: none;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #0070bb;
+  border-bottom-color: #316796;
 }
 hr.grey {
   border-bottom-color: #e4e6ea;
@@ -446,7 +446,7 @@ img.little-logo {
   margin-top: 0px;
   font-size: 1.5em;
   font-weight: bold !important;
-  color: #0070bb !important;
+  color: #316796 !important;
 }
 .section {
   padding: 80px 0 80px 0;
@@ -481,7 +481,7 @@ img.little-logo {
   margin-bottom: 50px;
 }
 .splash-section .top-nav.nav-pills >li >a {
-  color: #0070bb;
+  color: #316796;
 }
 .splash-section .top-nav.nav-pills >li >a:hover {
   color: #25c2dc;
@@ -603,7 +603,7 @@ img.little-logo {
   display: table;
 }
 .box-link-rapper .wrap-source-icon {
-  background-color: #bfc4cd;
+  background-color: #266b99;
   height: 56px;
   width: 56px;
   -webkit-border-radius: 28px;
@@ -618,7 +618,7 @@ img.little-logo {
 .box-link-rapper .data-source-title {
   display: table-cell;
   vertical-align: middle;
-  color: #bfc4cd;
+  color: #266b99;
 }
 .box-link-rapper:hover,
 .box-link-rapper.active {
@@ -626,25 +626,25 @@ img.little-logo {
 }
 .box-link-rapper:hover .data-source-title,
 .box-link-rapper.active .data-source-title {
-  color: #0a94bb;
+  color: #bfc4cd;
 }
 .box-link-rapper:hover .wrap-source-icon,
 .box-link-rapper.active .wrap-source-icon {
-  background-color: #0a94bb;
+  background-color: #bfc4cd;
 }
 .nav-pills>li >a {
-  color: #328cc8;
+  color: #266b99;
 }
 .nav-pills>li >a:hover {
   color: #474b5a;
 }
 .nav-pills>li.active>a {
   color: #fff;
-  background-color: #80c0dd;
+  background-color: #316796;
 }
 .nav-pills>li.active>a:hover,
 .nav-pills>li.active>a:focus {
-  background-color: #80c0dd;
+  background-color: #316796;
 }
 #select-goals {
   margin-top: 50px;
