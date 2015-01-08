@@ -26,7 +26,7 @@
         var text = $self.text();
         
         // is this an outbound link?
-        if ((this.protocol === 'http:' || this.protocol === 'https:') && this.hostname.indexOf(document.location.hostname) === -1) {
+        if ((this.protocol === 'http:' || this.protocol === 'https:') && typeof href !== "undefined" && this.hostname !== "" && this.hostname.indexOf(document.location.hostname) === -1) {
           evt.preventDefault();
           window.waitingForGA = true;
           setTimeout(loadPage, 1000);
