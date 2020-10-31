@@ -39,6 +39,7 @@ p,
 li,
 .body-text {
   color: #474b5a;
+  text-shadow: 3px 2px gray;
 }
 .bg-mgrey,
 .btn-warning:hover {
